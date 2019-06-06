@@ -1,0 +1,55 @@
+{
+  "POST_COMMON_VALUE":{
+    "WITH_VALID_DATA_BY_SUPER":{
+      "input":{
+        "audio": 10,
+        "video": 10,
+        "periodlevel": "Last Week",
+        "entityid": 22
+      },
+      "expected":{
+        "statusCode":201,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "audio": 10,
+        "video": 10,
+        "periodlevel": "Last Week",
+        "entityid": 22
+      }
+    },
+    "WITH_VALID_DATA_BY_EMPLOYEE":{
+      "input":{
+        "audio": 10,
+        "video": 10,
+        "periodlevel": "Last Week",
+        "entityid": 22
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "WITH_VALID_DATA_BY_CANDIDATE":{
+      "input":{
+        "audio": 10,
+        "video": 10,
+        "periodlevel": "Last Week",
+        "entityid": 22
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "WITH_VALID_DATA_BY_NEW_USER":{
+      "input":{
+        "audio": 10,
+        "video": 10,
+        "periodlevel": "Last Week",
+        "entityid": 22
+      },
+      "expected":{
+        "statusCode":401
+      }
+    }
+  }
+}

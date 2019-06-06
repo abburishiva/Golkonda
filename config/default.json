@@ -1,0 +1,47 @@
+{
+  "super_secret": "TalentSuite",
+  "talentScreenSecret": {
+    "facebook": "ce6d250e90a338c6923f12a29bc0724e",
+    "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+    "linkedin": "u0MG4PRXqv98S0H6",
+    "github": "0e73792036429a7992905f4ff528b4ebe1497291"
+  },
+  "development": {
+    "MONGO_URI": "mongodb://localhost/test",
+    "MONGO_OPTIONS": {
+      "db": {
+        "safe": true
+      }
+    }
+  },
+  "zmqConnections": {
+    "push": "tcp://127.0.0.1:1004",
+    "pull": "tcp://127.0.0.1:1004",
+    "pub": "tcp://127.0.0.1:1005",
+    "sub": "tcp://127.0.0.1:1005"
+  },
+  "quizVideo": {
+    "SOURCE_PATH": "/Recordings/Un-encoded/",
+    "DESTINATION_PATH": "/Recordings/Encoded/"
+  },
+  "logtransports":{
+    "handleExceptions": true,
+    "humanReadableUnhandledException": true,
+    "json":false,
+    "timestamp": false,
+    "filename": "logs/all_logs.log"
+  },
+  "firebase_connections" : {
+    "gcmKey" : "AIzaSyAEUCleUau188AIA8TXN6Sbl0zqpkwZs5E",
+    "authDomain" : "pushnotifications-75ec7.firebaseapp.com",
+    "databaseURL" : "https://pushnotifications-75ec7.firebaseio.com",
+    "projectId" : "pushnotifications-75ec7",
+    "storageBucket" : "pushnotifications-75ec7.appspot.com",
+    "messagingSenderId" : "263638709861",
+    "vapidDetails" : {
+      "subject" : "https://developers.google.com/web/fundamentals/",
+      "publicKey" : "BNlPpPc7EU-_KTCxzZvzKpXjbjH16Ln73AdKMoOyIg4jJgAP7xzdQNoI726lycp76EuNqRpLojJKLLdtyqJ90QM",
+      "privateKey" : "MYA5mELNXIHItNxuzsOg40FeloFBGHX61dze_gFVx1c"
+    }
+  }
+}

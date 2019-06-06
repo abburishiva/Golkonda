@@ -1,0 +1,315 @@
+{
+  "CODE_VERIFICATION_FOR_ACCOUNT_ACTIVATION": {
+    "TEST_FOR_NEW_USER": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "TcRXdaiP",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "data": [
+          {
+            "_id": "58e23997a32a7a49a507f3d5",
+            "email": "kasthuri@gmail.com",
+            "password": "ddb16a5b5409da7fa6396d5aa7376289",
+            "source": "talentscreen",
+            "__v": 0,
+            "code": "RTppfldk",
+            "lastmoddatetime": "2017-04-03T11:14:28.000Z",
+            "registereddatetime": "2017-04-03T11:14:28.000Z",
+            "resume_id": null,
+            "login_status": {
+              "is_active": "N",
+              "is_user_verified": "N",
+              "first_login_completed": "N",
+              "is_super": false
+            },
+            "video_demo": true,
+            "coding_demo": true,
+            "choice_demo": true,
+            "role": "candidate",
+            "source_details": {
+              "screen_name": null,
+              "location": null,
+              "company": null,
+              "link": null,
+              "picture": null
+            },
+            "source_id": null,
+            "name": "anonymous"
+          }
+        ],
+        "status": 200
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_EXCESS_CODE_LENGTH": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "TcRXdaiPASDEQW",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_INSUFFICIENT_CODE_LENGTH": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "TcRXd",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_INVALID_CODE": {
+      "input": {
+        "email_address": "kasthuri.ip@gmail.com",
+        "verification_code": "Qrq431BY",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "status": 206,
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_INVALID_DOMAIN_FOR_NEW_USER": {
+      "input": {
+        "email_address": "kasthuri.ip123@gmail.com",
+        "verification_code": "Qrq43OAz",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "body": "no content"
+      }
+    },
+    "TEST_FOR_EXISTING_USER": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "TcRXdaiP",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected":{
+        "data": [
+          {
+            "_id": "58e23befa32a7a49a507f3d7",
+            "email": "kasthurihanamkonda@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen",
+            "__v": 0,
+            "code": "TcRXdaiP",
+            "lastmoddatetime": "2017-03-27T14:39:35.000Z",
+            "registereddatetime": "2017-03-27T14:39:35.000Z",
+            "resume_id": null,
+            "login_status": {
+              "is_active": "N",
+              "is_user_verified": "N",
+              "first_login_completed": "N",
+              "is_super": false
+            },
+            "video_demo": true,
+            "coding_demo": true,
+            "choice_demo": false,
+            "role": "candidate",
+            "source_details": {
+              "screen_name": null,
+              "location": null,
+              "company": null,
+              "link": null,
+              "picture": null
+            },
+            "source_id": null,
+            "name": "anonymous"
+          }
+        ],
+        "status": 200
+      }
+    },
+    "TEST_FOR_EXISTING_USER_WITH_INVALID_CODE": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "K9MW5KPy",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "status": 206,
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_INVALID_DOMAIN_FOR_EXISTING_USER": {
+      "input": {
+        "email_address": "sudha123@gmail.com",
+        "verification_code": "Ennaxqf4",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "body": "no content"
+      }
+    }
+  },
+  "CODE_VERIFICATION_FOR_FORGOT_PASSWORD":{
+    "TEST_FOR_NEW_USER": {
+      "input": {
+        "email_address": "kasthuri.ip@gmail.com",
+        "verification_code": "RTppfldk",
+        "app_type": "talentscreen",
+        "type": "forgotPassword"
+      },
+      "expected": {
+        "data": [
+          {
+            "_id": "58e23997a32a7a49a507f3d5",
+            "email": "kasthuri.ip@gmail.com",
+            "password": "ddb16a5b5409da7fa6396d5aa7376289",
+            "source": "talentscreen",
+            "__v": 0,
+            "code": "RTppfldk",
+            "lastmoddatetime": "2017-03-02T20:17:13.000Z",
+            "registereddatetime": "2017-03-02T20:17:13.000Z",
+            "resume_id": null,
+            "login_status": {
+              "is_active": "N",
+              "is_user_verified": "N",
+              "first_login_completed": "N",
+              "is_super": false
+            },
+            "video_demo": true,
+            "coding_demo": true,
+            "choice_demo": true,
+            "role": "candidate",
+            "source_details": {
+              "screen_name": null,
+              "location": null,
+              "company": null,
+              "link": null,
+              "picture": null
+            },
+            "source_id": null,
+            "name": "anonymous"
+          }
+        ],
+        "status": 200
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_EXCESS_CODE_LENGTH": {
+      "input": {
+        "email_address": "kasthuri.ip@gmail.com",
+        "verification_code": "RTppfldkAQWSED",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "message": "You have entered an invalid verification code"
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_INSUFFICIENT_CODE_LENGTH": {
+      "input": {
+        "email_address": "kasthuri.ip@gmail.com",
+        "verification_code": "RTppfl",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "message": "You have entered an invalid verification code"
+      }
+    },
+    "TEST_FOR_NEW_USER_WITH_INVALID_CODE": {
+      "input": {
+        "email_address": "kasthuri.ip@gmail.com",
+        "verification_code": "Qrq431BY",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "status": 206,
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_INVALID_DOMAIN_FOR_NEW_USER": {
+      "input": {
+        "email_address": "kasthuri.ip123@gmail.com",
+        "verification_code": "Qrq43OAz",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "body": "no content"
+      }
+    },
+    "TEST_FOR_EXISTING_USER": {
+      "input": {
+        "email_address": "kasthurihanamkonda@gmail.com",
+        "verification_code": "TcRXdaiP",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected":{
+        "data": [
+          {
+            "_id": "58e23befa32a7a49a507f3d7",
+            "email": "kasthurihanamkonda@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen",
+            "__v": 0,
+            "code": "TcRXdaiP",
+            "lastmoddatetime": "2017-03-27T14:39:35.000Z",
+            "registereddatetime": "2017-03-27T14:39:35.000Z",
+            "resume_id": null,
+            "login_status": {
+              "is_active": "N",
+              "is_user_verified": "N",
+              "first_login_completed": "N",
+              "is_super": false
+            },
+            "video_demo": true,
+            "coding_demo": true,
+            "choice_demo": false,
+            "role": "candidate",
+            "source_details": {
+              "screen_name": null,
+              "location": null,
+              "company": null,
+              "link": null,
+              "picture": null
+            },
+            "source_id": null,
+            "name": "anonymous"
+          }
+        ],
+        "status": 200
+      }
+    },
+    "TEST_FOR_EXISTING_USER_WITH_INVALID_CODE": {
+      "input": {
+        "email_address": "sudha@gmail.com",
+        "verification_code": "K9MW5KPy",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "status": 206,
+        "message": "You have entered an invalid verification code. Please try again"
+      }
+    },
+    "TEST_FOR_INVALID_DOMAIN_FOR_EXISTING_USER": {
+      "input": {
+        "email_address": "sudha123@gmail.com",
+        "verification_code": "Ennaxqf4",
+        "app_type": "talentscreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "body": "no content"
+      }
+    }
+
+  }
+}

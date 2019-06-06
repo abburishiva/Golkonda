@@ -1,0 +1,33 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_BASIC_GET_ALL_FOR_SUPER": {
+      "expected": {
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_FOR_NEW_USER": {
+      "expected": {
+        "statusCode":401
+      }
+    }
+  }
+}

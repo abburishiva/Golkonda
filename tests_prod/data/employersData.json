@@ -1,0 +1,158 @@
+{
+  "EMPLOYERS": {
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_ID_FOR_SUPER":{
+      "input":{
+        "id":"591af2215a19a2354ce16cac"
+      },
+      "expected":  {
+        "_id": "591af2215a19a2354ce16cac",
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "auth_details": {
+          "registereddatetime": "2017-05-16T12:35:45.000Z",
+          "last_verification_code": "c6nqh33q",
+          "first_login_completed": "Y",
+          "is_user_verified": "Y",
+          "is_super": true
+        },
+        "employer_details": {
+          "company_name": "Google",
+          "country_name": "United States",
+          "company_size": "5000+",
+          "job_title": "Engineering Manager"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "kumar@whitebox-learning.com"
+        },
+        "user_profile": {
+          "phone": "+19254247411",
+          "name": "Kumar velupula",
+          "email": "kumar@whitebox-learning.com"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_ID_FOR_EMPLOYEE":{
+      "input":{
+        "id":"591af3005a19a2354ce16cae"
+      },
+      "expected": {
+        "_id": "591af3005a19a2354ce16cae",
+        "auth_details": {
+          "registereddatetime": "2017-05-16T12:39:28.000Z",
+          "last_verification_code": "ym8DBoa3",
+          "first_login_completed": "Y",
+          "is_user_verified": "Y",
+          "is_super": false
+        },
+        "employer_details": {
+          "company_name": "Innova-path",
+          "country_name": "India",
+          "company_size": "500-999",
+          "job_title": "VP"
+        },
+        "source_details": {
+          "username": "sudha@innova-path.com",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "source": "talentscreen"
+        },
+        "user_profile": {
+          "phone": "+919676454532",
+          "name": "Sudha WBL",
+          "email": "sudha@innova-path.com"
+        }
+      }
+
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_ID_FOR_CANDIDATE":{
+      "input":{
+        "id":"58d9d45c8c950f4c2a689380"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_ID_FOR_NEW_USER":{
+      "input":{
+        "id":"58d9d45c8c950f4c2a689380"
+      }
+
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_EMAIL_ID_FOR_SUPER": {
+      "input": {
+        "emailid": "kumar@whitebox-learning.com"
+      },
+      "expected":
+      {
+        "_id": "591af2215a19a2354ce16cac",
+        "lastmoddatetime": "2017-06-09T07:57:59.502Z",
+        "__v": 0,
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "auth_details": {
+          "registereddatetime": "2017-05-16T12:35:45.000Z",
+          "last_verification_code": "c6nqh33q",
+          "first_login_completed": "Y",
+          "is_user_verified": "Y",
+          "is_super": true
+        },
+        "employer_details": {
+          "company_name": "Google",
+          "country_name": "United States",
+          "company_size": "5000+",
+          "job_title": "Engineering Manager"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "kumar@whitebox-learning.com"
+        },
+        "user_profile": {
+          "phone": "+19254247411",
+          "name": "Kumar velupula",
+          "email": "kumar@whitebox-learning.com"
+        }
+      }
+
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_EMAIL_ID_FOR_EMPLOYEE": {
+      "input": {
+        "emailid": "engr1@innova-path.com"
+      },
+      "expected":[
+        {
+          "_id": "591af3005a19a2354ce16cae",
+          "auth_details": {
+            "registereddatetime": "2017-05-16T12:39:28.000Z",
+            "last_verification_code": "ym8DBoa3",
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": false
+          },
+          "employer_details": {
+            "company_name": "Innova-path",
+            "country_name": "India",
+            "company_size": "500-999",
+            "job_title": "VP"
+          },
+          "source_details": {
+            "username": "sudha@innova-path.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "phone": "+919676454532",
+            "name": "Sudha WBL",
+            "email": "sudha@innova-path.com"
+          }
+        }
+      ]
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_EMAIL_ID_FOR_CANDIDATE": {
+      "input": {
+        "emailid": "engr1@innova-path.com"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_BY_EMAIL_ID_FOR_NEW_USER": {
+      "input": {
+        "emailid": "engr1@innova-path.com"
+      }
+    }
+  }
+}

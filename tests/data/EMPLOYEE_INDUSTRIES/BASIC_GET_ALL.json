@@ -1,0 +1,74 @@
+{
+  "BASIC_GET_ALL": {
+    "TEST_FOR_BASIC_GET_ALL_LOOKUP_INDUSTRIES": {
+      "expected": {
+        "count": 5,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 148,
+          "name": "Accounting"
+        },
+        "last": {
+          "id": 294,
+          "name": "Writing/Editing"
+        },
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "id": 148,
+        "name": "Accounting"
+      },
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "Accounting",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 148,
+          "name": "Accounting"
+        },
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 148
+      },
+      "expected": {
+        "id": 148,
+        "name": "Accounting",
+        "flag": 0,
+        "description": null,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

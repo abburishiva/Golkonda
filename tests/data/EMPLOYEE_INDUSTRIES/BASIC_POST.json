@@ -1,0 +1,53 @@
+{
+  "BASIC_POST": {
+    "TEST_FOR_BASIC_POST_LOOKUP_INDUSTRIES_SUPER": {
+      "input": {
+        "payload": {
+          "name": "alternative medic",
+          "flag": 0,
+          "description": ""
+        },
+        "statusCode":201,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "expected": {
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_LOOKUP_INDUSTRIES_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "alternative medicine",
+          "flag": 0,
+          "description": ""
+        },
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_POST_LOOKUP_INDUSTRIES_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Arts And Crafts",
+          "flag": 0,
+          "description": " "
+        },
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_POST_LOOKUP_INDUSTRIES_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Automotive",
+          "flag": 0,
+          "description": " "
+        },
+        "statusCode":401
+      }
+    }
+  }
+}

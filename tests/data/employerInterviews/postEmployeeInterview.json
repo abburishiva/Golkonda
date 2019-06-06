@@ -1,0 +1,311 @@
+{
+  "postEmployeeInterview": {
+    "with valid data for SUPER": {
+      "input": {
+        "subject": [
+          {
+            "flag": "true",
+            "codemirror_theme": "lang-javascript",
+            "mode": "javascript",
+            "categoryid": 1,
+            "icon_class": "ts-javascriptprogramming",
+            "name": "JavaScript",
+            "id": 56
+          }
+        ],
+        "detail": {
+          "level": "expert",
+          "makeChallenge": "user"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "__v": 0,
+        "subject": [
+          {
+            "flag": "true",
+            "codemirror_theme": "lang-javascript",
+            "mode": "javascript",
+            "categoryid": 1,
+            "icon_class": "ts-javascriptprogramming",
+            "name": "JavaScript",
+            "id": 56
+          }
+        ],
+        "detail": {
+          "makeChallenge": "user",
+          "level": "expert"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "lastmoddatetime": "2017-07-26T12:17:53.829Z",
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "_id": "59788871deb09f45b9204b50",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      }
+    },
+    "with valid data for EMPLOYEE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "with valid data for CANDIDATE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "with valid data for NEW_USER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "expected":{
+      "statusCode":401
+    }
+  }
+}

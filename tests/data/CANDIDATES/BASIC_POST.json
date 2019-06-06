@@ -1,0 +1,94 @@
+{
+  "BASIC_POST":{
+    "TEST_FOR_BASIC_POST_FOR_SUPER":{
+      "input":{
+        "source_details": {
+          "source": "talentscreen",
+          "username": "narjun.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      },
+      "expected": {
+        "statusCode": 201,
+        "content-type": "application/json; charset=utf-8",
+        "lastmoddatetime": "2017-04-23T12:33:46.000Z",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "registereddatetime": "2017-04-24T06:23:51.000Z",
+          "first_login_completed": "N",
+          "is_user_verified": "N"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE":{
+      "input":{
+        "source_details": {
+          "source": "talentscreen",
+          "username": "narjun1.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun1.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      },
+      "expected": {
+        "statusCode": 201,
+        "content-type": "application/json; charset=utf-8",
+        "lastmoddatetime": "2017-04-23T12:33:46.000Z",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "registereddatetime": "2017-04-24T06:23:51.000Z",
+          "first_login_completed": "N",
+          "is_user_verified": "N"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE":{
+      "input":{
+        "app_type": "talentscreen",
+        "email_address":"mounika@gmail.com",
+        "password":"Excellence@123456",
+        "message_type": "string",
+        "type": "string",
+        "role": "candidate"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER":{
+      "input":{
+        "app_type": "talentscreen",
+        "email_address":"mounika@gmail.com",
+        "password":"Excellence@123456",
+        "message_type": "string",
+        "type": "string",
+        "role": "candidate"
+      }
+    }
+  }
+}

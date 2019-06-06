@@ -1,0 +1,18 @@
+{
+  "CANDIDATE_REGISTERING_AS_EMPLOYEE": {
+    "TEST_FOR_CANDIDATE_REGISTERING_AS_EMPLOYEE": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "sudhaaa.ip@gmail.com",
+        "password": "Excellence@123",
+        "message_type": "string",
+        "type": "string",
+        "role": "employee"
+      },
+      "expected": {
+        "code": 200,
+        "message": "The email address that you have entered already registered as talentscreenlogin. Please try using another email address."
+      }
+    }
+  }
+}

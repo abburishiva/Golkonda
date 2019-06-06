@@ -1,0 +1,49 @@
+{
+  "BASIC_GET_EMPLOYER_INTERVIEWS":{
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYER_INTERVIEWS_FOR_SUPER": {
+      "expected": {
+        "statusCode":200,
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYER_INTERVIEWS_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode":200,
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYER_INTERVIEWS_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYER_INTERVIEWS_FOR_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+      }
+    },
+
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEW_BY_INTERVIEW_ID_FOR_SUPER": {
+      "expected":{
+        "statusCode":200,
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEW_BY_INTERVIEW_ID_FOR_EMPLOYEE": {
+        "expected":{
+          "statusCode":200,
+          "content-type": "application/json; charset=utf-8"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEW_BY_INTERVIEW_ID_FOR_CANDIDATE": {
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEW_BY_INTERVIEW_ID_FOR_NEW_USER": {
+      "expected":{
+        "statusCode":401
+      }
+    }
+  }
+}

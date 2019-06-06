@@ -1,0 +1,56 @@
+{
+  "AUDIO_QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_AUDIO_QUESTIONS": {
+      "expected": {
+        "count": 1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_AUDIO_QUESTIONS_BY_SORTING_SUBJECTID": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "subjectid": 56,
+          "levelid": 2,
+          "headers": {
+            "content-type": "application/json; charset=utf-8"}
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_AUDIO_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 2
+      },
+      "expected": {
+        "count": 1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_AUDIO_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      },
+      "expected": {
+        "count": 1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"}
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 1,
+        "subjectid": 56,
+        "levelid": 2,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"}
+      }
+    }
+  }
+}

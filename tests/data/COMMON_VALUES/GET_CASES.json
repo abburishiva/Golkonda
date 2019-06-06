@@ -1,0 +1,51 @@
+{
+  "GET_CASES": {
+    "GET_ALL_COMMON_VALUES": {
+      "expected": {
+        "statusCode": 200,
+        "properties": [
+          "id",
+          "audio",
+          "video",
+          "periodlevel",
+          "entityid",
+          "lastmoddatetime",
+          "lastmoduserid"
+        ],
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "GET_COMMON_VALUE_WITH_VALID_ID": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "id": 1,
+        "audio": 0,
+        "video": 0,
+        "periodlevel": "Last Week",
+        "entityid": 22,
+        "lastmoddatetime": "2017-08-08T12:16:05.000Z",
+        "lastmoduserid": 99999
+      },
+      "ifNoRecords": {
+        "status": 404,
+        "message": "Records Not Found"
+      }
+    },
+    "GET_ALL_SORTING_BY_ENTITY_ID": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

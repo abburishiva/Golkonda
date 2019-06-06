@@ -1,0 +1,515 @@
+{
+
+  "UTILS_RESUMES": {
+    "TEST_FOR_BASIC_POST_FOR_DOCX_FILE":{
+      "resume_properties": [
+        "basics",
+        "education",
+        "work",
+        "skills",
+        "volunteer",
+        "references",
+        "interests",
+        "awards",
+        "languages"
+      ],
+      "expected": {
+        "statusCode":200,
+        "basics": {
+          "name": "Functions DOM ",
+          "summary": "Over 6 years of professional experience in Front-endUI development focused on communication and media, using HTMLHTML5, CSSCSS3, Bootstrap, AngularJS, jQuery, JavaScript with solid understanding of Closure, Prototype Chain, Hoisting, OOD, OOP , InnovaTalentAvatharPathAliaseetc.Strong experience on Back-End technologies and frameworks including Node.JS . Similar solid experience using databases including MongoDB, MySQL .",
+          "location": {
+            "address": "5, CSSCSS3"
+          },
+          "profiles": []
+        },
+        "skills": [
+          {
+            "name": "programming languages",
+            "keywords": [
+              "  C, C++, JavaScript, SQLOperating System Windows, Linux, Unix, Mac OS XIDEs worked on  Notepad++, Visual Studio, Eclipse, WebStorm, Sublime, Brackets,Application Servers  Node.JS, Apache, IIS, InnovaTalentAvatharPathSynonym.Libraries Express.JS, Request, Google, Angular-UI, jQuery UI, Socket.IO, Mongoose, Bootstrap.JS."
+            ]
+          },
+          {
+            "name": "strong skills",
+            "keywords": [
+              " implementing UI Design using HTML, CSS, jQuery, JavaScript. Built pages from Photoshop mock-ups using JavaScript, JQuery, CSS, and HTML."
+            ]
+          },
+          {
+            "name": "technical skills",
+            "keywords": [
+              "Web Development HTML5, SASS, CSS3, JavaScript, jQuery, PHP, JSON, JDBC, AJAX, XML, XHTML, DHTML, Angular.JS, MVC, DOM, Express.JS, Bootstrap.Databases  PL/SQL (Oracle), MySQL, MSSQL, MongoDB"
+            ]
+          }
+        ],
+        "work": [
+          {
+            "position": "Developer",
+            "startDate": "Jan 16",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Cognizant Technology Solutions",
+            "position": "Developer",
+            "startDate": "Oct 10",
+            "endDate": "Jul 14",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Capital One",
+            "position": "Developer",
+            "startDate": "Sep 14",
+            "endDate": "Dec 15",
+            "highlights": [
+              "Description: T he purpose of this application is to process the mortgage loan originations. Capital one offers fixed, variable and balloon mortgages, and home equity loans. The application captures customer data and once the data is captured, the application invokes credit bureau to get customers credit rating and then it hits asset and liability verification system and then it invokes loan underwriting system which executes bunch of loan underwriting decision rules. Then it invokes the pricing module to get the suggested rates and referral messages would be generated to the underwriter to make underwriting decisions. The system also does product recommendation in case if the customer selects no products.   Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Worked closely with UX designers and implemented mockups .Developed an application using JavaScript design patterns like singleton and factoryUsed AngularJS as the SPAs framework and angular-uiui-router to manage URL route.Created several custom Directives for component reuse and custom Services for providing data exchange function.Injected AngularJS $http, $q as the promise library for asynchronous data operation.Used twitter Bootstrap Grid System and CSS media queries to make web responsive and mobile first.Utilized HTML5 Form Validation and AngularJS Form Validation to check users input and interact with userDesigned and implemented UI layout using HTML5, CSSCSS3, Less, Bootstrap .Implemented Responsive Design by Bootstrap Grid System and CSS3 Media Queries .Chose C3.js as responsive data visualization library.Used AngularJS MVVM paradigm as an instruction for a SPA development .Constructed the single page application using AngularJS and UI-Bootstrap, UI-Router .Used HTML5 Form Validation and AngularJS Form Validation to check users input and interact with user.Used AngularJS ui-route for managing URL route and State TransitionUsed AngularJS dependency injection to inject different Angular Services as well as custom Services, also built several custom Directives to provide reusable componentUsed Promise, specifically $http and $q service , to asynchronously fetch data from backend to speed up frontend view rendering.Utilized jQuery and JavaScript for DOM manipulations and basic front-end logic and Event handlers .Developed the relevant backend RESTful API using Node.js and Express.js .Used Mongoose for Object Modeling and Database interacting with MongoDB .Completed User Authentication by using Passport.js local strategy.Logged and debugged using Chrome developer tools and configured test environment using Karma and wrote unit test using Jasmine and e2e test using Protractor .Adopted Git for version controlling and JIRA for project tracking .Environment: HTML5, CSSCSS3, Bootstrap, AngularJS, AJAX, Promise, JavaScript, jQuery, Node.js, Express.js, Mongoose, MongoDB, Karma, Jasmine, Git, Trello, REST, Webstorm.Client:"
+            ]
+          },
+          {
+            "highlights": [
+              " with building and consuming REST API’s . Good understanding of Http. Built web services using Node.js and Express.JS.Expert in AngularJS to design Single Page Application with solid experience of creating custom Directives, Services and Filters, also skillful in ng-Animate to provide CSS-based animations as well as JavaScript -based animations via callback hooks.Proficient in HTML/HTML5 including new features like Form Validation, Media, Canvas, SVG, HTML APIs like Web Worker, Local Storage, Server-Side Event, and CSS/CSS3.Skillful in jQuery include but not limited to Selectors, Functions, Animations, Events and AJAX.Solid experience in using Express.js to create web application and comprehensive understanding of URL Routing, Error Handling and Debugging. Skillful in AngularUI Router to build Single Page Application with URL route and State Transition.Hands-on experience in using Passport.js.Extensive experience with Advanced JavaScript concepts – closures, scope, promises, function expressions, hoisting, prototypes ."
+            ]
+          },
+          {
+            "summary": " Inter-American Development Bank Description  Inter-American Development Bank is looking for a Data Repository Platform that would provide a one-stop-shop for data from multiple sources and provide data visualization, role based data access and social sharing for their data. Display this indicator based data in predetermined layouts which include tabular, charts and other visualization. Responsibilities Good exposure to Responsive Design and good understanding and knowledge in CSS Frameworks like Bootstrap. "
+          },
+          {
+            "highlights": [
+              "Macy’s, Atlanta, GA Duration "
+            ]
+          },
+          {
+            "summary": " #2"
+          },
+          {
+            "highlights": [
+              " on working with CSS Background, CSS Layouts, CSS positioning, CSS text, CSS border, CSS margin, CSS padding, CSS table, Pseudo classes, Pseudo elements and CSS behaviors in CSS.Ability to rapidly prototype interface designs in hand-coded validating, standards-compliant, and semantically rich code and be aware of cross-browser compatibility and bugs.Thorough understanding of the differences and bugs in various browsers and browser versions.Understanding of application development lifecycle methodologies.Knowledge of human factors and usability, best practices for interface designStrong communication, analytical and interpersonal skills working within cross-functional teamsDeep understanding of JavaScript and the JQuery frameworkCreated and optimized graphic prototype websites and applications interfaces using HTML and CSS.Involved in write application level code to interact with APIs, Web Services using AJAX, JSON and XML.Implemented and designed user interface for web based customer application.Developed data formatted web applications and deploy the script using client side scripting using JavaScript.Worked on Cross-Browser compatibility and fixed the bugs for several browsers.Integrated with back end code (PHP) for highly interactive AJAX based applications.Environment Html, CSS, JavaScript, jQuery, Ajax, XML, JSON, Java, Spring, Hibernate, JUnit, Apache Tomcat, Eclipse IDE."
+            ]
+          },
+          {
+            "highlights": [
+              " with Grunt for JavaScript file's concatenation and minify to improve performance in loading web pages.Created REST API’s using Express Router/Model/Controller architecture. Models connect to MySQL and MongoDB using Node.JS, MySQL and Mongoose modules.Implemented Socket.IO through ZMQ for MongoDB events for real-time feeds on the front-end. Created module with Socket.IO for web socket engine to make real-time web application with bi directional communication.  Created controllers and view pages along with Bootstrap and HTML5 for dynamic web application.Used JSON response modulation in rest services to make it more generic for our mobile team to consume the services.Developed  UI with AJAX, DHTML and JavaScript for more interactive web pagesUsed Git as source control and planned for continuous integration and delivery.Environment Node.JS, Angular.JS, Express.JS, Mongoose, Socket.IO, RESTFUL Web services, JavaScript, HTML5, CSS3, Bootstrap, Grunt, jQuery, MongoDB, JIRA, GitHub."
+            ]
+          },
+          {
+            "highlights": [
+              " working with Grunt and Gulp – Build process and workflow management."
+            ]
+          },
+          {
+            "highlights": [
+              " in using UI Bootstrap to create Bootstrap Components like Modal.Complete understanding of Design Pattern like factory, observe, and mixin pattern in JavaScript.Hands-on experience on installing and managing different packages by NPM, Bower .Great understanding on Unix/Linux Operating System and Computer Network, Computer Graphic, familiar with Data Structure and Algorithm Design such as List, Queue, Stack, and Tree.Good understanding of Test-Driven Development and Unit, Black-box, White-box, and Grey-box Testing, InnovaTalentAvatharPathAliase.Good with SDLC, participated in Team work, have strong experience with SVN, Git , familiar with public Git repository hosting service like GitHub."
+            ]
+          },
+          {
+            "summary": " On-boarding ApplicationDescription The project intends at building a web application which can be used to automate the on- boarding process of Cognizant employees who are about to start working on project (s) for the client. This application will help the involved users, viz. Candidate, Manager& P.M.O. to keep a track of the process of submitting various documents and also help to fill lengthy data using web forms and exporting it in required format.ResponsibilitiesInvolved in requirements analysis, design and implementation in Agile environmentDesigned and Developed UI of Web pages with HTML, CSSDesigned dynamic client-side JavaScript codes and jQuery to build web forms, page navigation and form validation.Used jQuery to get the client-side elements effects like Hide, Show, Event Handling and DOM manipulation .Debug the application using Firebug to traverse the documents and manipulated the Nodes using DOM and DOM Functions .Used Springand Hibernate to set up server side framework and used Java as backend development language, deployed server on Tomcat .Unit testing was performed using JUnit and Version control using SVN.Keeping up to date with the latest tech in case of future's upgradeSolved cross browser problems against different browsersDeveloped optimized HTML and CSS for responsive web design. "
+          },
+          {
+            "summary": " #1"
+          },
+          {
+            "highlights": [
+              " with Jasmine and Protractor to test Unit and AngularJS applications."
+            ]
+          }
+        ],
+        "awards": [
+          {
+            "title": "publications",
+            "summary": "PublicationPaper battery-IEEE international journalreleaseDate10-10-2010referencenamekarthikreferenceworking as senior SeinterestsnamewildlifekeywordsphotographylanguageslanguageEnglishfluencyNative speaker"
+          }
+        ],
+        "education": [
+          {
+            "studyType": "Bachelor of Technology – Computer Science."
+          }
+        ],
+        "references": [],
+        "interests": [],
+        "volunteer": [],
+        "languages": []
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_DOC_FILE":{
+      "resume_properties": [
+        "basics",
+        "education",
+        "work",
+        "skills",
+        "volunteer",
+        "references",
+        "interests",
+        "awards",
+        "languages"
+      ],
+      "expected": {
+        "basics": {
+          "name": "MANNE REDDY ",
+          "email": "mahender.manne@gmail.com",
+          "summary": "To perceive a career in a renowned firm with dedicated efforts and to associate myself with an organization that gives me a chance to update my knowledge.Educational QualificationGraduation B.Com (Computer Science) Under Osmania University from Sandeepani Degree college, Kamareddy -2009.Intermediate C.E.C under Board of Intermediate Education, from Sandeepani Jr. College, Kamareddy – 2006.S.S.C from Board of Secondary Education, Triveni High School, Domakonda – 2004.",
+          "location": {},
+          "profiles": []
+        },
+        "skills": [
+          {
+            "name": "computer skills",
+            "keywords": [
+              "P.G.D.C.A (Post Graduate Diploma in Computer Application)A.D.C.A (Advanced Diploma in Computer Application)D.T.P (Desktop Publisher)Operation Systems (XP, 2000, 98, and Other)"
+            ]
+          },
+          {
+            "name": "nationality  indianlanguages",
+            "keywords": [
+              " Known  English, Hindi and TeluguAddress  H.No 6-26,Vill Domakonda,Mdl DomakondaDist Nizamabad, 503123.DeclarationI here by declare that the above information is correct and true to the best of my knowledge and belief.PlaceDate (MAHENDER REDDY MANNE)"
+            ]
+          }
+        ],
+        "work": [],
+        "awards": [],
+        "education": [],
+        "references": [],
+        "interests": [
+          {
+            "name": "Strengths",
+            "keywords": [
+              "Good Communication Skills.Ready to take responsibility.Quick Learner and Good Interpersonal Skills."
+            ]
+          }
+        ],
+        "volunteer": [],
+        "languages": []
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_PDF_FILE":{
+      "resume_properties": [
+        "basics",
+        "education",
+        "work",
+        "skills",
+        "volunteer",
+        "references",
+        "interests",
+        "awards",
+        "languages"
+      ],
+      "expected": {
+        "statusCode":200,
+  "basics": {
+    "name": "Business ",
+    "label": "salesperson",
+    "summary": " - Preparing monthly reports-Stock and sales statement report, retailing and invoicing reports. - PDC and PRI claim reports and Direct Supply reports. - Consolidation of data region and country wise monthly, quarterly and annually. - Extracting data from SAP and working on reports. - Compilation and preparation of analytical report on retailing and invoicing data of clients. - Attending and managing client queries with mails and calls. - Reconciliation of dealer SNS vs Stock report. - Audit for Stock and sales statement. - Preparation of Delta AR Report with aging wise and payment term wise. - Preparing provision or accruals file for incentives. - Preparing templates for incentive calculation based on the company policy. - Awards calculation for salesperson, supervisor and RSM. - Calculation of incentive based on target and achievement of sales team. - Providing rreporting to financial controller for decision making. - Preparing MIS reports. Previous Employer-Associate SKP Business consulting LLPSenior Process ",
+    "location": {},
+    "profiles": [
+      {
+        "network": " - Preparing monthly reports-Stock and sales statement report, retailing and invoicing reports. - PDC and PRI claim reports and Direct Supply reports. - Consolidation of data region and country wise monthly, quarterly and annually. - Extracting data from SAP and working on reports. - Compilation and preparation of analytical report on retailing and invoicing data of clients. - Attending and managing client queries with mails and calls. - Reconciliation of dealer SNS vs Stock report. - Audit for Stock and sales statement. - Preparation of Delta AR Report with aging wise and payment term wise. - Preparing provision or accruals file for incentives. - Preparing templates for incentive calculation based on the company policy. - Awards calculation for salesperson, supervisor and RSM. - Calculation of incentive based on target and achievement of sales team. - Providing rreporting to financial controller for decision making. - Preparing MIS reports. Previous Employer-Associate SKP Business consulting LLPSenior Process "
+      }
+    ]
+  },
+  "skills": [],
+  "work": [
+    {
+      "company": "Delta",
+      "position": "supervisor",
+      "startDate": "July 2015",
+      "highlights": [
+        " to PresentAP, AR & GL and financial Reporting. "
+      ]
+    },
+    {
+      "company": "Delta",
+      "position": "Executive",
+      "startDate": "June 2012",
+      "highlights": [
+        " to July 2015Process:-Accounts Payable and MIS Activities Job Profile: - Ensure that the reimbursement claim is as per the corporate policy and the payout of the same as per the due date on a monthly basis. - Processing of vendor invoices in the accounting system. - Preparation of the vendor payment list on a daily basis. - Creating the payment proposal in SAP and ensuring that the checks are printed and emailed to the vendor to their correct address. - Communication of the payment details to the vendor contacts through emails.- Processing the bank payment entries in SAP. - Preparation & submission of the Weekly Creditors Aging report. - Reconciliation of the Vendors on a monthly basis. - Preparation of the Prepaid Schedule on a monthly basis and posting of the entries in SAP - Filing of the invoices and the payments details on a periodic basis of the soft copy and hard copy. - Processing the monthly Salary details in SAP. - Raising debit notes for the inter company cost for Salary, Expenses Etc. - Co-ordination with the External auditors for the statutory audit. - Cash Flow & Fund Management: - Preparation of the Daily Collection Report and Cash flow report on a daily basis. - Monitoring fund position for making Vendor, Salary & Tax payments and reporting the same on a daily basis. - Preparation of the Outstanding Check details on a daily basis. - Posting all the bank entries and updating of the ledger balance. - Involved in Process Improvement Program and Report Auditing. - Conduct training for new joiners in the process and lead team."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Awards",
+      "summary": " calculation for salesperson, "
+    }
+  ],
+  "education": [
+    {
+      "studyType": "MBA in FINANCE Belgaum Institute of Management Studies Belgaum - Belgaum, Karnataka 2009B.COM in Arjunnagar Devchand college 2007H.S.C. in Arjunnagar Devchand college 2004S.S.L.C. in Computer Skills Shri G. M. Sankpal High School Shripewadi 2002"
+    }
+  ],
+  "references": [],
+  "interests": [],
+  "volunteer": [],
+  "languages": []
+}
+    },
+    "TEST_FOR_BASIC_POST_FOR_HTML_FILE":{
+      "resume_properties": [
+        "basics",
+        "education",
+        "work",
+        "skills",
+        "volunteer",
+        "references",
+        "interests",
+        "awards",
+        "languages"
+      ],
+      "expected": {
+        "statusCode":200,
+        "basics": {
+          "name": "Functions DOM ",
+          "summary": "Over 6 years of professional experience in Front-endUI development focused on communication and media, using HTMLHTML5, CSSCSS3, Bootstrap, AngularJS, jQuery, JavaScript with solid understanding of Closure, Prototype Chain, Hoisting, OOD, OOP , InnovaTalentAvatharPathAliaseetc.Strong experience on Back-End technologies and frameworks including Node.JS . Similar solid experience using databases including MongoDB, MySQL .",
+          "location": {
+            "address": "5, CSSCSS3"
+          },
+          "profiles": []
+        },
+        "skills": [
+          {
+            "name": "programming languages",
+            "keywords": [
+              "  C, C++, JavaScript, SQLOperating System Windows, Linux, Unix, Mac OS XIDEs worked on  Notepad++, Visual Studio, Eclipse, WebStorm, Sublime, Brackets,Application Servers  Node.JS, Apache, IIS, InnovaTalentAvatharPathSynonym.Libraries Express.JS, Request, Google, Angular-UI, jQuery UI, Socket.IO, Mongoose, Bootstrap.JS."
+            ]
+          },
+          {
+            "name": "strong skills",
+            "keywords": [
+              " implementing UI Design using HTML, CSS, jQuery, JavaScript. Built pages from Photoshop mock-ups using JavaScript, JQuery, CSS, and HTML."
+            ]
+          },
+          {
+            "name": "technical skills",
+            "keywords": [
+              "Web Development HTML5, SASS, CSS3, JavaScript, jQuery, PHP, JSON, JDBC, AJAX, XML, XHTML, DHTML, Angular.JS, MVC, DOM, Express.JS, Bootstrap.Databases  PL/SQL (Oracle), MySQL, MSSQL, MongoDB"
+            ]
+          }
+        ],
+        "work": [
+          {
+            "position": "Developer",
+            "startDate": "Jan 16",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Cognizant Technology Solutions",
+            "position": "Developer",
+            "startDate": "Oct 10",
+            "endDate": "Jul 14",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Capital One",
+            "position": "Developer",
+            "startDate": "Sep 14",
+            "endDate": "Dec 15",
+            "highlights": [
+              "Description: T he purpose of this application is to process the mortgage loan originations. Capital one offers fixed, variable and balloon mortgages, and home equity loans. The application captures customer data and once the data is captured, the application invokes credit bureau to get customers credit rating and then it hits asset and liability verification system and then it invokes loan underwriting system which executes bunch of loan underwriting decision rules. Then it invokes the pricing module to get the suggested rates and referral messages would be generated to the underwriter to make underwriting decisions. The system also does product recommendation in case if the customer selects no products.   Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Worked closely with UX designers and implemented mockups .Developed an application using JavaScript design patterns like singleton and factoryUsed AngularJS as the SPAs framework and angular-uiui-router to manage URL route.Created several custom Directives for component reuse and custom Services for providing data exchange function.Injected AngularJS $http, $q as the promise library for asynchronous data operation.Used twitter Bootstrap Grid System and CSS media queries to make web responsive and mobile first.Utilized HTML5 Form Validation and AngularJS Form Validation to check users input and interact with userDesigned and implemented UI layout using HTML5, CSSCSS3, Less, Bootstrap .Implemented Responsive Design by Bootstrap Grid System and CSS3 Media Queries .Chose C3.js as responsive data visualization library.Used AngularJS MVVM paradigm as an instruction for a SPA development .Constructed the single page application using AngularJS and UI-Bootstrap, UI-Router .Used HTML5 Form Validation and AngularJS Form Validation to check users input and interact with user.Used AngularJS ui-route for managing URL route and State TransitionUsed AngularJS dependency injection to inject different Angular Services as well as custom Services, also built several custom Directives to provide reusable componentUsed Promise, specifically $http and $q service , to asynchronously fetch data from backend to speed up frontend view rendering.Utilized jQuery and JavaScript for DOM manipulations and basic front-end logic and Event handlers .Developed the relevant backend RESTful API using Node.js and Express.js .Used Mongoose for Object Modeling and Database interacting with MongoDB .Completed User Authentication by using Passport.js local strategy.Logged and debugged using Chrome developer tools and configured test environment using Karma and wrote unit test using Jasmine and e2e test using Protractor .Adopted Git for version controlling and JIRA for project tracking .Environment: HTML5, CSSCSS3, Bootstrap, AngularJS, AJAX, Promise, JavaScript, jQuery, Node.js, Express.js, Mongoose, MongoDB, Karma, Jasmine, Git, Trello, REST, Webstorm.Client:"
+            ]
+          },
+          {
+            "highlights": [
+              " with building and consuming REST API’s . Good understanding of Http. Built web services using Node.js and Express.JS.Expert in AngularJS to design Single Page Application with solid experience of creating custom Directives, Services and Filters, also skillful in ng-Animate to provide CSS-based animations as well as JavaScript -based animations via callback hooks.Proficient in HTML/HTML5 including new features like Form Validation, Media, Canvas, SVG, HTML APIs like Web Worker, Local Storage, Server-Side Event, and CSS/CSS3.Skillful in jQuery include but not limited to Selectors, Functions, Animations, Events and AJAX.Solid experience in using Express.js to create web application and comprehensive understanding of URL Routing, Error Handling and Debugging. Skillful in AngularUI Router to build Single Page Application with URL route and State Transition.Hands-on experience in using Passport.js.Extensive experience with Advanced JavaScript concepts – closures, scope, promises, function expressions, hoisting, prototypes ."
+            ]
+          },
+          {
+            "summary": " Inter-American Development Bank Description  Inter-American Development Bank is looking for a Data Repository Platform that would provide a one-stop-shop for data from multiple sources and provide data visualization, role based data access and social sharing for their data. Display this indicator based data in predetermined layouts which include tabular, charts and other visualization. Responsibilities Good exposure to Responsive Design and good understanding and knowledge in CSS Frameworks like Bootstrap. "
+          },
+          {
+            "highlights": [
+              "Macy’s, Atlanta, GA Duration "
+            ]
+          },
+          {
+            "summary": " #2"
+          },
+          {
+            "highlights": [
+              " on working with CSS Background, CSS Layouts, CSS positioning, CSS text, CSS border, CSS margin, CSS padding, CSS table, Pseudo classes, Pseudo elements and CSS behaviors in CSS.Ability to rapidly prototype interface designs in hand-coded validating, standards-compliant, and semantically rich code and be aware of cross-browser compatibility and bugs.Thorough understanding of the differences and bugs in various browsers and browser versions.Understanding of application development lifecycle methodologies.Knowledge of human factors and usability, best practices for interface designStrong communication, analytical and interpersonal skills working within cross-functional teamsDeep understanding of JavaScript and the JQuery frameworkCreated and optimized graphic prototype websites and applications interfaces using HTML and CSS.Involved in write application level code to interact with APIs, Web Services using AJAX, JSON and XML.Implemented and designed user interface for web based customer application.Developed data formatted web applications and deploy the script using client side scripting using JavaScript.Worked on Cross-Browser compatibility and fixed the bugs for several browsers.Integrated with back end code (PHP) for highly interactive AJAX based applications.Environment Html, CSS, JavaScript, jQuery, Ajax, XML, JSON, Java, Spring, Hibernate, JUnit, Apache Tomcat, Eclipse IDE."
+            ]
+          },
+          {
+            "highlights": [
+              " with Grunt for JavaScript file's concatenation and minify to improve performance in loading web pages.Created REST API’s using Express Router/Model/Controller architecture. Models connect to MySQL and MongoDB using Node.JS, MySQL and Mongoose modules.Implemented Socket.IO through ZMQ for MongoDB events for real-time feeds on the front-end. Created module with Socket.IO for web socket engine to make real-time web application with bi directional communication.  Created controllers and view pages along with Bootstrap and HTML5 for dynamic web application.Used JSON response modulation in rest services to make it more generic for our mobile team to consume the services.Developed  UI with AJAX, DHTML and JavaScript for more interactive web pagesUsed Git as source control and planned for continuous integration and delivery.Environment Node.JS, Angular.JS, Express.JS, Mongoose, Socket.IO, RESTFUL Web services, JavaScript, HTML5, CSS3, Bootstrap, Grunt, jQuery, MongoDB, JIRA, GitHub."
+            ]
+          },
+          {
+            "highlights": [
+              " working with Grunt and Gulp – Build process and workflow management."
+            ]
+          },
+          {
+            "highlights": [
+              " in using UI Bootstrap to create Bootstrap Components like Modal.Complete understanding of Design Pattern like factory, observe, and mixin pattern in JavaScript.Hands-on experience on installing and managing different packages by NPM, Bower .Great understanding on Unix/Linux Operating System and Computer Network, Computer Graphic, familiar with Data Structure and Algorithm Design such as List, Queue, Stack, and Tree.Good understanding of Test-Driven Development and Unit, Black-box, White-box, and Grey-box Testing, InnovaTalentAvatharPathAliase.Good with SDLC, participated in Team work, have strong experience with SVN, Git , familiar with public Git repository hosting service like GitHub."
+            ]
+          },
+          {
+            "summary": " On-boarding ApplicationDescription The project intends at building a web application which can be used to automate the on- boarding process of Cognizant employees who are about to start working on project (s) for the client. This application will help the involved users, viz. Candidate, Manager& P.M.O. to keep a track of the process of submitting various documents and also help to fill lengthy data using web forms and exporting it in required format.ResponsibilitiesInvolved in requirements analysis, design and implementation in Agile environmentDesigned and Developed UI of Web pages with HTML, CSSDesigned dynamic client-side JavaScript codes and jQuery to build web forms, page navigation and form validation.Used jQuery to get the client-side elements effects like Hide, Show, Event Handling and DOM manipulation .Debug the application using Firebug to traverse the documents and manipulated the Nodes using DOM and DOM Functions .Used Springand Hibernate to set up server side framework and used Java as backend development language, deployed server on Tomcat .Unit testing was performed using JUnit and Version control using SVN.Keeping up to date with the latest tech in case of future's upgradeSolved cross browser problems against different browsersDeveloped optimized HTML and CSS for responsive web design. "
+          },
+          {
+            "summary": " #1"
+          },
+          {
+            "highlights": [
+              " with Jasmine and Protractor to test Unit and AngularJS applications."
+            ]
+          }
+        ],
+        "awards": [
+          {
+            "title": "publications",
+            "summary": "PublicationPaper battery-IEEE international journalreleaseDate10-10-2010referencenamekarthikreferenceworking as senior SeinterestsnamewildlifekeywordsphotographylanguageslanguageEnglishfluencyNative speaker"
+          }
+        ],
+        "education": [
+          {
+            "studyType": "Bachelor of Technology – Computer Science."
+          }
+        ],
+        "references": [],
+        "interests": [],
+        "volunteer": [],
+        "languages": []
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_TEXT_FILE":{
+      "resume_properties": [
+        "basics",
+        "education",
+        "work",
+        "skills",
+        "volunteer",
+        "references",
+        "interests",
+        "awards",
+        "languages"
+      ],
+      "expected": {
+        "statusCode":200,
+        "basics": {
+          "name": "Functions DOM ",
+          "summary": "Over 6 years of professional experience in Front-endUI development focused on communication and media, using HTMLHTML5, CSSCSS3, Bootstrap, AngularJS, jQuery, JavaScript with solid understanding of Closure, Prototype Chain, Hoisting, OOD, OOP , InnovaTalentAvatharPathAliaseetc.Strong experience on Back-End technologies and frameworks including Node.JS . Similar solid experience using databases including MongoDB, MySQL .",
+          "location": {
+            "address": "5, CSSCSS3"
+          },
+          "profiles": []
+        },
+        "skills": [
+          {
+            "name": "programming languages",
+            "keywords": [
+              "  C, C++, JavaScript, SQLOperating System Windows, Linux, Unix, Mac OS XIDEs worked on  Notepad++, Visual Studio, Eclipse, WebStorm, Sublime, Brackets,Application Servers  Node.JS, Apache, IIS, InnovaTalentAvatharPathSynonym.Libraries Express.JS, Request, Google, Angular-UI, jQuery UI, Socket.IO, Mongoose, Bootstrap.JS."
+            ]
+          },
+          {
+            "name": "strong skills",
+            "keywords": [
+              " implementing UI Design using HTML, CSS, jQuery, JavaScript. Built pages from Photoshop mock-ups using JavaScript, JQuery, CSS, and HTML."
+            ]
+          },
+          {
+            "name": "technical skills",
+            "keywords": [
+              "Web Development HTML5, SASS, CSS3, JavaScript, jQuery, PHP, JSON, JDBC, AJAX, XML, XHTML, DHTML, Angular.JS, MVC, DOM, Express.JS, Bootstrap.Databases  PL/SQL (Oracle), MySQL, MSSQL, MongoDB"
+            ]
+          }
+        ],
+        "work": [
+          {
+            "position": "Developer",
+            "startDate": "Jan 16",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Cognizant Technology Solutions",
+            "position": "Developer",
+            "startDate": "Oct 10",
+            "endDate": "Jul 14",
+            "highlights": [
+              "Description: The Vendor Portal application is responsible for daily monitoring of the vendor portal and various merchandise being shipped. A stock-keeping unit SKU is a stores or catalogs product and service identification code, often portrayed as a machine-readable bar code that helps the item to be tracked for  inventory . Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Developed single page responsive Web  UI  using HTML5, Angular.JS, Bootstrap, CSS3, JavaScript, InnovaTalentAvatharPath ,jQuery.Created web services and desktop applications to access and display data needed by support teams using, Ajax, JavaScript, Angular.JS, Node.js and JQuery, Gulp, Grunt .Complete exposure with MEAN  MongoDB , Express web framework, Angular.JS, Node.JS  full stack programming. Extended functionality of internal Node.JS application using native and external node modules.Used Node.JS for developing the Single Page Application. Utilized Express.JS with Node.JS to create API’s for the application.Using Angular.JS created custom directives for data manipulations and to display data in company standard format in UI .Extensively used Angular JS to call REST APIs and push content to the user interface Worked extensively on Angular Js in creating Controllers, Making AJAX calls using $http services and JSON parse.Developed a single page, mobile-first, cross-devicecross-browser web application utilizing Angular.JS , Java script API’s.Created server-side Routes with the help of Node.JS  and connected to the database using Mongoose . Used Karma for unit testing and Protractor for end to end testing. Developed code for table less web interfaces using XHTML, CSS, DOM and JavaScript .Involved in writing application level code to interact with APIs , Web Services using AJAX , JSON and XML .Design and develop fully prototypes and mockups using HTML5, CSS3 and jQuery for future enhancements of the SMB Marketplace website and then implement them on the live web platform.Extensively used Angular UI components like Calendar, Grid , Select, and Uploader etc."
+            ]
+          },
+          {
+            "company": "Capital One",
+            "position": "Developer",
+            "startDate": "Sep 14",
+            "endDate": "Dec 15",
+            "highlights": [
+              "Description: T he purpose of this application is to process the mortgage loan originations. Capital one offers fixed, variable and balloon mortgages, and home equity loans. The application captures customer data and once the data is captured, the application invokes credit bureau to get customers credit rating and then it hits asset and liability verification system and then it invokes loan underwriting system which executes bunch of loan underwriting decision rules. Then it invokes the pricing module to get the suggested rates and referral messages would be generated to the underwriter to make underwriting decisions. The system also does product recommendation in case if the customer selects no products.   Responsibilities:Experienced behavior driven development using SCRUM framework under Agile Methodology.Worked closely with UX designers and implemented mockups .Developed an application using JavaScript design patterns like singleton and factoryUsed AngularJS as the SPAs framework and angular-uiui-router to manage URL route.Created several custom Directives for component reuse and custom Services for providing data exchange function.Injected AngularJS $http, $q as the promise library for asynchronous data operation.Used twitter Bootstrap Grid System and CSS media queries to make web responsive and mobile first.Utilized HTML5 Form Validation and AngularJS Form Validation to check users input and interact with userDesigned and implemented UI layout using HTML5, CSSCSS3, Less, Bootstrap .Implemented Responsive Design by Bootstrap Grid System and CSS3 Media Queries .Chose C3.js as responsive data visualization library.Used AngularJS MVVM paradigm as an instruction for a SPA development .Constructed the single page application using AngularJS and UI-Bootstrap, UI-Router .Used HTML5 Form Validation and AngularJS Form Validation to check users input and interact with user.Used AngularJS ui-route for managing URL route and State TransitionUsed AngularJS dependency injection to inject different Angular Services as well as custom Services, also built several custom Directives to provide reusable componentUsed Promise, specifically $http and $q service , to asynchronously fetch data from backend to speed up frontend view rendering.Utilized jQuery and JavaScript for DOM manipulations and basic front-end logic and Event handlers .Developed the relevant backend RESTful API using Node.js and Express.js .Used Mongoose for Object Modeling and Database interacting with MongoDB .Completed User Authentication by using Passport.js local strategy.Logged and debugged using Chrome developer tools and configured test environment using Karma and wrote unit test using Jasmine and e2e test using Protractor .Adopted Git for version controlling and JIRA for project tracking .Environment: HTML5, CSSCSS3, Bootstrap, AngularJS, AJAX, Promise, JavaScript, jQuery, Node.js, Express.js, Mongoose, MongoDB, Karma, Jasmine, Git, Trello, REST, Webstorm.Client:"
+            ]
+          },
+          {
+            "highlights": [
+              " with building and consuming REST API’s . Good understanding of Http. Built web services using Node.js and Express.JS.Expert in AngularJS to design Single Page Application with solid experience of creating custom Directives, Services and Filters, also skillful in ng-Animate to provide CSS-based animations as well as JavaScript -based animations via callback hooks.Proficient in HTML/HTML5 including new features like Form Validation, Media, Canvas, SVG, HTML APIs like Web Worker, Local Storage, Server-Side Event, and CSS/CSS3.Skillful in jQuery include but not limited to Selectors, Functions, Animations, Events and AJAX.Solid experience in using Express.js to create web application and comprehensive understanding of URL Routing, Error Handling and Debugging. Skillful in AngularUI Router to build Single Page Application with URL route and State Transition.Hands-on experience in using Passport.js.Extensive experience with Advanced JavaScript concepts – closures, scope, promises, function expressions, hoisting, prototypes ."
+            ]
+          },
+          {
+            "summary": " Inter-American Development Bank Description  Inter-American Development Bank is looking for a Data Repository Platform that would provide a one-stop-shop for data from multiple sources and provide data visualization, role based data access and social sharing for their data. Display this indicator based data in predetermined layouts which include tabular, charts and other visualization. Responsibilities Good exposure to Responsive Design and good understanding and knowledge in CSS Frameworks like Bootstrap. "
+          },
+          {
+            "highlights": [
+              "Macy’s, Atlanta, GA Duration "
+            ]
+          },
+          {
+            "summary": " #2"
+          },
+          {
+            "highlights": [
+              " on working with CSS Background, CSS Layouts, CSS positioning, CSS text, CSS border, CSS margin, CSS padding, CSS table, Pseudo classes, Pseudo elements and CSS behaviors in CSS.Ability to rapidly prototype interface designs in hand-coded validating, standards-compliant, and semantically rich code and be aware of cross-browser compatibility and bugs.Thorough understanding of the differences and bugs in various browsers and browser versions.Understanding of application development lifecycle methodologies.Knowledge of human factors and usability, best practices for interface designStrong communication, analytical and interpersonal skills working within cross-functional teamsDeep understanding of JavaScript and the JQuery frameworkCreated and optimized graphic prototype websites and applications interfaces using HTML and CSS.Involved in write application level code to interact with APIs, Web Services using AJAX, JSON and XML.Implemented and designed user interface for web based customer application.Developed data formatted web applications and deploy the script using client side scripting using JavaScript.Worked on Cross-Browser compatibility and fixed the bugs for several browsers.Integrated with back end code (PHP) for highly interactive AJAX based applications.Environment Html, CSS, JavaScript, jQuery, Ajax, XML, JSON, Java, Spring, Hibernate, JUnit, Apache Tomcat, Eclipse IDE."
+            ]
+          },
+          {
+            "highlights": [
+              " with Grunt for JavaScript file's concatenation and minify to improve performance in loading web pages.Created REST API’s using Express Router/Model/Controller architecture. Models connect to MySQL and MongoDB using Node.JS, MySQL and Mongoose modules.Implemented Socket.IO through ZMQ for MongoDB events for real-time feeds on the front-end. Created module with Socket.IO for web socket engine to make real-time web application with bi directional communication.  Created controllers and view pages along with Bootstrap and HTML5 for dynamic web application.Used JSON response modulation in rest services to make it more generic for our mobile team to consume the services.Developed  UI with AJAX, DHTML and JavaScript for more interactive web pagesUsed Git as source control and planned for continuous integration and delivery.Environment Node.JS, Angular.JS, Express.JS, Mongoose, Socket.IO, RESTFUL Web services, JavaScript, HTML5, CSS3, Bootstrap, Grunt, jQuery, MongoDB, JIRA, GitHub."
+            ]
+          },
+          {
+            "highlights": [
+              " working with Grunt and Gulp – Build process and workflow management."
+            ]
+          },
+          {
+            "highlights": [
+              " in using UI Bootstrap to create Bootstrap Components like Modal.Complete understanding of Design Pattern like factory, observe, and mixin pattern in JavaScript.Hands-on experience on installing and managing different packages by NPM, Bower .Great understanding on Unix/Linux Operating System and Computer Network, Computer Graphic, familiar with Data Structure and Algorithm Design such as List, Queue, Stack, and Tree.Good understanding of Test-Driven Development and Unit, Black-box, White-box, and Grey-box Testing, InnovaTalentAvatharPathAliase.Good with SDLC, participated in Team work, have strong experience with SVN, Git , familiar with public Git repository hosting service like GitHub."
+            ]
+          },
+          {
+            "summary": " On-boarding ApplicationDescription The project intends at building a web application which can be used to automate the on- boarding process of Cognizant employees who are about to start working on project (s) for the client. This application will help the involved users, viz. Candidate, Manager& P.M.O. to keep a track of the process of submitting various documents and also help to fill lengthy data using web forms and exporting it in required format.ResponsibilitiesInvolved in requirements analysis, design and implementation in Agile environmentDesigned and Developed UI of Web pages with HTML, CSSDesigned dynamic client-side JavaScript codes and jQuery to build web forms, page navigation and form validation.Used jQuery to get the client-side elements effects like Hide, Show, Event Handling and DOM manipulation .Debug the application using Firebug to traverse the documents and manipulated the Nodes using DOM and DOM Functions .Used Springand Hibernate to set up server side framework and used Java as backend development language, deployed server on Tomcat .Unit testing was performed using JUnit and Version control using SVN.Keeping up to date with the latest tech in case of future's upgradeSolved cross browser problems against different browsersDeveloped optimized HTML and CSS for responsive web design. "
+          },
+          {
+            "summary": " #1"
+          },
+          {
+            "highlights": [
+              " with Jasmine and Protractor to test Unit and AngularJS applications."
+            ]
+          }
+        ],
+        "awards": [
+          {
+            "title": "publications",
+            "summary": "PublicationPaper battery-IEEE international journalreleaseDate10-10-2010referencenamekarthikreferenceworking as senior SeinterestsnamewildlifekeywordsphotographylanguageslanguageEnglishfluencyNative speaker"
+          }
+        ],
+        "education": [
+          {
+            "studyType": "Bachelor of Technology – Computer Science."
+          }
+        ],
+        "references": [],
+        "interests": [],
+        "volunteer": [],
+        "languages": []
+      }
+    }
+  }
+}

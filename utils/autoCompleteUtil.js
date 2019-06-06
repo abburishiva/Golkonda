@@ -1,0 +1,54 @@
+var EventEmitter = require('events').EventEmitter,
+    util = require('util'),
+    Trie = require('./trieUtil').TrieUtil;
+
+function Autocomplete(name) {
+    this.trie = new Trie();
+    EventEmitter.call(this);
+}
+
+
+Autocomplete.connectAutocomplete = function (onReady) {
+    Autocomplete.singleton = new Autocomplete();
+    if (onReady)
+        onReady(Autocomplete.singleton);
+    return Autocomplete.singleton;
+};
+
+
+util.inherits(Autocomplete, EventEmitter);
+
+Autocomplete.prototype.close = function () {
+    this.emit('close');
+};
+
+Autocomplete.prototype.initialize = function (getInitialElements) {
+    getInitialElements(function (elements) {
+        elements.forEach(function (element) {
+            if (typeof element === 'object') {
+                var item = new Object;
+                item.key = element[0];
+                item.value = element[1];
+                Autocomplete.singleton.addElement(item);
+            }
+            else {
+                Autocomplete.singleton.addElement(element);
+            }
+        });
+        Autocomplete.singleton.emit('loaded');
+    });
+};
+
+Autocomplete.prototype.addElement = function (element) {
+    this.trie.addValue(element);
+};
+
+Autocomplete.prototype.removeElement = function (element) {
+    this.trie.removeValue(element);
+};
+
+Autocomplete.prototype.search = function (prefix) {
+    return this.trie.autoComplete(prefix);
+};
+
+module.exports = Autocomplete;

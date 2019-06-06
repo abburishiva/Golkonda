@@ -1,0 +1,455 @@
+{
+  "AUTH_USERS": {
+    "TEST_FOR_BASIC_POST_NEW_CANDIDATE_TO_TALENT_USERS_THROUGH_SIGN_UP": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "sudha123@gmail.com",
+        "message_type": "TS_SIGNUP",
+        "password": "Excellence@123",
+        "redirect_url": "app.qa.talentscreen.io/#/login",
+        "role": "candidate",
+        "type": "register"
+      },
+      "expected": {
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_CANDIDATE_IN_CANDIDATES_TABLE_FOR_SUPER": {
+      "input": {
+        "email": "sudha123@gmail.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          }
+        },
+        "input": {
+          "app_type": "talentscreen",
+          "type": "login",
+          "email_address": "sudha123@gmail.com",
+          "password": "Excellence@123",
+          "role": "candidate"
+        }
+      },
+      "expected": {
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "first_login_completed": "Y",
+          "is_user_verified": "Y"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "sudha123@gmail.com"
+        },
+        "user_profile": {
+          "name": "Sudha123",
+          "email": "sudha123@gmail.com",
+          "phone": "+918926464631",
+          "country_name": "India"
+        }
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_CANDIDATE_IN_CANDIDATES_TABLE_FOR_EMPLOYEE": {
+      "input": {
+        "email": "sudha123@gmail.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          }
+        },
+        "input": {
+          "app_type": "talentscreen",
+          "type": "login",
+          "email_address": "sudha123@gmail.com",
+          "password": "Excellence@123",
+          "role": "candidate"
+        }
+      },
+      "expected": {
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "first_login_completed": "Y",
+          "is_user_verified": "Y"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "sudha123@gmail.com"
+        },
+        "user_profile": {
+          "name": "Sudha123",
+          "email": "sudha123@gmail.com",
+          "phone": "+918926464631",
+          "country_name": "India"
+        }
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_CANDIDATE_IN_CANDIDATES_TABLE_FOR_CANDIDATE": {
+      "input": {
+        "email": "sudha123@gmail.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          }
+        },
+        "input": {
+          "app_type": "talentscreen",
+          "type": "login",
+          "email_address": "sudha123@gmail.com",
+          "password": "Excellence@123",
+          "role": "candidate"
+        }
+      },
+      "expected": {
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "first_login_completed": "Y",
+          "is_user_verified": "Y"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "sudha123@gmail.com"
+        },
+        "user_profile": {
+          "name": "Sudha123",
+          "email": "sudha123@gmail.com",
+          "phone": "+918926464631",
+          "country_name": "India"
+        }
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_CANDIDATE_IN_CANDIDATES_TABLE_FOR_NEW_USER": {
+      "input": {
+        "email": "sudha123@gmail.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          }
+        },
+        "input": {
+          "app_type": "talentscreen",
+          "type": "login",
+          "email_address": "sudha123@gmail.com",
+          "password": "Excellence@123",
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_VERIFYING_THE_CANDIDATE_RECORD_STORED_IN_TALENT_USERS_COLLECTION": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudha123@gmail.com",
+        "password": "Excellence@123",
+        "role": "candidate"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "lastmoduserid": "591af2215a19a2354ce16cac",
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_VERIFYING_THE_CANDIDATE_RECORD_DELETED_IN_TALENT_USERS_COLLECTION": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudha123@gmail.com",
+        "password": "Excellence@123",
+        "role": "candidate"
+      },
+      "expected": {
+        "message": "You have not registered. Please sign up."
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_EMPLOYEE_TO_TALENT_USERS_THROUGH_SIGN_UP": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "sudhatest@whitebox-learning.com",
+        "password": "Excellence@123",
+        "message_type": "TS_SIGNUP",
+        "redirect_url": "app.qa.talentscreen.io/#/login",
+        "type": "register",
+        "role": "employee"
+      },
+      "expected": {
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_EMPLOYEE_IN_EMPLOYERS_TABLE_FOR_SUPER": {
+      "input": {
+        "email": "sudhatest@whitebox-learning.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": true
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudhatest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Sudha",
+            "email": "sudhatest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      },
+      "expected": {
+        "lastmoduserid": "591af2215a19a2354ce16cac",
+        "auth_details":
+        {
+          "first_login_completed": "Y",
+          "is_user_verified": "Y",
+          "is_super": true },
+        "employer_details":
+        { "company_name": "Google",
+          "country_name": "United States",
+          "company_size": "5000+",
+          "job_title": "Engineering Manager" },
+        "source_details":
+        { "source": "talentscreen",
+          "password": "16a2174aa0099047aaefd63853516d7c",
+          "username": "sudhatest@whitebox-learning.com" },
+        "user_profile":
+        { "phone": "+19254247411",
+          "name": "Sudha",
+          "email": "sudhatest@whitebox-learning.com" } }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_EMPLOYEE_IN_EMPLOYERS_TABLE_FOR_EMPLOYEE": {
+      "input": {
+        "email": "sudhatest@whitebox-learning.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": true
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudhatest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Sudha",
+            "email": "sudhatest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_EMPLOYEE_IN_EMPLOYERS_TABLE_FOR_CANDIDATE": {
+      "input": {
+        "email": "sudhatest@whitebox-learning.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": true
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudhatest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Sudha",
+            "email": "sudhatest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_GET_NEWLY_REGISTERED_EMPLOYEE_IN_EMPLOYERS_TABLE_FOR_NEW_USER": {
+      "input": {
+        "email": "sudhatest@whitebox-learning.com",
+        "payload": {
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": true
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudhatest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Sudha",
+            "email": "sudhatest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_VERIFYING_THE_EMPLOYEE_RECORD_STORED_IN_TALENT_USERS_COLLECTION": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudhatest@whitebox-learning.com",
+        "password": "Excellence@123",
+        "role": "employee"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "lastmoduserid": "591af2215a19a2354ce16cac",
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "sudha123@gmail.com"
+          },
+          "user_profile": {
+            "name": "Sudha123",
+            "email": "sudha123@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_VERIFYING_THE_EMPLOYEE_RECORD_DELETED_IN_TALENT_USERS_COLLECTION": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudhatest@whitebox-learning.com",
+        "password": "Excellence@123",
+        "role": "employee"
+      },
+      "expected": {
+        "message": "You have not registered. Please sign up."
+      }
+    }
+  }
+}

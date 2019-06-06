@@ -1,0 +1,29 @@
+{
+  "TYPED_QUESTIONS": {
+    "TEST_FOR_BASIC_DELETE_TYPED_QUESTIONS_FOR_SUPER": {
+      "expected":
+      {
+      "statusCode":204
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_TYPED_QUESTIONS_FOR_EMPLOYEE": {
+
+      "expected":
+      {
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_TYPED_QUESTIONS_FOR_CANDIDATE": {
+      "expected":
+      {
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_TYPED_QUESTIONS_FOR_NEW_USER": {
+      "expected":
+      {
+        "statusCode":401
+      }
+    }
+  }
+}

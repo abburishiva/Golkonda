@@ -1,0 +1,1622 @@
+{
+  "CHALLENGES":{
+    "TEST_FOR_BASIC_GET_ALL_CHALLENGES_FOR_SUPER":{
+      "expected":{
+        "statusCode":200
+      }
+    },
+
+    "TEST_FOR_BASIC_GET_ALL_CHALLENGES_FOR_EMPLOYEE":{
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_CHALLENGES_FOR_CANDIDATE":{
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_CHALLENGES_FOR_NEW_USER":{
+      "expected":{
+        "statusCode":401
+      }
+    },
+    "TEST_FOR_BASIC_GET_CHALLENGE_BY_ID_FOR_SUPER":{
+      "input":{
+        "id":"58d9fc438c950f4c2a689383"
+      },
+      "expected":{
+        "_id": "58d9fc438c950f4c2a689383",
+        "candidate_id": "587f05688f6c240e2a527384",
+        "__v": 0,
+        "lastmoddatetime": "2017-03-27T14:39:36.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-27T14:39:36.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "Javascript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        },
+        "questions": [
+          {
+            "rowNo": 0,
+            "question_id": 31,
+            "question": "The basic difference between JavaScript and Java is",
+            "answerOne": "There is no difference",
+            "answerTwo": "Functions are considered as fields",
+            "answerThree": "Variables are specific",
+            "answerFour": "functions are values, and there is no hard distinction between methods and fields",
+            "originalAnswer": "d\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 1,
+            "question_id": 32,
+            "question": "The meaning for?Augmenting classes?is that",
+            "answerOne": "objects inherit prototype properties even in dynamic state",
+            "answerTwo": "objects inherit prototype properties only in dynamic state",
+            "answerThree": "objects inherit prototype properties in static state",
+            "answerFour": "None of the mentioned",
+            "originalAnswer": "a\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 2,
+            "question_id": 33,
+            "question": "The property of JSON() method is:",
+            "answerOne": "?it can be invoked manually as object.JSON()",
+            "answerTwo": "it will be automatically invoked by the compiler",
+            "answerThree": "?it is invoked automatically by the JSON.stringify() method",
+            "answerFour": "it cannot be invoked in any form",
+            "originalAnswer": "c\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 3,
+            "question_id": 38,
+            "question": "How would one declare a string variable?",
+            "answerOne": "Any of these",
+            "answerTwo": "?var fName = ?Mary?;",
+            "answerThree": "?var names = ?7?;",
+            "answerFour": "var fName = new String;",
+            "originalAnswer": "a\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 4,
+            "question_id": 39,
+            "question": "\nfunction foo(){ var tmp = ?one_two_three_four_five?; return tmp.replace(/_/g, ?+?); } What does foo() return?",
+            "answerOne": "one_two_three_four_five",
+            "answerTwo": "?_______________________",
+            "answerThree": "?one+",
+            "answerFour": "one+two+three+four+five",
+            "originalAnswer": "d\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 5,
+            "question_id": 40,
+            "question": "USERNAME and userName",
+            "answerOne": "Represent the name of the same variable",
+            "answerTwo": "Represent the name of different variables",
+            "answerThree": "Represent the name of different constants",
+            "answerFour": "Represent the name of the same constant",
+            "originalAnswer": "b\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 6,
+            "question_id": 41,
+            "question": "Which of these could be a correct way to create an instance of Person?",
+            "answerOne": "var Person john = new Person(?John?, ?Doe?, 50, ?blue?);",
+            "answerTwo": "var john = new Person(?John?, ?Doe?, 50, ?blue?);",
+            "answerThree": "new john = Person(?John?, ?Doe?, 50, ?blue?);",
+            "answerFour": "Person john = new Person(?John?, ?Doe?, 50, ?blue?);",
+            "originalAnswer": "b\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 7,
+            "question_id": 42,
+            "question": "Which is the correct way to write a JavaScript array?",
+            "answerOne": "?var names = {0: ?Tim?, 1: ?Kim?, 2: ?Jim?};",
+            "answerTwo": "var names = {1: ?Tim?, 2:?Kim?, 3:?Jim?};",
+            "answerThree": "?var names = [?Tim?,?Kim?,?Jim?];",
+            "answerFour": "var names = array(?Tim?, ?Kim?, ?Jim?);",
+            "originalAnswer": "c\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 8,
+            "question_id": 43,
+            "question": "Which of the following asserts that the variables `A`, `B`, and `C` have unequal values?",
+            "answerOne": "A !== B || B !== C",
+            "answerTwo": "A !== B & B !== C",
+            "answerThree": "A !== B && B !== C && A !== C",
+            "answerFour": "A !== B",
+            "originalAnswer": "c\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 9,
+            "question_id": 44,
+            "question": "The ?if? statement is used to:",
+            "answerOne": "Deal with logic that should execute only when a condition is false",
+            "answerTwo": "?Convert an integer value to a boolean",
+            "answerThree": "Create a loop that runs as long as a condition is true",
+            "answerFour": "Deal with logic that should execute only when a condition is true",
+            "originalAnswer": "d\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 10,
+            "question_id": 45,
+            "question": "How to return the first value of this array? var myArr = [1, 2, 3, 4, 5]; var myVal = ?",
+            "answerOne": "myArr.pop();",
+            "answerTwo": "myArr[1];",
+            "answerThree": "myArr.shift();",
+            "answerFour": "myArr.unshift();",
+            "originalAnswer": "a\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 11,
+            "question_id": 47,
+            "question": "Properties of a RegExp object include:",
+            "answerOne": "source",
+            "answerTwo": "ignoreCase",
+            "answerThree": "?lastIndex",
+            "answerFour": "All of these",
+            "originalAnswer": "d\r",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 12,
+            "question_id": 48,
+            "question": "\"\nConsider the following code snippet :\n\nvar o = new F();\no.constructor === F\nThe output would be :\"\r\n",
+            "answerOne": "FALSE\r\n",
+            "answerTwo": "TRUE\r\n",
+            "answerThree": "0\r\n",
+            "answerFour": "1\r\n",
+            "originalAnswer": "b\r\n",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 13,
+            "question_id": 49,
+            "question": "The behaviour of the instances present of a class inside a method is defined by\r\n",
+            "answerOne": "Method\r\n",
+            "answerTwo": "Classes\r\n",
+            "answerThree": "Interfaces",
+            "answerFour": "Classes and Interfaces",
+            "originalAnswer": "b",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          },
+          {
+            "rowNo": 14,
+            "question_id": 50,
+            "question": " Which function among the following lets to register a function to be invoked once?",
+            "answerOne": "setTimeout()",
+            "answerTwo": "setTotaltime()",
+            "answerThree": "setInterval()",
+            "answerFour": "None of the mentioned",
+            "originalAnswer": "a",
+            "time": 60,
+            "candidateAnswer": null,
+            "attempted": "N",
+            "correctOrNot": "N",
+            "time_taken": 0
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_GET_CHALLENGE_BY_ID_FOR_EMPLOYEE":{
+      "input":{
+        "id":"58b7f51e3ba46623a2b11ced"
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_GET_CHALLENGE_BY_ID_FOR_CANDIDATE":{
+      "input":{
+        "id":"58b7f51e3ba46623a2b11ced"
+      },
+      "expected":{
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_GET_CHALLENGE_BY_ID_FOR_NEW_USER":{
+      "input":{
+        "id":"58b7f51e3ba46623a2b11ced"
+      },
+      "expected":{
+        "statusCode":401
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_FOR_SUPER":{
+      "input":{
+        "subject":"Javascript"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_FOR_EMPLOYEE":{
+      "input":{
+        "subject":"JavaScript"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_FOR_CANDIDATE":{
+      "input":{
+        "subject":"JavaScript"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_FOR_NEW_USER":{
+      "input":{
+        "subject":"JavaScript"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_LEVEL_FOR_SUPER":{
+      "input":{
+        "level":"ADVANCED"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_LEVEL_FOR_EMPLOYEE":{
+      "input":{
+        "level":"INTERMEDIATE"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_LEVEL_FOR_CANDIDATE":{
+      "input":{
+        "level":"INTERMEDIATE"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_LEVEL_FOR_NEW_USER":{
+      "input":{
+        "level":"INTERMEDIATE"
+      },
+      "expected":{
+        "count":1
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER":{
+      "input":{
+        "subjectid": 56,
+        "levelid": 2,
+        "quiztype": "choice",
+        "candidate_id": "58b6ceeeb42449653d86d884"
+      },
+      "expected":{
+        "__v": 0,
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "_id": "58bcf9b221de2504b1317f51",
+        "lastmoddatetime": "2017-03-05T20:17:14.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        },
+        "questions": [
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "object based\r\n",
+            "answerThree": " evil\r\n",
+            "answerTwo": "objective\r\n",
+            "answerOne": "subjective\r\n",
+            "question": "JavaScript is …\r\n",
+            "question_id": 16,
+            "rowNo": 0
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "invalid",
+            "answerThree": "valid",
+            "answerTwo": "FALSE\r\n",
+            "answerOne": "TRUE\r\n",
+            "question": "var obj1 = {}; var obj2 = {}; What is the value of (obj1 === obj2)\r\n",
+            "question_id": 17,
+            "rowNo": 1
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "“5 bottles of milk”\r\n",
+            "answerThree": " undefined. An exception is thrown\r\n",
+            "answerTwo": "“6 bottles of milk”\r\n",
+            "answerOne": "“15 bottles of milk”\r\n",
+            "question": "What does the following expression return? 1 + 5 + ” bottles of milk”;\r\n",
+            "question_id": 18,
+            "rowNo": 2
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "var obj = new Object();",
+            "answerThree": "function Foo() {} var obj = new Foo();",
+            "answerTwo": "function Foo() {} var obj = new Foo();",
+            "answerOne": "var obj = {};",
+            "question": "How do you create an object in JavaScript?",
+            "question_id": 19,
+            "rowNo": 3
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "“string”",
+            "answerThree": "Throws error “ReferenceError: x is not defined”",
+            "answerTwo": "“[object String]”",
+            "answerOne": "“character”",
+            "question": "What is the result of the following statement: typeof “x”;",
+            "question_id": 20,
+            "rowNo": 4
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "none",
+            "answerThree": "Reference",
+            "answerTwo": "Pointer",
+            "answerOne": "Value",
+            "question": "Primitive types are passed by :",
+            "question_id": 21,
+            "rowNo": 5
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "character",
+            "answerThree": " string",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which is not a primitive data type in JavaScript?",
+            "question_id": 22,
+            "rowNo": 6
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": " var myArray = {};",
+            "answerThree": " var myArray = new Array[];",
+            "answerTwo": "var myArray = [];",
+            "answerOne": " var myArray = ();",
+            "question": "Which of these is a correct method to create a new array?",
+            "question_id": 23,
+            "rowNo": 7
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "boolean",
+            "answerThree": " integer",
+            "answerTwo": "negative",
+            "answerOne": "positive",
+            "question": "To what type are values converted internally when evaluating a conditional statement?",
+            "question_id": 24,
+            "rowNo": 8
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b\r\n",
+            "answerFour": "||\r\n",
+            "answerThree": "&&\r\n",
+            "answerTwo": "&\r\n",
+            "answerOne": " !\r\n",
+            "question": "Which of these is not a logical operator?\r\n",
+            "question_id": 25,
+            "rowNo": 9
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d\r\n",
+            "answerFour": " “B”\r\n",
+            "answerThree": "“A”\r\n",
+            "answerTwo": "TRUE\r\n",
+            "answerOne": "undefined\r\n",
+            "question": "What is the value of x? var a = false; var x = a ? “A” : “B”;\r\n",
+            "question_id": 26,
+            "rowNo": 10
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "double",
+            "answerThree": "object",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which of the following variable types does not exist in JavaScript?",
+            "question_id": 27,
+            "rowNo": 11
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "if (x === 5) { … }",
+            "answerThree": "if x = 5 …",
+            "answerTwo": "if (x == 5) { … }",
+            "answerOne": "if x = 5 then …",
+            "question": "How do you write a conditional statement that will *only* execute the contained code if variable x has a value 5 of type *number*?",
+            "question_id": 28,
+            "rowNo": 12
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "onchange",
+            "answerThree": "onblur",
+            "answerTwo": "onmove",
+            "answerOne": "onclick",
+            "question": "Which event fires whenever a control loses focus?",
+            "question_id": 29,
+            "rowNo": 13
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "myConstructor x = new myConstructor();",
+            "answerThree": " myConstructor x = create myConstructor();",
+            "answerTwo": "var x = create myConstructor();",
+            "answerOne": "var x = new myConstructor();",
+            "question": "Which of the following invokes a user-defined object constructor function?",
+            "question_id": 30,
+            "rowNo": 14
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE":{
+      "input":{
+        "subjectid": 56,
+        "levelid": 2,
+        "quiztype": "choice",
+        "candidate_id": "58b6ceeeb42449653d86d884"
+      },
+      "expected":{
+        "__v": 0,
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "_id": "58bcf9b221de2504b1317f51",
+        "lastmoddatetime": "2017-03-05T20:17:14.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        },
+        "questions": [
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "object based\r\n",
+            "answerThree": " evil\r\n",
+            "answerTwo": "objective\r\n",
+            "answerOne": "subjective\r\n",
+            "question": "JavaScript is …\r\n",
+            "question_id": 16,
+            "rowNo": 0
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "invalid",
+            "answerThree": "valid",
+            "answerTwo": "FALSE\r\n",
+            "answerOne": "TRUE\r\n",
+            "question": "var obj1 = {}; var obj2 = {}; What is the value of (obj1 === obj2)\r\n",
+            "question_id": 17,
+            "rowNo": 1
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "“5 bottles of milk”\r\n",
+            "answerThree": " undefined. An exception is thrown\r\n",
+            "answerTwo": "“6 bottles of milk”\r\n",
+            "answerOne": "“15 bottles of milk”\r\n",
+            "question": "What does the following expression return? 1 + 5 + ” bottles of milk”;\r\n",
+            "question_id": 18,
+            "rowNo": 2
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "var obj = new Object();",
+            "answerThree": "function Foo() {} var obj = new Foo();",
+            "answerTwo": "function Foo() {} var obj = new Foo();",
+            "answerOne": "var obj = {};",
+            "question": "How do you create an object in JavaScript?",
+            "question_id": 19,
+            "rowNo": 3
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "“string”",
+            "answerThree": "Throws error “ReferenceError: x is not defined”",
+            "answerTwo": "“[object String]”",
+            "answerOne": "“character”",
+            "question": "What is the result of the following statement: typeof “x”;",
+            "question_id": 20,
+            "rowNo": 4
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "none",
+            "answerThree": "Reference",
+            "answerTwo": "Pointer",
+            "answerOne": "Value",
+            "question": "Primitive types are passed by :",
+            "question_id": 21,
+            "rowNo": 5
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "character",
+            "answerThree": " string",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which is not a primitive data type in JavaScript?",
+            "question_id": 22,
+            "rowNo": 6
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": " var myArray = {};",
+            "answerThree": " var myArray = new Array[];",
+            "answerTwo": "var myArray = [];",
+            "answerOne": " var myArray = ();",
+            "question": "Which of these is a correct method to create a new array?",
+            "question_id": 23,
+            "rowNo": 7
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "boolean",
+            "answerThree": " integer",
+            "answerTwo": "negative",
+            "answerOne": "positive",
+            "question": "To what type are values converted internally when evaluating a conditional statement?",
+            "question_id": 24,
+            "rowNo": 8
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b\r\n",
+            "answerFour": "||\r\n",
+            "answerThree": "&&\r\n",
+            "answerTwo": "&\r\n",
+            "answerOne": " !\r\n",
+            "question": "Which of these is not a logical operator?\r\n",
+            "question_id": 25,
+            "rowNo": 9
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d\r\n",
+            "answerFour": " “B”\r\n",
+            "answerThree": "“A”\r\n",
+            "answerTwo": "TRUE\r\n",
+            "answerOne": "undefined\r\n",
+            "question": "What is the value of x? var a = false; var x = a ? “A” : “B”;\r\n",
+            "question_id": 26,
+            "rowNo": 10
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "double",
+            "answerThree": "object",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which of the following variable types does not exist in JavaScript?",
+            "question_id": 27,
+            "rowNo": 11
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "if (x === 5) { … }",
+            "answerThree": "if x = 5 …",
+            "answerTwo": "if (x == 5) { … }",
+            "answerOne": "if x = 5 then …",
+            "question": "How do you write a conditional statement that will *only* execute the contained code if variable x has a value 5 of type *number*?",
+            "question_id": 28,
+            "rowNo": 12
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "onchange",
+            "answerThree": "onblur",
+            "answerTwo": "onmove",
+            "answerOne": "onclick",
+            "question": "Which event fires whenever a control loses focus?",
+            "question_id": 29,
+            "rowNo": 13
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "myConstructor x = new myConstructor();",
+            "answerThree": " myConstructor x = create myConstructor();",
+            "answerTwo": "var x = create myConstructor();",
+            "answerOne": "var x = new myConstructor();",
+            "question": "Which of the following invokes a user-defined object constructor function?",
+            "question_id": 30,
+            "rowNo": 14
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE":{
+      "input":{
+        "subjectid": 56,
+        "levelid": 2,
+        "quiztype": "choice",
+        "candidate_id": "58b6ceeeb42449653d86d884"
+      },
+      "expected":{
+        "__v": 0,
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "_id": "58bcf9b221de2504b1317f51",
+        "lastmoddatetime": "2017-03-05T20:17:14.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        },
+        "questions": [
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "object based\r\n",
+            "answerThree": " evil\r\n",
+            "answerTwo": "objective\r\n",
+            "answerOne": "subjective\r\n",
+            "question": "JavaScript is …\r\n",
+            "question_id": 16,
+            "rowNo": 0
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "invalid",
+            "answerThree": "valid",
+            "answerTwo": "FALSE\r\n",
+            "answerOne": "TRUE\r\n",
+            "question": "var obj1 = {}; var obj2 = {}; What is the value of (obj1 === obj2)\r\n",
+            "question_id": 17,
+            "rowNo": 1
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "“5 bottles of milk”\r\n",
+            "answerThree": " undefined. An exception is thrown\r\n",
+            "answerTwo": "“6 bottles of milk”\r\n",
+            "answerOne": "“15 bottles of milk”\r\n",
+            "question": "What does the following expression return? 1 + 5 + ” bottles of milk”;\r\n",
+            "question_id": 18,
+            "rowNo": 2
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "var obj = new Object();",
+            "answerThree": "function Foo() {} var obj = new Foo();",
+            "answerTwo": "function Foo() {} var obj = new Foo();",
+            "answerOne": "var obj = {};",
+            "question": "How do you create an object in JavaScript?",
+            "question_id": 19,
+            "rowNo": 3
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "“string”",
+            "answerThree": "Throws error “ReferenceError: x is not defined”",
+            "answerTwo": "“[object String]”",
+            "answerOne": "“character”",
+            "question": "What is the result of the following statement: typeof “x”;",
+            "question_id": 20,
+            "rowNo": 4
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "none",
+            "answerThree": "Reference",
+            "answerTwo": "Pointer",
+            "answerOne": "Value",
+            "question": "Primitive types are passed by :",
+            "question_id": 21,
+            "rowNo": 5
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "character",
+            "answerThree": " string",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which is not a primitive data type in JavaScript?",
+            "question_id": 22,
+            "rowNo": 6
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": " var myArray = {};",
+            "answerThree": " var myArray = new Array[];",
+            "answerTwo": "var myArray = [];",
+            "answerOne": " var myArray = ();",
+            "question": "Which of these is a correct method to create a new array?",
+            "question_id": 23,
+            "rowNo": 7
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "boolean",
+            "answerThree": " integer",
+            "answerTwo": "negative",
+            "answerOne": "positive",
+            "question": "To what type are values converted internally when evaluating a conditional statement?",
+            "question_id": 24,
+            "rowNo": 8
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b\r\n",
+            "answerFour": "||\r\n",
+            "answerThree": "&&\r\n",
+            "answerTwo": "&\r\n",
+            "answerOne": " !\r\n",
+            "question": "Which of these is not a logical operator?\r\n",
+            "question_id": 25,
+            "rowNo": 9
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d\r\n",
+            "answerFour": " “B”\r\n",
+            "answerThree": "“A”\r\n",
+            "answerTwo": "TRUE\r\n",
+            "answerOne": "undefined\r\n",
+            "question": "What is the value of x? var a = false; var x = a ? “A” : “B”;\r\n",
+            "question_id": 26,
+            "rowNo": 10
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "double",
+            "answerThree": "object",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which of the following variable types does not exist in JavaScript?",
+            "question_id": 27,
+            "rowNo": 11
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "if (x === 5) { … }",
+            "answerThree": "if x = 5 …",
+            "answerTwo": "if (x == 5) { … }",
+            "answerOne": "if x = 5 then …",
+            "question": "How do you write a conditional statement that will *only* execute the contained code if variable x has a value 5 of type *number*?",
+            "question_id": 28,
+            "rowNo": 12
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "onchange",
+            "answerThree": "onblur",
+            "answerTwo": "onmove",
+            "answerOne": "onclick",
+            "question": "Which event fires whenever a control loses focus?",
+            "question_id": 29,
+            "rowNo": 13
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "myConstructor x = new myConstructor();",
+            "answerThree": " myConstructor x = create myConstructor();",
+            "answerTwo": "var x = create myConstructor();",
+            "answerOne": "var x = new myConstructor();",
+            "question": "Which of the following invokes a user-defined object constructor function?",
+            "question_id": 30,
+            "rowNo": 14
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER":{
+      "input":{
+        "subjectid": 56,
+        "levelid": 2,
+        "quiztype": "choice",
+        "candidate_id": "58b6ceeeb42449653d86d884"
+      },
+      "expected":{
+        "__v": 0,
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "_id": "58bcf9b221de2504b1317f51",
+        "lastmoddatetime": "2017-03-05T20:17:14.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        },
+        "questions": [
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "object based\r\n",
+            "answerThree": " evil\r\n",
+            "answerTwo": "objective\r\n",
+            "answerOne": "subjective\r\n",
+            "question": "JavaScript is …\r\n",
+            "question_id": 16,
+            "rowNo": 0
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "invalid",
+            "answerThree": "valid",
+            "answerTwo": "FALSE\r\n",
+            "answerOne": "TRUE\r\n",
+            "question": "var obj1 = {}; var obj2 = {}; What is the value of (obj1 === obj2)\r\n",
+            "question_id": 17,
+            "rowNo": 1
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "“5 bottles of milk”\r\n",
+            "answerThree": " undefined. An exception is thrown\r\n",
+            "answerTwo": "“6 bottles of milk”\r\n",
+            "answerOne": "“15 bottles of milk”\r\n",
+            "question": "What does the following expression return? 1 + 5 + ” bottles of milk”;\r\n",
+            "question_id": 18,
+            "rowNo": 2
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "var obj = new Object();",
+            "answerThree": "function Foo() {} var obj = new Foo();",
+            "answerTwo": "function Foo() {} var obj = new Foo();",
+            "answerOne": "var obj = {};",
+            "question": "How do you create an object in JavaScript?",
+            "question_id": 19,
+            "rowNo": 3
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "“string”",
+            "answerThree": "Throws error “ReferenceError: x is not defined”",
+            "answerTwo": "“[object String]”",
+            "answerOne": "“character”",
+            "question": "What is the result of the following statement: typeof “x”;",
+            "question_id": 20,
+            "rowNo": 4
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "none",
+            "answerThree": "Reference",
+            "answerTwo": "Pointer",
+            "answerOne": "Value",
+            "question": "Primitive types are passed by :",
+            "question_id": 21,
+            "rowNo": 5
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "character",
+            "answerThree": " string",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which is not a primitive data type in JavaScript?",
+            "question_id": 22,
+            "rowNo": 6
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": " var myArray = {};",
+            "answerThree": " var myArray = new Array[];",
+            "answerTwo": "var myArray = [];",
+            "answerOne": " var myArray = ();",
+            "question": "Which of these is a correct method to create a new array?",
+            "question_id": 23,
+            "rowNo": 7
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "boolean",
+            "answerThree": " integer",
+            "answerTwo": "negative",
+            "answerOne": "positive",
+            "question": "To what type are values converted internally when evaluating a conditional statement?",
+            "question_id": 24,
+            "rowNo": 8
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b\r\n",
+            "answerFour": "||\r\n",
+            "answerThree": "&&\r\n",
+            "answerTwo": "&\r\n",
+            "answerOne": " !\r\n",
+            "question": "Which of these is not a logical operator?\r\n",
+            "question_id": 25,
+            "rowNo": 9
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d\r\n",
+            "answerFour": " “B”\r\n",
+            "answerThree": "“A”\r\n",
+            "answerTwo": "TRUE\r\n",
+            "answerOne": "undefined\r\n",
+            "question": "What is the value of x? var a = false; var x = a ? “A” : “B”;\r\n",
+            "question_id": 26,
+            "rowNo": 10
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "double",
+            "answerThree": "object",
+            "answerTwo": "number",
+            "answerOne": "boolean",
+            "question": "Which of the following variable types does not exist in JavaScript?",
+            "question_id": 27,
+            "rowNo": 11
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "if (x === 5) { … }",
+            "answerThree": "if x = 5 …",
+            "answerTwo": "if (x == 5) { … }",
+            "answerOne": "if x = 5 then …",
+            "question": "How do you write a conditional statement that will *only* execute the contained code if variable x has a value 5 of type *number*?",
+            "question_id": 28,
+            "rowNo": 12
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "onchange",
+            "answerThree": "onblur",
+            "answerTwo": "onmove",
+            "answerOne": "onclick",
+            "question": "Which event fires whenever a control loses focus?",
+            "question_id": 29,
+            "rowNo": 13
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "a",
+            "answerFour": "myConstructor x = new myConstructor();",
+            "answerThree": " myConstructor x = create myConstructor();",
+            "answerTwo": "var x = create myConstructor();",
+            "answerOne": "var x = new myConstructor();",
+            "question": "Which of the following invokes a user-defined object constructor function?",
+            "question_id": 30,
+            "rowNo": 14
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER":{
+      "input":{
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "__v": 0,
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 1,
+          "name": "beginner"
+        },
+        "questions": []
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "__v": 0,
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 1,
+          "name": "beginner"
+        },
+        "questions": []
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE":{
+      "input":{
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "__v": 0,
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 1,
+          "name": "beginner"
+        },
+        "questions": []
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER":{
+      "input":{
+        "candidate_id": "58b6ceeeb42449653d86d884",
+        "__v": 0,
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-05T20:17:14.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": {"audio": null, "video": null},
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 1,
+          "name": "beginner"
+        },
+        "questions": []
+      }
+    }
+  }
+}

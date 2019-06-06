@@ -1,0 +1,53 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_SUPER": {
+      "input": {
+        "candidate_name": "V G",
+        "resume_name": "V G",
+        "resumeId": "AV8LbzIbYBPzgHfkJe4_"
+      },
+      "expected": {
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "V G",
+        "resume_name": "V G",
+        "resumeId": "AV8LbzIbYBPzgHfkJe4_"
+      },
+      "expected": {
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "V G",
+        "resume_name": "V G",
+        "resumeId": "AV8LbzIbYBPzgHfkJe4_"
+      },
+      "expected": {
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "V G",
+        "resume_name": "V G",
+        "resumeId": "AV8LbzIbYBPzgHfkJe4_"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

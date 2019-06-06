@@ -1,0 +1,724 @@
+{
+  "EMPLOYERS_QUESTIONS":{
+    "TEST_FOR_BASIC_GET_EMPLOYERS_QUESTIONS_BY_ID_FOR_SUPER":{
+      "input":{
+        "id":"5912395c69c49110071936d0"
+      },
+      "expected":{
+        "_id": "5912395c69c49110071936d0",
+        "questiontype": "coding",
+        "question": "<p>Tests 123</p>",
+        "hint": "",
+        "answer": "Test",
+        "testcases": "",
+        "time": 5,
+        "emp_id": "58fa02ea9a175068a476a338",
+        "lastmoddatetime": "2017-05-15T07:22:50.000Z",
+        "__v": 0,
+        "common_level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        },
+        "subject": {
+          "name": "C#"
+        },
+        "choice_options": [],
+        "trimquestion": "Tests 123"
+      },
+      "no_records":{
+        "status": 404,
+        "message": "Records Not Found"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_QUESTIONS_BY_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "5912395c69c49110071936d0"
+      },
+      "expected": {
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+},
+    "TEST_FOR_BASIC_GET_EMPLOYERS_QUESTIONS_BY_ID_FOR_CANDIDATE":{
+      "input":{
+        "id":"5912395c69c49110071936d0"
+      },
+      "expected":{
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_QUESTIONS_BY_ID_FOR_NEW_USER":{
+      "input":{
+        "id":"5912395c69c49110071936d0"
+      },
+      "expected":{
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTION_FOR_SUPER":{
+      "input": {
+        "questiontype": "choice",
+        "question": "<p>Which of the following function of String object extracts a section of a string and returns a new string?</p>",
+        "answer": "a",
+        "time": 10,
+        "emp_id": "591af3005a19a2354ce16cae",
+        "common_level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "name": "javascript"
+        },
+        "choice_options": [
+          {
+            "choice1": "slice()",
+            "choice2": "split()",
+            "choice3": "replace()",
+            "choice4": "search()"
+          }
+        ],
+        "trimquestion": "Which of the following function of String object extracts a section of a string and returns a new string?"
+      },
+      "expected":{
+        "questiontype": "choice",
+        "question": "<p>Which of the following function of String object extracts a section of a string and returns a new string?</p>",
+        "answer": "a",
+        "time": 10,
+        "emp_id": "591af3005a19a2354ce16cae",
+        "common_level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "name": "javascript"
+        },
+        "choice_options": [
+          {
+            "choice4": "search()",
+            "choice3": "replace()",
+            "choice2": "split()",
+            "choice1": "slice()"
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTION_FOR_EMPLOYEE":{
+      "input":
+      {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find even numbers between a given range of numbers ?",
+        "hint": "Run a for loop. start dividing by two and if it is divisible by 2  u r done",
+        "answer": "  /n  } /n  return even numbers; /n} /n&lt;/code&gt;/n",
+        "testcases": "evenNumbers(2,4,6,8); = [1, 10]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTION_FOR_CANDIDATE":{
+      "input":
+      {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTION_FOR_NEW_USER":{
+      "input":
+      {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTION_FOR_SUPER":{
+      "input":  {
+        "questiontype": "choice",
+        "question": "<p>Which of the following function of String object extracts a section of a string and returns a new string?</p>",
+        "answer": "a",
+        "time": 5,
+        "emp_id": "591af3005a19a2354ce16cae",
+        "common_level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "name": "javascript"
+        },
+        "choice_options": [
+          {
+            "choice1": "slice()",
+            "choice2": "split()",
+            "choice3": "replace()",
+            "choice4": "search()"
+          }
+        ],
+        "trimquestion": "Which of the following function of String object extracts a section of a string and returns a new string?"
+      },
+      "expected":{
+       "n":1,
+        "nModified":1,
+        "ok":1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTION_FOR_EMPLOYEE":{
+      "input": {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTION_FOR_CANDIDATE":{
+      "input": {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTION_FOR_NEW_USER":{
+      "input": {
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      },
+      "expected":{
+        "emp_id": "5874d788e277793c931b1466",
+        "question": "How could you find all prime factors of a number?",
+        "hint": "Run a while loop. start dividing by two and if not divisible increase divider until u r done",
+        "answer": "  /n  } /n  return factors; /n} /n&lt;/code&gt;/n",
+        "testcases": "primeFactors(100); = [5, 20]",
+        "template": " ors; /n} /n execute(); /n",
+        "time": 180,
+        "type": {
+          "id": 3,
+          "name": "choice"
+        },
+        "level": {
+          "id": 1,
+          "name": "NOVICE"
+        },
+        "subject": {
+          "_id": "5832c2ffe1a9e964be901f8e",
+          "subject_id": 10006,
+          "category_id": 1,
+          "name": "Javascript Programming",
+          "description": ""
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTION_FOR_SUPER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        " questiontype": "coding",
+        "question":
+        "<pre spellcheck='false'>var text = 'outside';?function logIt(){?console.log(text);?var text = 'inside';?};?lo();</><><></p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":90
+      },
+      "expected": {
+        "__v": 0,
+        "hint": "",
+        "questiontype": "coding",
+        "question": "<pre spellcheck='false'>var text = 'outside';?function logIt(){?console.log(text);?var text = 'inside';?};?lo();</><><></p>",
+        "template": "//JavaScript ?print('Hello, world!');",
+        "testcases": "",
+        "time": 90,
+        "common_level": {
+          "id": 1
+        },
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "choice_options": []
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTION_FOR_EMPLOYEE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "coding",
+        "question":
+        "<p>const arr = [10, 12, 15, 21];for (var i = 0; i < arr.length; i++) {setTimeout(function() {console.log('The index of this number is:' +),300);}</p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":90
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTION_FOR_CANDIDATE":{
+        "input":{
+          "hint":"",
+          "common_level": {
+            "id": 1
+          },
+          "questiontype": "coding",
+          "question":
+          "<p>const arr = [10, 12, 15, 21];for (var i = 0; i < arr.length; i++) {setTimeout(function(i_local) {return function() {console.log('The index of this number is: ' + i_local);}}(i), 3000);}</p>",
+          "subject": {
+            "subject_id": 56,
+            "category_id": 1,
+            "name": "javascript"
+          },
+          "template":"//JavaScript ?print('Hello, world!');",
+          "testcases":"",
+          "time":60
+        }
+},
+    "TEST_FOR_BASIC_POST_CODING_QUESTION_FOR_NEW_USER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "coding",
+        "question":
+        "<p>const arr = [10, 12, 15, 21];for (let i = 0; i < arr.length; i++) {setTimeout(function() {console.log('The index of this number is: ' + i);}, 3000);}</p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":60
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTION_FOR_SUPER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        " questiontype": "coding",
+        "question":
+        "<pre spellcheck='false'>var text = 'outside';?function logIt(){?console.log(text);?var text = 'inside';?};?lo();</><><></p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":60
+      },
+    "expected":{
+      "n":1,
+      "nModified":1,
+      "ok":1
+    }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTION_FOR_EMPLOYEE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "coding",
+        "question":
+        "<p>const arr = [10, 12, 15, 21];for (var i = 0; i < arr.length; i++) {setTimeout(function() {console.log('The index of this number is:' +),300);}</p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":60
+      },
+      "expected":{
+        "n":1,
+        "nModified":1,
+        "ok":1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTION_FOR_CANDIDATE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "coding",
+        "question":
+        "<p>const arr = [10, 12, 15, 21];for (var i = 0; i < arr.length; i++) {setTimeout(function(i_local) {return function() {console.log('The index of this number is: ' + i_local);}}(i), 3000);}</p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":90
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTION_FOR_NEW_USER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "coding",
+        "question":
+        "<p>const arr = [10, 12, 15, 21];for (let i = 0; i < arr.length; i++) {setTimeout(function() {console.log('The index of this number is: ' + i);}, 3000);}</p>",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "template":"//JavaScript ?print('Hello, world!');",
+        "testcases":"",
+        "time":90
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTION_FOR_SUPER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        " questiontype": "video",
+        "question": "What is the difference between JavaScript and jscript?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":90
+      },
+      "expected": {
+        "__v": 0,
+        "hint": "",
+        "questiontype": "video",
+        "question": "What is the difference between JavaScript and jscript?",
+        "testcases": "",
+        "time": 90,
+        "common_level": {
+          "id": 1
+        },
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTION_FOR_EMPLOYEE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is BOM?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":90
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTION_FOR_CANDIDATE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is the use of history object?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":60
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTION_FOR_NEW_USER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is the use of window object?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":60
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTION_FOR_SUPER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        " questiontype": "video",
+        "question": "What is the difference between JavaScript and jscript?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":80
+      },
+      "expected":{
+        "n":1,
+        "nModified":1,
+        "ok":1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTION_FOR_EMPLOYEE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is BOM?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":60
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTION_FOR_CANDIDATE":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is the use of history object?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":70
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTION_FOR_NEW_USER":{
+      "input":{
+        "hint":"",
+        "common_level": {
+          "id": 1
+        },
+        "questiontype": "video",
+        "question": "What is the use of window object?",
+        "subject": {
+          "subject_id": 56,
+          "category_id": 1,
+          "name": "javascript"
+        },
+        "testcases":"",
+        "time":80
+      }
+    }
+  }
+}

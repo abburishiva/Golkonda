@@ -1,0 +1,25 @@
+{
+  "BASIC_GET_CANDIDATE_BY_ID": {
+    "TEST_FOR_BASIC_GET_CANDIDATE_BY_ID_FOR_SUPER": {
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    "TEST_FOR_BASIC_GET_CANDIDATE_BY_ID_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8"      }
+    },
+    "TEST_FOR_BASIC_GET_CANDIDATE_BY_ID_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8"      }
+    },
+    "TEST_FOR_BASIC_GET_CANDIDATE_BY_ID_FOR_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

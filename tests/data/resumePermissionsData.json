@@ -1,0 +1,536 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_SUPER": {
+      "input": {
+        "candidatae_name":"Hanamkonda Kasthuri",
+        "resume_name":"kasthuri",
+        "resumeId": "AVycGYFHYBPzgHfkJeyy"
+      },
+      "expected": {
+        "shortUid": "hkasthuri"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_EMPLOYEE": {
+      "input": {
+        "candidatae_name":"Hanamkonda Kasthuri",
+        "resume_name":"kasthuri",
+        "resumeId": "AVycGYFHYBPzgHfkJeyy"
+      },
+      "expected": {
+        "shortUid": "hkasthuri"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_CANDIDATE": {
+      "input": {
+        "candidatae_name":"Hanamkonda Kasthuri",
+        "resume_name":"kasthuri",
+        "resumeId": "AVycGYFHYBPzgHfkJeyy"
+      },
+      "expected": {
+        "shortUid": "hkasthuri"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_NEW_USER": {
+      "input": {
+        "candidatae_name":"Hanamkonda Kasthuri",
+        "resume_name":"kasthuri",
+        "resumeId": "AVycGYFHYBPzgHfkJeyy"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_SUPER": {
+      "input": {
+        "candidate_name":"Sri Latha",
+        "resume_name":"Sri Latha Mallavarapu",
+        "resumeId": "AVzJRXXPYBPzgHfkJezn"
+      },
+      "expected": {
+        "shortUid": "slatha"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name":"Sri Latha",
+        "resume_name":"Sri Latha Mallavarapu",
+        "resumeId": "AVzJRXXPYBPzgHfkJezn"
+      },
+      "expected": {
+        "shortUid": "slatha"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name":"Sri Latha",
+        "resume_name":"Sri Latha Mallavarapu",
+        "resumeId": "AVzJRXXPYBPzgHfkJezn"
+      },
+      "expected": {
+        "shortUid": "slatha"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_NEW_USER": {
+      "input": {
+        "candidate_name":"Sri Latha",
+        "resume_name":"Sri Latha Mallavarapu",
+        "resumeId": "AVzJRXXPYBPzgHfkJezn"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_SUPER": {
+      "input": {
+        "candidate_name":"Sri Jyothi",
+        "resume_name":"Sai Sri",
+        "resumeId": "AVzJUH5bYBPzgHfkJezp"
+      },
+      "expected": {
+        "shortUid": "sjyothi"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name":"Sri Jyothi",
+        "resume_name":"Sai Sri",
+        "resumeId": "AVzJUH5bYBPzgHfkJezp"
+      },
+      "expected": {
+        "shortUid": "sjyothi"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name":"Sri Jyothi",
+        "resume_name":"Sai Sri",
+        "resumeId": "AVzJUH5bYBPzgHfkJezp"
+      },
+      "expected": {
+        "shortUid": "sjyothi"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_NEW_USER": {
+      "input": {
+        "candidate_name":"Sri Jyothi",
+        "resume_name":"Sai Sri",
+        "resumeId": "AVzJUH5bYBPzgHfkJezp"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_SINGLE_WORD_EACH_FOR_SUPER": {
+      "input": {
+        "candidate_name":"Harish",
+        "resume_name":"Harish",
+        "resumeId": "AVzJWBnkYBPzgHfkJezr"
+      },
+      "expected": {
+        "shortUid": "harish"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_SINGLE_WORD_EACH_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name":"Harish",
+        "resume_name":"Harish",
+        "resumeId": "AVzJWBnkYBPzgHfkJezr"
+      },
+      "expected": {
+        "shortUid": "harish"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_SINGLE_WORD_EACH_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name":"Harish",
+        "resume_name":"Harish",
+        "resumeId": "AVzJWBnkYBPzgHfkJezr"
+      },
+      "expected": {
+        "shortUid": "harish"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_SINGLE_WORD_EACH_FOR_NEW_USER": {
+      "input": {
+        "candidate_name":"Harish",
+        "resume_name":"Harish",
+        "resumeId": "AVzJWBnkYBPzgHfkJezr"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_SUPER":{
+      "input":{
+        "candidate_name":"V G",
+        "resume_name":"V G",
+        "resumeId":"AVzJXjwjYBPzgHfkJezt"
+        }
+      },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"V G",
+        "resume_name":"V G",
+        "resumeId":"AVzJXjwjYBPzgHfkJezt"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"V G",
+        "resume_name":"V G",
+        "resumeId":"AVzJXjwjYBPzgHfkJezt"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_ARE_SAME_AND_HAS_TWO_WORD_EACH_WITH_SINGLE_CHARACTER_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"V G",
+        "resume_name":"V G",
+        "resumeId":"AVzJXjwjYBPzgHfkJezt"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_FOUR_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_SUPER":{
+      "input":{
+        "candidate_name":"V Venkata Ravindra Babu",
+        "resume_name":"V Ravindra",
+        "resumeId":"AVzJZgZTYBPzgHfkJezu"
+      },
+      "expected":{
+        "shortUid":"vbabu"
+      }
+
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_FOUR_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"V Venkata Ravindra Babu",
+        "resume_name":"V Ravindra",
+        "resumeId":"AVzJZgZTYBPzgHfkJezu"
+      },
+      "expected":{
+        "shortUid":"vbabu"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_FOUR_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"V Venkata Ravindra Babu",
+        "resume_name":"V Ravindra",
+        "resumeId":"AVzJZgZTYBPzgHfkJezu"
+      },
+      "expected":{
+        "shortUid":"vbabu"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_FOUR_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"V Venkata Ravindra Babu",
+        "resume_name":"V Ravindra",
+        "resumeId":"AVzJZgZTYBPzgHfkJezu"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_GREATER_THAN_LENGTH_OF_RESUME_NAME_FOR_SUPER":{
+      "input":{
+        "candidate_name":"RajuTelakalapelly",
+        "resume_name":"Raju",
+        "resumeId":"AVzAfXfOYBPzgHfkJezQ"
+      },
+      "expected":{
+        "shortUid":"rajutelakalape"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_GREATER_THAN_LENGTH_OF_RESUME_NAME_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"RajuTelakalapelly",
+        "resume_name":"Raju",
+        "resumeId":"AVzAfXfOYBPzgHfkJezQ"
+      },
+      "expected":{
+        "shortUid":"rajutelakalape"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_GREATER_THAN_LENGTH_OF_RESUME_NAME_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"RajuTelakalapelly",
+        "resume_name":"Raju",
+        "resumeId":"AVzAfXfOYBPzgHfkJezQ"
+      },
+      "expected":{
+        "shortUid":"rajutelakalape"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_GREATER_THAN_LENGTH_OF_RESUME_NAME_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"RajuTelakalapelly",
+        "resume_name":"Raju",
+        "resumeId":"AVzAfXfOYBPzgHfkJezQ"
+      }
+    },
+     "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_SUPER":{
+       "input":{
+         "candidate_name":"Sandy",
+         "resume_name":"Sandeep",
+         "resumeId":"AVzAlti-YBPzgHfkJezS"
+       },
+       "expected":{
+         "shortUid":"sandeep"
+       }
+     },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"Sandy",
+        "resume_name":"Sandeep",
+        "resumeId":"AVzAlti-YBPzgHfkJezS"
+      },
+      "expected":{
+        "shortUid":"sandeep"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"Sandy",
+        "resume_name":"Sandeep",
+        "resumeId":"AVzAlti-YBPzgHfkJezS"
+      },
+      "expected":{
+        "shortUid":"sandeep"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"Sandy",
+        "resume_name":"Sandeep",
+        "resumeId":"AVzAlti-YBPzgHfkJezS"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_SUPER":{
+      "input":{
+        "candidate_name":"eng",
+        "resume_name":"Enginnering Innovapath India",
+        "resumeId":"AVzAsw1fYBPzgHfkJezT"
+      },
+      "expected": {
+        "shortUid":"eindia"
+      }
+
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"eng",
+        "resume_name":"Enginnering Innovapath India",
+        "resumeId":"AVzAsw1fYBPzgHfkJezT"
+      },
+      "expected": {
+        "shortUid":"eindia"
+      }
+
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"eng",
+        "resume_name":"Enginnering Innovapath India",
+        "resumeId":"AVzAsw1fYBPzgHfkJezT"
+      },
+      "expected": {
+        "shortUid":"eindia"
+      }
+
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"eng",
+        "resume_name":"Enginnering Innovapath India",
+        "resumeId":"AVzAsw1fYBPzgHfkJezT"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_SUPER":{
+      "input":{
+        "candidate_name":"MadhuBala",
+        "resume_name":"MadhuBala Reddy",
+        "resumeId":"AVzE8x-aYBPzgHfkJezX"
+      },
+      "expected":{
+        "shortUid":"mreddy"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"MadhuBala",
+        "resume_name":"MadhuBala Reddy",
+        "resumeId":"AVzE8x-aYBPzgHfkJezX"
+      },
+      "expected":{
+        "shortUid":"mreddy"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"MadhuBala",
+        "resume_name":"MadhuBala Reddy",
+        "resumeId":"AVzE8x-aYBPzgHfkJezX"
+      },
+      "expected":{
+        "shortUid":"mreddy"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"MadhuBala",
+        "resume_name":"MadhuBala Reddy",
+        "resumeId":"AVzE8x-aYBPzgHfkJezX"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_SUPER":{
+      "input":{
+        "resumeId":"AVzFINscYBPzgHfkJeza"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_EMPLOYEE":{
+      "input":{
+        "resumeId":"AVzFINscYBPzgHfkJeza"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_CANDIDATE":{
+      "input":{
+        "resumeId":"AVzFINscYBPzgHfkJeza"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_NEW_USER":{
+      "input":{
+        "resumeId":"AVzFINscYBPzgHfkJeza"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BUT_LENGTH_OF_RESUME_NAME_IS_GREATER_THAN_CANDIDATE_NAME_FOR_SUPER":{
+      "input":{
+        "candidate_name":"eng india",
+        "resume_name":"Engineering Inn",
+        "resumeId":"AVzFOUZZYBPzgHfkJezd"
+      },
+      "expected":{
+        "shortUid":"eindia"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BUT_LENGTH_OF_RESUME_NAME_IS_GREATER_THAN_CANDIDATE_NAME_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"eng india",
+        "resume_name":"Engineering Inn",
+        "resumeId":"AVzFOUZZYBPzgHfkJezd"
+      },
+      "expected":{
+        "shortUid":"eindia"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BUT_LENGTH_OF_RESUME_NAME_IS_GREATER_THAN_CANDIDATE_NAME_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"eng india",
+        "resume_name":"Engineering Inn",
+        "resumeId":"AVzFOUZZYBPzgHfkJezd"
+      },
+      "expected":{
+        "shortUid":"eindia"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BUT_LENGTH_OF_RESUME_NAME_IS_GREATER_THAN_CANDIDATE_NAME_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"eng india",
+        "resume_name":"Engineering Inn",
+        "resumeId":"eindia"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_SUPER":{
+      "input":{
+        "candidate_name":"V Sampath Kumar",
+        "resume_name":"Velupula Sampath Kumar",
+        "resumeId":"AVzFnFRvYBPzgHfkJezg"
+      },
+      "expected":{
+        "shortUid":"vkumar"
+}
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"V Sampath Kumar",
+        "resume_name":"Velupula Sampath Kumar",
+        "resumeId":"AVzFnFRvYBPzgHfkJezg"
+      },
+      "expected":{
+        "shortUid":"vkumar"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"V Sampath Kumar",
+        "resume_name":"Velupula Sampath Kumar",
+        "resumeId":"AVzFnFRvYBPzgHfkJezg"
+      },
+      "expected":{
+        "shortUid":"vkumar"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"V Sampath Kumar",
+        "resume_name":"Velupula Sampath Kumar",
+        "resumeId":"AVzFnFRvYBPzgHfkJezg"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_SUPER":{
+      "input":{
+        "candidate_name":"Engineering Innovapath",
+        "resume-name":"inovapath engineering india",
+        "resumeId":"AVzFwKP3YBPzgHfkJezi"
+      },
+      "expected":{
+        "shortUid":"einnovapath"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"Engineering Innovapath",
+        "resume-name":"inovapath engineering india",
+        "resumeId":"AVzFwKP3YBPzgHfkJezi"
+      },
+      "expected":{
+        "shortUid":"einnovapath"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"Engineering Innovapath",
+        "resume-name":"inovapath engineering india",
+        "resumeId":"AVzFwKP3YBPzgHfkJezi"
+      },
+      "expected":{
+        "shortUid":"einnovapath"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"Engineering Innovapath",
+        "resume-name":"inovapath engineering india",
+        "resumeId":"AVzFwKP3YBPzgHfkJezi"
+      }    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_SUPER":{
+      "input":{
+        "candidate_name":"Hanamkonda KasthuriInnovapath",
+        "resume_name":"Hanamkonda KasthuriInnovapath",
+        "resumeId":"AVzzhuNLYBPzgHfkJe0o"
+      },
+      "expected": {
+        "shortUid": "hkasthuriinnov"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_EMPLOYEE":{
+      "input":{
+        "candidate_name":"Hanamkonda KasthuriInnovapath",
+        "resume_name":"Hanamkonda KasthuriInnovapath",
+        "resumeId":"AVzzhuNLYBPzgHfkJe0o"
+      },
+      "expected":{
+        "shortUid": "hkasthuriinnov"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_CANDIDATE":{
+      "input":{
+        "candidate_name":"Hanamkonda KasthuriInnovapath",
+        "resume_name":"Hanamkonda KasthuriInnovapath",
+        "resumeId":"AVzzhuNLYBPzgHfkJe0o"
+      },
+      "expected":{
+        "shortUid": "hkasthuriinnov"
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_NEW_USER":{
+      "input":{
+        "candidate_name":"Hanamkonda KasthuriInnovapath",
+        "resume_name":"Hanamkonda KasthuriInnovapath",
+        "resumeId":"AVzzhuNLYBPzgHfkJe0o"
+      }
+    }
+  }
+}

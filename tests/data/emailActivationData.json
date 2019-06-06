@@ -1,0 +1,345 @@
+{
+  "EMAIL_ACTIVATION": {
+    "TEST_FOR_NEW_CANDIDATE_SIGN_UP": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "emailactivationtest@gmail.com",
+        "password": "Excellence@123",
+        "message_type": "string",
+        "type": "string",
+        "role": "candidate"
+      },
+      "expected": {
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_CANDIDATE_FOR_SUPER": {
+      "input": {
+        "email": "emailactivationtest@gmail.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "user_profile": {
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@gmail.com",
+            "phone": "9654781264",
+            "country_name": "18"
+          }
+        }
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "first_login_completed": "N",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "username": "emailactivationtest@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@gmail.com",
+            "phone": "9654781264",
+            "country_name": "18"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_CANDIDATE_FOR_EMPLOYEE": {
+      "input": {
+        "email": "emailactivationtest@gmail.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "user_profile": {
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@gmail.com",
+            "phone": "9654781264",
+            "country_name": "18"
+          }
+        }
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "first_login_completed": "N",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "username": "emailactivationtest@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@gmail.com",
+            "phone": "9654781264",
+            "country_name": "18"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_CANDIDATE_FOR_CANDIDATE": {
+      "input": {
+        "email": "emailactivationtest@gmail.com"
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_CANDIDATE_FOR_NEW_USER": {
+      "input": {
+        "email": "emailactivationtest@gmail.com"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    },
+    "TEST_FOR_LOGIN_FOR_NEWLY_REGISTERED_CANDIDATE": {
+      "input": {
+        "email_address": "emailactivationtest@gmail.com",
+        "app_type": "talentScreen",
+        "type": "login",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "first_login_completed": "N",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "username": "emailactivationtest@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@gmail.com",
+            "phone": "9654781264",
+            "country_name": "18"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_CANDIDATE_WITH_INCORRECT_VERIFICATION_CODE": {
+      "input": {
+        "email": "emailactivationtest@gmail.com",
+        "verificationCode": "ASDEFgij"
+      },
+      "expected": {
+        "message": "You have entered a wrong verification code"
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_EXISTING_USER": {
+      "input": {
+        "email_address": "sudha@gmail.com",
+        "verification_code": "rCV4Hndr",
+        "app_type": "talentScreen",
+        "type": "accountActivation"
+      },
+      "expected": {
+        "status": 206,
+        "message": "Your email address is already activated."
+      }
+    },
+    "TEST_FOR_INVALID_USER": {
+      "input": {
+        "email_address": "kasturi@gmail.com",
+        "app_type": "talentscreen",
+        "message_type": "TS_VERIFY",
+        "type": "emailActivation",
+        "redirect_url": "https://stag.talentscreen.io/#/login"
+      },
+      "expected": {
+        "status": 206,
+        "message": "This email address doesn't exists. Please try with a valid email address."
+      }
+    },
+    "TEST_FOR_NEW_EMPLOYEE_REGISTER": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "emailactivationtest@whitebox-learning.com",
+        "password": "Excellence@123",
+        "message_type": "register",
+        "type": "register",
+        "role": "employee"
+      },
+      "expected": {
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    },
+    "TEST_FOR_LOGIN_FOR_NEWLY_REGISTERED_EMPLOYEE": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "emailactivationtest@whitebox-learning.com",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "auth_details": {
+            "first_login_completed": "N",
+            "is_user_verified": "Y",
+            "is_super": false
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          },
+          "source_details": {
+            "username": "emailactivationtest@whitebox-learning.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "phone": "+919676454532",
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@whitebox-learning.com"
+          },
+          "role": "employee"
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_EMPLOYEE_FOR_SUPER": {
+      "input": {
+        "email": "emailactivationtest@whitebox-learning.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "emailactivationtest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+919676454532",
+            "name": "Email Activation Test",
+            "email": "emailactivationtest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_EMPLOYEE_FOR_EMPLOYEE": {
+      "input": {
+        "email": "emailactivationtest@whitebox-learning.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "emailactivationtest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Kasthuri",
+            "email": "emailactivationtest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_EMPLOYEE_FOR_CANDIDATE": {
+      "input": {
+        "email": "emailactivationtest@whitebox-learning.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "emailactivationtest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Kasthuri",
+            "email": "emailactivationtest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    },
+    "TEST_FOR_ACCOUNT_ACTIVATION_FOR_NEWLY_REGISTERED_EMPLOYEE_FOR_NEW_USER": {
+      "input": {
+        "email": "emailactivationtest@whitebox-learning.com",
+        "app_type": "talentScreen",
+        "type": "accountActivation",
+        "payload": {
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "emailactivationtest@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Kasthuri",
+            "email": "emailactivationtest@whitebox-learning.com"
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          }
+        }
+      }
+    }
+  }
+}
+
+

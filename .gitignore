@@ -1,0 +1,7 @@
+*.log
+*.jar
+*.xml
+/.git
+/.idea
+/node_modules
+/lint_logs

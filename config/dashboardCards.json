@@ -1,0 +1,335 @@
+{
+  "candidateCards": [
+    {
+      "key": "PUBLIC_CHALLENGES",
+      "title": "Public Challenges",
+      "description": "Public Challenges helps to test your skills",
+      "card_icon": "fa fa-slideshare",
+      "redirect_path":"candidate.public-challenges"
+    },
+    {
+      "key": "QUIZES",
+      "title": "Quizzes",
+      "description": "different types of Quizzes to test Candidates",
+      "card_icon": "fa fa-puzzle-piece",
+      "redirect_path":"candidate.take-challenge-quiz"
+    },
+    {
+      "key": "EMPLOYERS",
+      "title": "Employers",
+      "description": "We have no.of Employees to show your skills",
+      "card_icon": "fa fa-users",
+      "redirect_path":"redirect_path"
+    },
+    {
+      "key": "JOBS",
+      "title": "Jobs",
+      "description": "We have no.of opening on different skills",
+      "card_icon": "fa fa-briefcase",
+      "redirect_path":"job-search"
+    },
+    {
+      "key": "JOBS_ON_SKILLS",
+      "title": "Top Jobs on Skills",
+      "description": "jobs on different skills",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "MATCHED_JOBS",
+      "title": "Matched Jobs On Your Skills",
+      "description": "You can create your own Resume",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "WELCOME",
+      "title": "Welcome To TALENTSCREEN",
+      "description": "About welcome"
+    }
+  ],
+  "employerCards": [
+    {
+      "key": "PUBLIC_CHALLENGES",
+      "title": "Public Challenges",
+      "description": "Public Challenges helps to test your skills",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "INTERVIEWS_ON_SKILLS",
+      "title": "Skills",
+      "description": "interviews based on skills",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "CANDIDATES_ON_SKILLS",
+      "title": "Skills",
+      "description": "candidates based on skills",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "CANDIDATES",
+      "title": "Candidates",
+      "description": "About candidates",
+      "card_icon": "fa fa-users"
+    },
+    {
+      "key": "RESUMES",
+      "title": "Resumes",
+      "description": "About resume",
+      "card_icon": "fa fa-file-text"
+    },
+    {
+      "key": "QUIZES",
+      "title": "Quizzes",
+      "description": "different types of Quizzes to test Candidates",
+      "card_icon": "fa fa-trophy"
+    },
+    {
+      "key": "WELCOME",
+      "title": "Welcome To TALENTSCREEN",
+      "description": "About welcome"
+    }
+  ],
+  "secondTimeEmployeeCards":[
+    {
+      "key": "JOBS_COUNT",
+      "title": "Total Jobs",
+      "description": "Total Jobs",
+      "card_icon": "fa fa-suitcase"
+    },
+    {
+      "key": "EMP_QUESTIONS",
+      "title": "My Questions",
+      "description": "Total Completed Quizzes",
+      "card_icon": "fa fa-question"
+    },
+    {
+      "key": "EMP_INTERVIEWS",
+      "title": "My Interviews",
+      "description": "All Interviews",
+      "card_icon": " fa fa-tasks"
+    },
+    {
+      "key": "SUBJECTS_CATEGORY",
+      "title": "Subjects on Category",
+      "description": "Category",
+      "card_icon": "fa fa-slideshare"
+    }
+  ],
+  "secondTimeCandidateCards":[
+    {
+      "key": "SEC_PUBLIC_CHALLENGES",
+      "title": "My Challenges",
+      "description": "Completed Public Challenges",
+      "card_icon": "fa fa-slideshare",
+      "redirect_path":"candidate.public-challenges"
+    },
+    {
+      "key": "SEC_MY_INTERVIEWS",
+      "title": "My Interviews",
+      "description": "All Interviews",
+      "card_icon": " fa fa-folder-open",
+      "redirect_path":"candidate.my-interviews"
+    },
+    {
+      "key": "SEC_MY_QUIZZES",
+      "title": "My Quizzes",
+      "description": "Total Completed Quizzes",
+      "card_icon": "fa fa-puzzle-piece",
+      "redirect_path":"candidate.challenge"
+    },
+    {
+      "key": "SEC_WEEK_CHALLENGES",
+      "title": "Last Week Challenges",
+      "description": "Last Week Completed Challenges",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "SEC_TOTAL_INTERVIEWS",
+      "title": "Total Interviews",
+      "description": "Interviews"
+    }
+  ],
+  "candidateChallengesCards": [
+    {
+      "key": "PUBLIC_CHALLENGES",
+      "title": "Total Public Challenges",
+      "description": "About publicChallenges",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "MY_QUIZZES",
+      "title": "My Quizzes",
+      "description": "it describe about all My Quizzes",
+      "card_icon": "fa fa-puzzle-piece"
+    },
+    {
+      "key": "MY_CHALLENGES",
+      "title": "My Challenges",
+      "description": "it describe about all My Challenges",
+      "card_icon": "fa fa-thumbs-up"
+    },
+    {
+      "key": "RECENT_PERFORMED_QUIZZES",
+      "title": "Recent Performed Quizzes",
+      "description": "it describe about all Recent Performed Quizzes",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "RECENT_PUBLIC_CHALLENGES",
+      "title": "Recent Public Challenges",
+      "description": "it describe about all Recent Public Challenges"
+    }
+  ],
+  "employeeJobsDashboardCards": [
+    {
+      "key": "LATEST_ADDED_POSITIONS",
+      "title": "Job Positions",
+      "sub_title": "Latest Added Positions",
+      "description": "Latest Added Positions in TalentScreen",
+      "card_icon": "fa fa-suitcase"
+    },
+    {
+      "key": "SKILL_BASED_JOBS",
+      "title": "Skill Based Jobs",
+      "description": "jobs on skills"
+    },
+    {
+      "key": "SKILL_BASED_CANDIDATES",
+      "title": "Skill Based Candidates",
+      "description": "candidates on skills"
+    },
+    {
+      "key": "LATEST_APPLIED_POSITIONS",
+      "title": "Job Applications",
+      "sub_title": "Latest Applied Positions",
+      "description": "recently applied positions",
+      "card_icon": "fa fa-briefcase"
+    },
+    {
+      "key": "SKILL_BASED_RESUMES",
+      "title": "Skill Based Resumes",
+      "description": "skills on Resumes"
+    }
+  ],
+  "candidateMyInterviewsCards": [
+    {
+      "key": "MY_INTERVIEWS",
+      "title": "My Interviews",
+      "description": "it describe about all MyInterviews",
+      "card_icon": "fa fa-folder-open"
+    },
+    {
+      "key": "TOTAL_INTERVIEWS",
+      "title": "Total Interviews",
+      "description": "About Total Interviews count",
+      "card_icon": "fa fa-folder-open"
+    },
+    {
+      "key": "RECENTLY_PERFORMED_INTERVIEWS",
+      "title": "Recently Performed Interviews",
+      "description": "it describe about Recently Performed Interviews"
+
+    },
+    {
+      "key": "UPCOMING_INTERVIEWS",
+      "title": "Upcoming Interviews",
+      "description": "it describe about Upcoming Interviews"
+    }
+
+  ],
+  "employerLibreryCards":[
+    {
+      "key": "LATEST_ADDED SUBJECTS",
+      "title": "Latest Added Subjects",
+      "description": "it describe about top five Latest Added Subjects"
+    },
+    {
+      "key": "MY_SUBJECTS",
+      "title": "My Subjects",
+      "description": "it describe about My Subjects",
+      "card_icon": "fa fa-book"
+    },
+    {
+      "key": "QUESTIONS_COUNT",
+      "title": "Questions",
+      "description": "it describe about All Questions Count",
+      "card_icon": "fa fa-question"
+    },
+    {
+      "key": "QUESTIONS_BASED_ON_SUBJECTS",
+      "title": "Questions Based On Subjects",
+      "description": "it describe about All Questions Based On Subjects"
+    },
+    {
+      "key": "QUESTIONS_ON_QUIZZES",
+      "title": "Questions On Quizzes",
+      "description": "it describe about All Questions On Quizzes"
+    },
+    {
+      "key": "POPULAR_QUESTIONS",
+      "title": "Popular Questions",
+      "description": "it describe about top five Popular Questions"
+    },{
+      "key": "RECENTLY_ADDED_QUESTIONS",
+      "title": "Recently Added Questions",
+      "description": "it describe about top five Recently Added Questions"
+    }
+  ],
+  "candidateJobsDashboardCards": [
+    {
+      "key": "JOBS_BASED_ON_SUBJECTS",
+      "title": "Jobs Based On Subjects",
+      "description": "Jobs Based On Subjects in TalentScreen"
+    },
+    {
+      "key": "APPLIED_JOBS",
+      "title": "Applied Jobs",
+      "description": "applied jobs"
+    },
+    {
+      "key": "LATEST_ADDED_JOBS",
+      "title": "Latest Added Jobs",
+      "description": "Latest Added Jobs in TalentScreen"
+    },
+    {
+      "key": "RECENTLY_APPLIED_JOBS",
+      "title": "Recently Applied Jobs",
+      "description": "Recently Applied Jobs"
+    },
+    {
+      "key": "MOST_APPLIED_JOBS",
+      "title": "Most Applied Jobs",
+      "description": "Most Applied Jobs"
+    }
+  ],
+  "employeeInterviewsDashboardCards": [
+    {
+      "key": "TOTAL_INTERVIEWS",
+      "title": "Total Interviews",
+      "description": "total interviews",
+      "card_icon": "fa fa-tasks"
+    },
+    {
+      "key": "EMP_INTERVIEWS",
+      "title": "Interviews",
+      "description": "total Employee interviews",
+      "card_icon": "fa fa-folder-open"
+    },
+    {
+      "key": "EMP_PUBLIC_CHALLENGES",
+      "title": "Public Challenges",
+      "description": "total employee public challenges",
+      "card_icon": "fa fa-slideshare"
+    },
+    {
+      "key": "LATEST_SHARED_INTERVIEWS",
+      "title": "Latest Shared Interviews",
+      "description": "Recently posted interviews"
+    },
+    {
+      "key": "LATEST_SHARED_PUBLIC_CHALLENGES",
+      "title": "Latest Shared Public Challenges",
+      "description": "Recently posted Public challenges"
+    }
+  ]
+}

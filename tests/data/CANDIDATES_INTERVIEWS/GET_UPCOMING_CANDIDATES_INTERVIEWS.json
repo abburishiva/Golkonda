@@ -1,0 +1,339 @@
+{
+  "GET_UPCOMING_CANDIDATES_INTERVIEWS": {
+    "GET_ALL_UPCOMING_CANDIDATES_INTERVIEWS_FOR_SUPER": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "properties": {
+          "_id": "",
+          "subject": {
+            "type": "",
+            "id": "",
+            "name": ""
+          },
+          "quiz": {
+            "makeChallenge": "",
+            "name": ""
+          },
+          "level": {
+            "name": ""
+          },
+          "challengeCreatedDatetime": "",
+          "time_taken": "",
+          "total_time": "",
+          "attempted": "",
+          "correct": "",
+          "interviewDetail": {
+            "definitionId": "",
+            "interviewerEmail": "",
+            "emp_id": "",
+            "interviewerName": "",
+            "interviewName": "",
+            "interviewType": "",
+            "interviewStartDateTime": "",
+            "interviewExpiredDateTime": "",
+            "events": [
+            ],
+            "access": {
+              "live": "",
+              "collaboration": "",
+              "screenSharing": ""
+            },
+            "allowTime": ""
+          },
+          "questions": [],
+          "allowTime": "",
+          "timeLeft": "",
+          "startAtDateTime": "",
+          "expiredAtDateTime": ""
+        }
+      }
+    },
+    "GET_ALL_UPCOMING_CANDIDATES_INTERVIEWS_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "GET_ALL_UPCOMING_CANDIDATES_INTERVIEWS_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "GET_ALL_UPCOMING_CANDIDATES_INTERVIEWS_FOR_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_SUPER": {
+      "input": {
+        "id": "5989927fd27fc90c07a646e4"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "_id": "5989927fd27fc90c07a646e4",
+        "email": "sudhaaa.ip@gmail.com",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "challengeCreatedDatetime": "",
+        "time_taken": 41,
+        "total_time": 505,
+        "attempted": 6,
+        "correct": 1,
+        "interviewDetail": {
+          "definitionId": "59899252d27fc90c07a646e0",
+          "interviewerEmail": "kumar@whitebox-learning.com",
+          "emp_id": "592414005ca7c77f94cfd778",
+          "interviewerName": "kumar wbl",
+          "interviewName": "testing quiz",
+          "interviewType": "ondemand",
+          "interviewStartDateTime": "11/08/2017 04:30:00",
+          "interviewExpiredDateTime": "10/08/2017 03:28:00",
+          "events": [
+            "interviewOpened",
+            "interviewStarted"
+          ],
+          "access": {
+            "live": false,
+            "collaboration": true,
+            "screenSharing": false
+          },
+          "allowTime": 60
+        },
+        "quiz": {
+          "name": "choice-test",
+          "makeChallenge": "user"
+        },
+        "subject": {
+          "id": 56,
+          "name": "Javascript",
+          "icon_class": "ts-javascriptprogramming",
+          "type": "employer"
+        },
+        "level": {
+          "name": "NOVICE"
+        },
+        "questions": [
+          {
+            "time_taken": 16,
+            "attempted": "Y",
+            "time": 180,
+            "questiontype": "Video",
+            "question": "<p><strong>what is </strong></p>",
+            "rowNo": 0
+          },
+          {
+            "time_taken": 8,
+            "attempted": "Y",
+            "time": 180,
+            "questiontype": "Video",
+            "question": "<p><strong>what is javadfdff dfd</strong>d dfdfd fdfdffdfdfdfdf<u>dffdfdffdffdfdfdfdfdfdfdd</u></p>",
+            "rowNo": 1
+          },
+          {
+            "time_taken": 8,
+            "attempted": "Y",
+            "time": 60,
+            "questiontype": "Video",
+            "question": "write a algoridham for print even numbers upto 100",
+            "rowNo": 2
+          },
+          {
+            "correctOrNot": "N",
+            "attempted": "Y",
+            "time_taken": 4,
+            "candidateAnswer": "a",
+            "time": 5,
+            "explanation": null,
+            "originalAnswer": "d",
+            "answerSix": null,
+            "answerFive": null,
+            "answerFour": "Lack of objectivity",
+            "answerThree": "Lack of test tools on the market for developers",
+            "answerTwo": "Lack of technical documentation",
+            "answerOne": "Lack of training",
+            "questiontype": "Choice",
+            "question": "<p>One Key reason why developers have difficulty testing their own work is</p>",
+            "rowNo": 3
+          },
+          {
+            "correctOrNot": "Y",
+            "attempted": "Y",
+            "time_taken": 2,
+            "candidateAnswer": "a",
+            "time": 40,
+            "explanation": null,
+            "originalAnswer": "a",
+            "answerSix": null,
+            "answerFive": null,
+            "answerFour": "#demo.innerHTML = \"Hello World!\";",
+            "answerThree": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+            "answerTwo": "document.getElementByName(\"p\").innerHTML = \"Hello World!\";",
+            "answerOne": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+            "questiontype": "Choice",
+            "question": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(241, 241, 241);\">&nbsp;What is the correct JavaScript syntax to change the content of the HTML element below?</span></p>",
+            "rowNo": 4
+          },
+          {
+            "correctOrNot": "N",
+            "attempted": "Y",
+            "time_taken": 3,
+            "candidateAnswer": "c",
+            "time": 40,
+            "explanation": null,
+            "originalAnswer": "b",
+            "answerSix": null,
+            "answerFive": null,
+            "answerFour": "replace()",
+            "answerThree": "search()",
+            "answerTwo": "match()",
+            "answerOne": "concat()",
+            "questiontype": "Choice",
+            "question": "<p><span style=\"color: rgb(0, 0, 0);\">Which of the following function of String object is used to match a regular expression against a string?</span></p>",
+            "rowNo": 5
+          }
+        ]
+      },
+      "ifNoRecords": {
+        "statusCode": 404,
+        "status": 404,
+        "message": "Records Not Found"
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "5989927fd27fc90c07a646e4"
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_CANDIDATE": {
+      "input": {
+        "id": "5989927fd27fc90c07a646e4"
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_NEW_USER": {
+      "input": {
+        "id": "5989927fd27fc90c07a646e4"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_INVALID_ID_FOR_SUPER": {
+      "input": {
+        "id": "5975eb5a4d219a40baa100b!"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "status": 500,
+        "error": {
+          "message": "Cast to ObjectId failed for value \"5975eb5a4d219a40baa100b!\" at path \"_id\" for model \"employerInterviews\"",
+          "name": "CastError",
+          "stringValue": "\"5975eb5a4d219a40baa100b!\"",
+          "kind": "ObjectId",
+          "value": "5975eb5a4d219a40baa100b!",
+          "path": "_id"
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_INVALID_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "5975eb5a4d219a40baa100b!"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 403,
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_INVALID_ID_FOR_CANDIDATE": {
+      "input": {
+        "id": "5975eb5a4d219a40baa100b!"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 403,
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_INVALID_ID_FOR_NEW_USER": {
+      "input": {
+        "id": "5975eb5a4d219a40baa100b!"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 401
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_BY_ID_WITH_INVALID_ROUTE_FOR_SUPER": {
+      "input": {
+        "id": "59757bd6dd02e83819e26eca"
+      },
+      "expected": {
+        "statusCode": 200,
+        "count": 1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "ifNoRecords": {
+          "statusCode": 404,
+          "status": 404,
+          "message": "Records Not Found"
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_BY_ID_WITH_INVALID_ROUTE_FOR_EMPLOYEE": {
+      "input": {
+        "id": "59757bd6dd02e83819e26eca"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 403
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_BY_ID_WITH_INVALID_ROUTE_FOR_CANDIDATE": {
+      "input": {
+        "id": "59757bd6dd02e83819e26eca"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 403
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_BY_ID_WITH_INVALID_ROUTE_FOR_NEW_USER": {
+      "input": {
+        "id": "59757bd6dd02e83819e26eca"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

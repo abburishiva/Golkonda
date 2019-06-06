@@ -1,0 +1,64 @@
+{
+  "AUDIO_QUESTIONS": {
+    "TEST_FOR_BASIC_POST_AUDIO_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "time": 300,
+          "question": "Name some of the JavaScript features."
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_AUDIO_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "time": 300,
+          "question": "What are the advantages of using JavaScript?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_AUDIO_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "time": 300,
+          "question": "Is JavaScript a case-sensitive language?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_AUDIO_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4,
+          "time": 300,
+          "question": "Is JavaScript a case-sensitive language?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

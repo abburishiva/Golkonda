@@ -1,0 +1,196 @@
+
+{
+  "BASIC_PUT":{
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "candidate_id": "587f05688f6c240e2a527384",
+        "lastmoddatetime": "2017-03-21T07:13:50.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-21T07:13:50.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 3 ,
+          "name":"PROFICIENT"
+        }
+
+      },
+      "expected": {
+        "candidate_id": "587f05688f6c240e2a527384",
+        "quiz": {
+          "id": 2,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "Javascript Programming",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 3,
+          "name": "PROFICIENT"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "__v": 0,
+        "candidate_id": "587f05688f6c240e2a527384",
+        "lastmoddatetime": "2017-03-21T07:13:50.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-21T07:13:50.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "coding"
+        },
+        "subject": {
+          "id": 2,
+          "name": "C#",
+          "icon": "ts-csharp"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        }
+      },
+      "expected": {
+        "__v": 0,
+        "candidate_id": "587f05688f6c240e2a527384",
+        "lastmoddatetime": "2017-03-21T07:13:50.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-21T07:13:50.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "coding"
+        },
+        "subject": {
+          "id": 2,
+          "name": "C#",
+          "icon": "ts-csharp"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "lastmoddatetime": "2017-03-21T07:13:50.000Z",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "2017-03-21T07:13:50.000Z",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "nodejs",
+          "icon": "ts-nodejs"
+        },
+        "level": {
+          "id": 2 ,
+          "name":"PROFICIENT"
+        }
+
+      },
+      "expected": {
+        "statusCode":200,
+        "quiz": {
+          "id": 2,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "nodejs",
+          "icon": "ts-nodejs"
+        },
+        "level": {
+          "id": 2 ,
+          "name":"PROFICIENT"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 3,
+        "quiztype": "choice"
+      },
+      "expected": {
+        "statusCode":401
+      }
+    }
+  }
+}

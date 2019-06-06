@@ -1,0 +1,24 @@
+{
+  "BASIC_DELETE":{
+    "CANDIDATES_INTERVIEWS_FOR_SUPER":{
+      "expected":{
+        "statusCode": 204
+      }
+    },
+    "CANDIDATES_INTERVIEWS_FOR_EMPLOYEE":{
+      "expected":{
+        "statusCode": 403
+      }
+    },
+    "CANDIDATES_INTERVIEWS_FOR_CANDIDATE":{
+      "expected":{
+        "statusCode": 403
+      }
+    },
+    "CANDIDATES_INTERVIEWS_FOR_NEW_USER":{
+      "expected":{
+        "statusCode": 401
+      }
+    }
+    }
+}

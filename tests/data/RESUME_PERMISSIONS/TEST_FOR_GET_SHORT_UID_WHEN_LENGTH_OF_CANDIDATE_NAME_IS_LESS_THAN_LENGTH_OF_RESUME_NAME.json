@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_SUPER": {
+      "input": {
+        "candidate_name": "Sandy",
+        "resume_name": "Sandeep",
+        "resumeId": "AV8Lj29dYBPzgHfkJe5Q"
+      },
+      "expected": {
+        "shortUid": "sandeep",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "Sandy",
+        "resume_name": "Sandeep",
+        "resumeId": "AV8Lj29dYBPzgHfkJe5Q"
+      },
+      "expected": {
+        "shortUid": "sandeep",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "Sandy",
+        "resume_name": "Sandeep",
+        "resumeId": "AV8Lj29dYBPzgHfkJe5Q"
+      },
+      "expected": {
+        "shortUid": "sandeep",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_LENGTH_OF_CANDIDATE_NAME_IS_LESS_THAN_LENGTH_OF_RESUME_NAME_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "Sandy",
+        "resume_name": "Sandeep",
+        "resumeId": "AV8Lj29dYBPzgHfkJe5Q"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

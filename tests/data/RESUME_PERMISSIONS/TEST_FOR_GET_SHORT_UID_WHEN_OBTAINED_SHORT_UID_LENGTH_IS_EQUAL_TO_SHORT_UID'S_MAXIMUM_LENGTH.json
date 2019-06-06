@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_SUPER": {
+      "input": {
+        "candidate_name": "Hanamkonda KasthuriInnovapath",
+        "resume_name": "Hanamkonda KasthuriInnovapath",
+        "resumeId": "AV8LkvdnYBPzgHfkJe5R"
+      },
+      "expected": {
+        "shortUid": "hkasthuriinnov",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "Hanamkonda KasthuriInnovapath",
+        "resume_name": "Hanamkonda KasthuriInnovapath",
+        "resumeId": "AV8LkvdnYBPzgHfkJe5R"
+      },
+      "expected": {
+        "shortUid": "hkasthuriinnov",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "Hanamkonda KasthuriInnovapath",
+        "resume_name": "Hanamkonda KasthuriInnovapath",
+        "resumeId": "AV8LkvdnYBPzgHfkJe5R"
+      },
+      "expected": {
+        "shortUid": "hkasthuriinnov",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_OBTAINED_SHORT_UID_LENGTH_IS_EQUAL_TO_SHORT_UID'S_MAXIMUM_LENGTH_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "Hanamkonda KasthuriInnovapath",
+        "resume_name": "Hanamkonda KasthuriInnovapath",
+        "resumeId": "AV8LkvdnYBPzgHfkJe5R"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

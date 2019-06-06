@@ -1,0 +1,124 @@
+{
+  "BASIC_PUT":{
+    "TEST_FOR_BASIC_PUT_FOR_SUPER":{
+      "input":{
+        "source_details": {
+          "source": "talentscreen",
+          "username": "narjun.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun123.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      },
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8",
+        "lastmoddatetime": "2017-04-23T12:33:46.000Z",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "registereddatetime": "2017-04-24T06:23:51.000Z",
+          "first_login_completed": "N",
+          "is_user_verified": "N"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun123.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE":{
+      "input":{
+        "source_details": {
+          "source": "talentscreen",
+          "username": "narjun.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun12345.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      },
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8",
+        "lastmoddatetime": "2017-04-23T12:33:46.000Z",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "registereddatetime": "2017-04-24T06:23:51.000Z",
+          "first_login_completed": "N",
+          "is_user_verified": "N"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "Arjun Nama",
+          "email": "narjun12345.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE":{
+      "input":{
+        "source_details": {
+          "source": "talentscreen",
+          "password" : "16a2174aa0099047aaefd63853516d7c",
+          "username": "sudhaaa.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "sudhaaa kanpuri",
+          "email": "sudhaaa.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      },
+      "expected": {
+        "statusCode": 200,
+        "content-type": "application/json; charset=utf-8",
+        "lastmoddatetime": "2017-04-23T12:33:46.000Z",
+        "demo_details": {
+          "choice_demo": true,
+          "coding_demo": true,
+          "video_demo": true
+        },
+        "auth_details": {
+          "registereddatetime": "2017-04-24T06:23:51.000Z",
+          "first_login_completed": "Y",
+          "is_user_verified": "Y"
+        },
+        "source_details": {
+          "source": "talentscreen",
+          "username": "sudhaaa.ip@gmail.com"
+        },
+        "user_profile": {
+          "picture_link": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+          "name": "sudhaaa kanpuri",
+          "email": "sudhaaa.ip@gmail.com",
+          "skills_interested": ["java"]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER":{
+      "input":{
+        "app_type": "talentscreen",
+        "email_address":"mounika@gmail.com",
+        "password":"Excellence@1",
+        "message_type": "string",
+        "type": "string",
+        "role": "candidate"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "DELETE_NEWLY_REGISTERED_CANDIDATE": {
+    "TEST_FOR_DELETE_NEWLY_REGISTERED_CANDIDATE_FOR_SUPER": {
+      "expected": {
+        "statusCode": 200,
+        "deleteStatusCode":204,
+        "getStatusCode":404
+      }
+    },
+    "TEST_FOR_DELETE_NEWLY_REGISTERED_CANDIDATE_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode": 200
+      }
+    },
+    "TEST_FOR_DELETE_NEWLY_REGISTERED_CANDIDATE_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "TEST_FOR_DELETE_NEWLY_REGISTERED_CANDIDATE_FOR_NEW_USER": {
+      "input": {
+        "email": "kumar.ip@gmail.com"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

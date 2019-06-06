@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_SUPER": {
+      "input": {
+        "candidate_name": "Sri Latha",
+        "resume_name": "Sri Latha Mallavarapu",
+        "resumeId": "AV8LhQNFYBPzgHfkJe5K"
+      },
+      "expected": {
+        "shortUid": "slatha",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "Sri Latha",
+        "resume_name": "Sri Latha Mallavarapu",
+        "resumeId": "AV8LhQNFYBPzgHfkJe5K"
+      },
+      "expected": {
+        "shortUid": "slatha",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "Sri Latha",
+        "resume_name": "Sri Latha Mallavarapu",
+        "resumeId": "AV8LhQNFYBPzgHfkJe5K"
+      },
+      "expected": {
+        "shortUid": "slatha",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_THREE_WORDS_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "Sri Latha",
+        "resume_name": "Sri Latha Mallavarapu",
+        "resumeId": "AV8LhQNFYBPzgHfkJe5K"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

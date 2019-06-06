@@ -1,0 +1,73 @@
+{
+  "COMMON_TERMS": {
+    "TEST_FOR_BASIC_GET_BY_ID": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 1,
+        "name": "collabaration",
+        "description": "I agree terms and conditions",
+        "lastmoddatetime": "05-03-2017 05:11:05",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I agree to the terms and conditions"
+      },
+      "expected": {
+        "name": "typed quiz",
+        "description": "I agree to the terms and conditions",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I accept and agree to the terms and conditions"
+      },
+      "expected": {
+        "name": "typed quiz",
+        "description": "I accept and agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I accept and agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I accept and agree to the terms and conditions"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER": {
+      "input": {
+        "name": "typed quiz",
+        "description": "I accept and agree to the terms and conditions"
+      }
+    }
+  }
+}

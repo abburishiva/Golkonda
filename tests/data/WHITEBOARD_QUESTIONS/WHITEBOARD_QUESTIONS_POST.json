@@ -1,0 +1,64 @@
+{
+  "WHITEBOARD_QUESTIONS": {
+    "TEST_FOR_BASIC_POST_WHITEBOARD_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "question": "WRITE A ALGORITHAM FOR PRINT EVEN NUMBERS UPTO 500."
+        }
+      },
+      "expected":{
+  "statusCode":201,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        }
+}
+    },
+    "TEST_FOR_BASIC_POST_WHITEBOARD_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "question": "WRITE A ALGORITHAM FOR PRINT EVEN NUMBERS UPTO 500."
+        }
+      },
+      "expected":{
+        "statusCode":403,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_WHITEBOARD_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "question": "WRITE A ALGORITHAM FOR PRINT EVEN NUMBERS UPTO 500."
+        }
+      },
+      "expected":{
+        "statusCode":403,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_WHITEBOARD_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4,
+          "question": "WRITE A ALGORITHAM FOR PRINT EVEN NUMBERS UPTO 500."
+        }
+      },
+      "expected":{
+        "statusCode":401,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

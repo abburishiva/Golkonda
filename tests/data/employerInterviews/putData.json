@@ -1,0 +1,137 @@
+{
+  "EMPLOYER_INTERVIEWS":{
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_SUPER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_EMPLOYEE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_CANDIDATE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_NEW_USER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "TEST_FOR_BASIC_GET_BY_SUBJECT":{
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_SUPER": {
+      "input": {
+        "subject": "Javascript"
+      },
+      "expected": {
+        "statusCode": 200,
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_EMPLOYEE": {
+      "input": {
+        "subject": "Javascript"
+      },
+      "expected": {
+        "statusCode": 200,
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_CANDIDATE": {
+      "input": {
+        "subject": "Javascript"
+      },
+      "expected": {
+        "statusCode": 200,
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_SUBJECT_NEW_USER": {
+      "input": {
+        "subject": "Javascript"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+
+}

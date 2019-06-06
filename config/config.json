@@ -1,0 +1,346 @@
+{
+  "listen": 8000,
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "dev": {
+    "api_url": "api.dev.talentscreen.io",
+    "base_url": "https://api.dev.talentscreen.io",
+    "meta_url": "https://api.meta.dev.talentscreen.io",
+    "app_url": "https://app.dev.talentscreen.io",
+    "ops_Url": "https://ops.dev.talentscreen.io",
+    "es_host": "https://es_admin:Excellence123@esdev.talentscreen.io",
+    "google_token": "1/Qu7ixDVIChd_k2hhAhjUT9nFbrsEuEzbk3i0FpUY2f5OwBAsE0MTfRD9xzTpgOWI",
+    "mysql": {
+      "username": "whiteboxqa",
+      "password": "Innovapath1*",
+      "host": "mysql.dev.talentscreen.io",
+      "database": "talentdb",
+      "port": 3306
+    },
+    "mongodb": {
+      "host": "mongo.dev.talentscreen.io:27017",
+      "username": "kumarip",
+      "password": "Excellence123"
+    },
+    "es": {
+      "indexName": "elastic",
+      "type": "resumes"
+    },
+    "es_skills": {
+      "indexName": "skills",
+      "type": "keywords",
+      "id": "A"
+    },
+    "es_industries": {
+      "indexName": "industries",
+      "type": "type",
+      "id": "A"
+    },
+    "designations": {
+      "indexName": "designation",
+      "type": "position",
+      "id": "A"
+    },
+    "es_job": {
+      "indexName": "jobs",
+      "type": "postings"
+    },
+    "organizations": {
+      "indexName": "organizations",
+      "type": "details"
+    },
+    "currencies": {
+      "indexName": "currency",
+      "type": "details",
+      "id": "A"
+    },
+    "talentScreenSecret": {
+      "facebook": "6035ba46d41fa2fa8e70bcbd2675cab2",
+      "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+      "linkedin": "u0MG4PRXqv98S0H6",
+      "github": "0e73792036429a7992905f4ff528b4ebe1497291"
+    },
+    "firebase_connections": {
+      "gcmKey": "AIzaSyADDshpRd2U-1nZTYQPkP6rY-_rsEOat1c",
+      "databaseURL": "https://notifications-53947.firebaseio.com",
+      "serviceAcountKey": {
+        "type": "service_account",
+        "project_id": "notifications-53947",
+        "private_key_id": "064a5ed9ed3c7f32c51dd49906e926447e6eda3b",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDcfRnBCKfjAwLX\nbQ+a+WoOIx/jjs/dngkjlAuwyDIeNui2DbDDXF/gfp3U6phyOt8SIGg/hhbCW9tU\nC2Pf9DJCAky8xFH9JWvDsQbtnmVAr3nDRGVfM/fYKwYhN02EPfYuhvsasTeOdyjV\nPQau3Ny5ALyqS4RUhu0BCrSR+HW+9Mz/4+Tcxp8puvvMj9Id3XUygJZx4jsk5yM7\nto8e+FciivF4ZQQjOmuUQGPNg1fTVc8l5XSRZZwSl/Q0NpTlWEYZWxExcVGe/tZI\n4mb/8/4jA0IwyOcN+L5r9cy1VK1vapMo5tRa4tlaFtP4iwUL69i4xkPtBKIarfrr\njLoYK2ChAgMBAAECggEABkm3C09A4nN6iEQ+9q94O9D6ntW6zdos7ovRTYhYDY6J\nUm/Pg7LFtTRHMgRCtrdBF1Y/QtiDG6Xc+mecwI1JRaKlJ5j9sZd4nEsXJH2o65BV\ni6EOtwlXXx3S/e2C02uk8qy8yoUVTYXOb05fO2tnDAueVcjzjCmQ5r+0aJlKWli5\nVJcUTXZ1f58fDalcKofr2+rE8TjgT07Gpbek/Zey65kPI1U6ePnHXN+K7oAOK+Kc\nmD5hcsrI7+cD2V57N6NYxTZCez8txP9+CXjEHdcjFgSK83HLV4pj1z+KPWnQ00Gl\nBfWEcKcBkL4HyNfcSRHaDf1itcE10aML9LbTN+PRhQKBgQD2WUEv2dnsPNSE32vW\nkACN/n8+hGLXNTQktoZdMhBT6I9/VRcZOTtCi+XFugZYV098azhqpB4MWsHFBBrE\nqDH9CPyncoI03Upf0izqk0XF8aWXYyj6DDAjz9ZF0K+jIVa6KjQvIdimC6yW+cFk\nngpzd04dwM6FGVl/dp/vrgD9+wKBgQDlIHv1c2k2IhjqJjN76VkVP2y/nc4Tgj9C\nZABLgbM1UUUsOooTJ9+cRgEQlBs+xgTjQQxpyIoHnHLp9vI7D3Xya9ybH4urLtXh\nCFY1zRLnW72wSKj+xHT/vpZ9CZ6R5aQKW+bG5QPesToWzCgelvQBsvVh34SoDWbk\naObF7wXlEwKBgQCJDtNzufLCun1Kh7tJnsiQN523vJP5RAKEwoAy7Z2j8WmU4FR/\nlhXgSlFGFt9c2wbAJC85NaH6IaxY3pW+AA3/x7Y5uz2yB8RPV3Hh+JoDLRSCC4tK\nwukto36FTTvKuMu1u7FY363Xg/s77CyqvDr4TtJJP3InHxlqDyegg+DNbQKBgHl2\njQADXIT78mU+NxC7FSR0aPvzdelVpJ9XT+i3Kv9aw+a8abHZ82pumeXl/cN7SeAG\n/cOeMb3zK9/nr2WrvoTytRHu2SW4QF15A+qleh33vkkTW7MjBjsFF9XVIaCKMjnj\nmiVaBoEpRngLZkFBGL1F11s5GKPV5vOywJOxMFjNAoGBAOHVZFMGfPe0+6kLzHCa\njFeScY2Kf/LILbYby1dvbokTEH5yj58U0hjGDTdlU2dxcX4HL4RYigT2HszvPrLs\nfR+0XCiFP3TdAvw5tuyO7muqp76hAVDt3O6k25GlIXiveYjhxYcyBSJlqeGHIAuH\nj2Nq/oukbNx60+ujQ+oQFWAj\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-3oh4t@notifications-53947.iam.gserviceaccount.com",
+        "client_id": "103512314693655107087",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3oh4t%40notifications-53947.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "docker": {
+    "api_url": "35.192.73.70:4100",
+    "base_url": "http://35.192.73.70:4100",
+    "meta_url": "https://meta.qa.talentscreen.io",
+    "app_url": "https://app.qa.talentscreen.io/assets/logos/pushicon.png",
+    "mysql": {
+      "username": "whiteboxqa",
+      "password": "Innovapath1*",
+      "host": "mysqldb",
+      "database": "talentdb",
+      "port": 3306
+    },
+    "mongodb": {
+      "host": "mongodatabase",
+      "username": "ipengr",
+      "password": "Excellence123"
+    },
+    "es": {
+      "host": "es:9200",
+      "indexName": "elastic",
+      "type": "resumes"
+    },
+    "es_skills": {
+      "host": "es:9200",
+      "indexName": "skills",
+      "type": "keywords",
+      "id": "A"
+    },
+    "es_job": {
+      "host": "es:9200",
+      "indexName": "jobs",
+      "type": "postings"
+    },
+    "talentScreenSecret": {
+      "facebook": "6035ba46d41fa2fa8e70bcbd2675cab2",
+      "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+      "linkedin": "HPpt9Jn34vRnUjcJ",
+      "github": "df1639b5c97b506e39fc4baed5810ff17a6b7f70"
+    },
+    "firebase_connections": {
+      "gcmKey": "AIzaSyDaRBJI7Mzdb4fmsgFvbbVrpZOIaMjRc3w",
+      "databaseURL": "https://qa-notifications.firebaseio.com",
+      "serviceAcountKey": {
+        "type": "service_account",
+        "project_id": "qa-notifications",
+        "private_key_id": "2d50e14e2073b003d23bb85a35dbbc73564af6bf",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkh/0leuNbyAB4\n0vHnk7mCj0AgAAHL/b07+U09aY06Fx0iWyrpRyEL1Nr54Cy/9YrHYdKCPrmmP+7B\nD4pTIXCpG37YJ8La/ycQ8MgU28nbb0mw2GXfaUSNsBleTMx396XS9ZQ/fl9uMhG1\ngxHgNW417aAvPiZyTktg77+5BXrMMiVRiPdnqGw94GgorNuTsP5eSxiQDOPr5HsU\nmOg7s43hdo4eS+1+gWPRJFfZQCxOKnSkGD00vxAte0BoJjsK8zyCrxj9IP4GwtQ1\n9NoaNqJ+buVERh6LKBkmGxPSNjvAMX/8icsrI0UjBUOz4im/FVpplT/bs+PcPM6H\nZNWZOmSnAgMBAAECggEATkXLrqr5ws4xO0nPf4YNuQkBTrfyIuPBxOhjUJYIc9xP\nJesNTRFjrUdELZ/yahgcP6JQDVpd47OCmCIWglnkSO8ltxujXaAJK8wAw7uUGmql\nOhaY0GI6FNX0G6KZm3EbWHMwZcxvBfOX7Sw/stR4a/tyO0dr7vFEdwdXxGPQ+ZcW\nV/pChm5iztGqUtkNiPVyVxLTXSP1U9nHESWKxk+/9BirxRo9CauCtiuC0e3Fep5M\n5ec678JBWK9rG0aY08CEZacimGmSNsOeZ3bzZHANmS8KRTkt6ZAGvZkIJkhnQASu\nAuorM7Y4Q9DskFbc2av/seZ5QN/pH7Zr1Um+JbwqIQKBgQDNT9RF5RUcMQmCWlNc\n/cYKDDRf3Ro3XNqsWfdzgHE7wBVOHZggL/BHKuHLhi/9mxvPoDSpIA20sQKeB11N\nnShPM67bOItAU58mvP9flH9N14xELR77r7XeZuUFz/ZN9vCPiOt4OqyvJbNtOtlj\n8WiYPCwFlPlQo1QCkNkh4K8nvwKBgQDNJrtsFtttXqH6JgO0IxrMBGdl+4WH24Wr\nfyEetxEzcHImMIGZaiaplZLTjPIBArzeKVicJvoY1rPzoKsSW9Uj4ICTbYw+eh/G\nq85jOYovzrxe8O1ncfPtOPbqMsnC2yM7XxLA+6a37uQ8PrVn2YZBJt+vb10A4/JP\nBzNwdhk9GQKBgEWg9yqlIF2pO8Jbg74bypgJv5FrWMLB2N9uu38OZliPMiqF2tu/\npktcfasaXRgzDGGDwZhB6KQJDAwwDzKNQ+hobLqoGIG+WlE285ykre/mVAmjC8jr\ntFAysSUhfDTAtKDZHJJvw7S6onk+5g8BBinq7jsOZOc2HP2pxhm5K23dAoGBAKcj\nBBT2tkRvkcVrzR6obv+CIv9KIKrjpQ5oX4JXoVLoLIeCg0OK4P7OljV2If/CzD6v\nLrrhYmZ0HV3CKz2kxYwaLoZt/JE2C8dfV6EtUrDKXFt5K+FYTGObQkbho9D1mcmY\nFn5VR6mYniea6041QRS5aAnUz8+W5mWON1FLVhqZAoGBAIH2xMO0ch8YgquBPFj3\nKpm/JmhkYsErIdE+DHZtqBlaykUzo11N31ofTR5nwmGh8WrM8THEphHqEdfJDjFu\nXlZHRRgoqRbPLTfWF5GPUddBn98Ld1OXDOzW1yJcICMcDlg3EgjHjaNkwnFcCKMg\nf6/58IHCIgss9N1JMMkgCFVi\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-p4fdk@qa-notifications.iam.gserviceaccount.com",
+        "client_id": "116395969059000302393",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-p4fdk%40qa-notifications.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "qa": {
+    "api_url": "api.qa.talentscreen.io",
+    "base_url": "https://api.qa.talentscreen.io",
+    "meta_url": "https://meta.qa.talentscreen.io",
+    "app_url": "https://app.qa.talentscreen.io/assets/logos/pushicon.png",
+    "ops_Url": "https://ops.qa.talentscreen.io",
+    "es_host": "https://es.qa.talentscreen.io",
+    "google_token": "1/RmvG8e0Jk9I1gzl_KgEFD63HJI2A_qqhn7guqHDoYkA",
+    "mysql": {
+      "username": "whiteboxqa",
+      "password": "Innovapath1*",
+      "host": "mysql.qa.talentscreen.io",
+      "database": "talentdb",
+      "port": 3306
+    },
+    "mongodb": {
+      "host": "mongo.qa.talentscreen.io:27017",
+      "username": "ipkumar",
+      "password": "kumarip131"
+    },
+    "es": {
+      "indexName": "elastic",
+      "type": "resumes"
+    },
+    "es_skills": {
+      "indexName": "skills",
+      "type": "keywords",
+      "id": "A"
+    },
+    "es_job": {
+      "indexName": "jobs",
+      "type": "postings"
+    },
+    "organizations": {
+      "indexName": "organizations",
+      "type": "details"
+    },
+    "talentScreenSecret": {
+      "facebook": "6035ba46d41fa2fa8e70bcbd2675cab2",
+      "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+      "linkedin": "HPpt9Jn34vRnUjcJ",
+      "github": "df1639b5c97b506e39fc4baed5810ff17a6b7f70"
+    },
+    "firebase_connections": {
+      "gcmKey": "AIzaSyDaRBJI7Mzdb4fmsgFvbbVrpZOIaMjRc3w",
+      "databaseURL": "https://qa-notifications.firebaseio.com",
+      "serviceAcountKey": {
+        "type": "service_account",
+        "project_id": "qa-notifications",
+        "private_key_id": "2d50e14e2073b003d23bb85a35dbbc73564af6bf",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkh/0leuNbyAB4\n0vHnk7mCj0AgAAHL/b07+U09aY06Fx0iWyrpRyEL1Nr54Cy/9YrHYdKCPrmmP+7B\nD4pTIXCpG37YJ8La/ycQ8MgU28nbb0mw2GXfaUSNsBleTMx396XS9ZQ/fl9uMhG1\ngxHgNW417aAvPiZyTktg77+5BXrMMiVRiPdnqGw94GgorNuTsP5eSxiQDOPr5HsU\nmOg7s43hdo4eS+1+gWPRJFfZQCxOKnSkGD00vxAte0BoJjsK8zyCrxj9IP4GwtQ1\n9NoaNqJ+buVERh6LKBkmGxPSNjvAMX/8icsrI0UjBUOz4im/FVpplT/bs+PcPM6H\nZNWZOmSnAgMBAAECggEATkXLrqr5ws4xO0nPf4YNuQkBTrfyIuPBxOhjUJYIc9xP\nJesNTRFjrUdELZ/yahgcP6JQDVpd47OCmCIWglnkSO8ltxujXaAJK8wAw7uUGmql\nOhaY0GI6FNX0G6KZm3EbWHMwZcxvBfOX7Sw/stR4a/tyO0dr7vFEdwdXxGPQ+ZcW\nV/pChm5iztGqUtkNiPVyVxLTXSP1U9nHESWKxk+/9BirxRo9CauCtiuC0e3Fep5M\n5ec678JBWK9rG0aY08CEZacimGmSNsOeZ3bzZHANmS8KRTkt6ZAGvZkIJkhnQASu\nAuorM7Y4Q9DskFbc2av/seZ5QN/pH7Zr1Um+JbwqIQKBgQDNT9RF5RUcMQmCWlNc\n/cYKDDRf3Ro3XNqsWfdzgHE7wBVOHZggL/BHKuHLhi/9mxvPoDSpIA20sQKeB11N\nnShPM67bOItAU58mvP9flH9N14xELR77r7XeZuUFz/ZN9vCPiOt4OqyvJbNtOtlj\n8WiYPCwFlPlQo1QCkNkh4K8nvwKBgQDNJrtsFtttXqH6JgO0IxrMBGdl+4WH24Wr\nfyEetxEzcHImMIGZaiaplZLTjPIBArzeKVicJvoY1rPzoKsSW9Uj4ICTbYw+eh/G\nq85jOYovzrxe8O1ncfPtOPbqMsnC2yM7XxLA+6a37uQ8PrVn2YZBJt+vb10A4/JP\nBzNwdhk9GQKBgEWg9yqlIF2pO8Jbg74bypgJv5FrWMLB2N9uu38OZliPMiqF2tu/\npktcfasaXRgzDGGDwZhB6KQJDAwwDzKNQ+hobLqoGIG+WlE285ykre/mVAmjC8jr\ntFAysSUhfDTAtKDZHJJvw7S6onk+5g8BBinq7jsOZOc2HP2pxhm5K23dAoGBAKcj\nBBT2tkRvkcVrzR6obv+CIv9KIKrjpQ5oX4JXoVLoLIeCg0OK4P7OljV2If/CzD6v\nLrrhYmZ0HV3CKz2kxYwaLoZt/JE2C8dfV6EtUrDKXFt5K+FYTGObQkbho9D1mcmY\nFn5VR6mYniea6041QRS5aAnUz8+W5mWON1FLVhqZAoGBAIH2xMO0ch8YgquBPFj3\nKpm/JmhkYsErIdE+DHZtqBlaykUzo11N31ofTR5nwmGh8WrM8THEphHqEdfJDjFu\nXlZHRRgoqRbPLTfWF5GPUddBn98Ld1OXDOzW1yJcICMcDlg3EgjHjaNkwnFcCKMg\nf6/58IHCIgss9N1JMMkgCFVi\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-p4fdk@qa-notifications.iam.gserviceaccount.com",
+        "client_id": "116395969059000302393",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-p4fdk%40qa-notifications.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "stag": {
+    "api_url": "api.stag.talentscreen.io",
+    "base_url": "https://api.stag.talentscreen.io",
+    "meta_url": "https://meta.stag.talentscreen.io",
+    "app_url": "https://app.stag.talentscreen.io/assets/logos/pushicon.png",
+    "ops_Url": "https://ops.stag.talentscreen.io",
+    "es_host": "https://ipengr:Excellence123@es.stag.talentscreen.io",
+    "google_token": "1/pgFJKToFdhavKxiW5ZKfUNp4ITznSPtFHD_kZn23_gg",
+    "mysql": {
+      "username": "whiteboxqa",
+      "password": "Innovapath1*",
+      "host": "mysql.stag.talentscreen.io",
+      "database": "talentdb",
+      "port": 3306
+    },
+    "mongodb": {
+      "host": "mongo.stag.talentscreen.io:27017",
+      "username": "ipkumar",
+      "password": "kumarip131"
+    },
+    "es": {
+      "indexName": "elastic",
+      "type": "resumes"
+    },
+    "es_skills": {
+      "indexName": "skills",
+      "type": "keywords",
+      "id": "A"
+    },
+    "es_job": {
+      "indexName": "jobs",
+      "type": "postings"
+    },
+    "organizations": {
+      "indexName": "organizations",
+      "type": "details"
+    },
+    "talentScreenSecret": {
+      "facebook": "6035ba46d41fa2fa8e70bcbd2675cab2",
+      "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+      "linkedin": "oSdLBNSSriioL56k",
+      "github": "7d1f5cc6e414cbfb533cf8e9ca478acfc2888ce5"
+    },
+    "firebase_connections": {
+      "gcmKey": "AIzaSyCyCvmW-L7xGLVHZdP4wIhQpQPEuJA8nVs",
+      "databaseURL": "https://stag-notifications-5d067.firebaseio.com",
+      "serviceAcountKey": {
+        "type": "service_account",
+        "project_id": "stag-notifications-5d067",
+        "private_key_id": "bddd6136cbb7fcb57fd6ebdcda74efb65d4b82da",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDHasdx13nthX+e\nOlnln+f9aSezN53JAztREwCoIViR7ZPi1SI4BhxEsigKT9N8sQlmdr0KFHuwGqW5\nPQ3YLP53jkVfVz8L057scgnjxUl4VTHH+rn/M9sRJqOzTTZMvyuvMyyySJ0UMVQd\nbnUK+Pjg16Yivf3Unb6MMUyaJI4TpKd3SjuzJRRqh3vNkpTwSqTrWj08QVZ+keh+\n5HVyoIy73Yw9T/g7O2OdhEHNj5r7zq95tgP9Jwxf3qaPjvDdFCdSvArYfUAkgoju\nx8jUNbKyAf323VcKNxF+IeUOfDeNoqaG5emE6dx9jCu620lyVG8xIHADktoNVw0D\n+SurJL85AgMBAAECggEABajFOvj4XfoiSGdjxnlapDWMIcEH7mzT7b22MK9MlAyb\n3C28BD7BJd5v9jX0fKcKCyE+xWbWKUXiUt7Vkh9Zw+MS2y0uzfs+GPv2BaOjTYHO\ncTxPc7uBIawY7HVaH4Sz3MudHryij5CEUHcCZZKx/nCER5tgdRyabCBYig3UReCj\nKBNbkUxHwPXauJeLPDZ6Prjop9YGcwtG1eXotSSHsoidBe/+7D65uQGnBiqMc05e\nCraMt77JuucyQgBWZk2ylzTyfcua03iuqZXJfuv8Vqu+kGe9unkAl9wDqlAM11eX\n0UH08f3o3NhR+UgeG/7sXv1C1PiSq5XcD9kNHSPpYQKBgQDllZ6buEgAj5j+5t1x\nwUZxG/YwpQ5lMYaopGNGyz6JRqAVZn41+iYWRp36dXr1S1qwOu7oIk0Z5AzcaHHE\nh/H9B3abZ9ummrd4pYsKCQIUKlwKGZqyp2JJ9mco5SKNSCDTpRap0WKNaQViqMuO\nIP6/qOXeM+gsP3abAEecJUVr4QKBgQDeXJWQpUmRbAKlGbylRfBwaiZiaYLFYhKC\nboqHB/nbQdsyLq9d+2pEYL20OltYeVWvTC94LFXqeVoe6gEXHbOID0msy6++PoSo\nXNvDoldagynVoYPvhvuEXKY9al/a6LFXKTV5EkO6i3ohRNbh9nfbWWlpBP/gy+2s\nXS5JzBn+WQKBgEcE1pCTG+rYgNpxLhVPVWwN20VG+cIB5Qbr+y3eF1U9vK2CDA7E\nd92yMJJWnxecHMyhHmA+pB0bN4NC59aEuy2rjlwab48FEzZF91G+YZ89T0VskDct\nojEBAP5ciyirJER0MCON+u+Fij3vuzAXMta0946Z/fsaEqV2G7DIssXhAoGBAIns\n7czx6YctcxqLs0rk7fYcscB7Z+UdJxQGkyCc3uuUlu0yrg5io5DUXPdM91oSsQZy\nAEPPZF9zdGYWiiSXhMPRj8aB9XnQ96IjLyHTMdHv5+QeMmNB3ANHIMqZj+mOSmoh\nIoz9uksctt2qAIvawI+rj0nYEwuSEtPGXK7jzf/JAoGBALALcuES9ZPQPs+2QNNj\n9zlQRuWt2DqlqmJbGJzhl2KyA78mqDFUpToYfr3nTCEFN9VakKMdyiP/DQmWbP6D\n+9CSPTUF3mFY7nqK83PoscuofK9pxqu1WMxT2u2A96xBfU+QtPvfE8NRlEnb9nMQ\nIfoj7DSreGRYvyC3l4tdjKSf\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-2vj2j@stag-notifications-5d067.iam.gserviceaccount.com",
+        "client_id": "117324797469905282979",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-2vj2j%40stag-notifications-5d067.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "production": {
+    "api_url": "api.talentscreen.io",
+    "base_url": "https://api.talentscreen.io",
+    "meta_url": "https://meta.talentscreen.io",
+    "app_url": "https://app.talentscreen.io/assets/logos/pushicon.png",
+    "ops_Url": "https://ops.talentscreen.io",
+    "es_host": "https://ipengr:Excellence123@es.talentscreen.io",
+    "google_token": "1/HVgD9B3NGJJ1yugSxvrZKO1ap8YF4XLvzJ2AR9xYyFFmy88fMYT4mqHALaIJcESW",
+    "mysql": {
+      "username": "whiteboxqa",
+      "password": "Innovapath1*",
+      "host": "mysql.echo.talentscreen.io",
+      "database": "talentdb",
+      "port": 3306
+    },
+    "mongodb": {
+      "host": "mongo.echo.talentscreen.io:27017",
+      "username": "ipkumar",
+      "password": "kumarip131"
+    },
+    "es": {
+      "indexName": "elastic",
+      "type": "resumes"
+    },
+    "es_skills": {
+      "indexName": "skills",
+      "type": "keywords",
+      "id": "A"
+    },
+    "es_job": {
+      "indexName": "jobs",
+      "type": "postings"
+    },
+    "organizations": {
+      "indexName": "organizations",
+      "type": "details"
+    },
+    "talentScreenSecret": {
+      "facebook": "6035ba46d41fa2fa8e70bcbd2675cab2",
+      "google": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+      "linkedin": "dHfT0NFCGDSGvBJ1",
+      "github": "5153f203cb89e8df5746b40bc7e2ee3bc66931eb"
+    },
+    "firebase_connections": {
+      "gcmKey": "AIzaSyAoHFIFF0hFiU_BFktci-syG9auvZxRRqg",
+      "databaseURL": "https://prod-notifications.firebaseio.com",
+      "serviceAcountKey": {
+        "type": "service_account",
+        "project_id": "prod-notifications",
+        "private_key_id": "478c34947c91b3ad2ca8348596be8e5486ecbe1b",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9ZBtRu92HtYHo\nITyg0ttdm3WomW/q/sZ+VwVHjF+mODwvqsTaT9Oe8oZqWOaDdVKl4r7D9g9MMWRm\nLL3ORlL0yMx9tOEDceSE9uMyKQtVmI6qVnbEPEqy0Wkroe1Fa1qt0EBlrVy9TVpU\nQVS/as476I7iHfM1i2gb3MBLE7Cf+/bh0O+h4ReaLOQ/1DH1TRt8eWmxo+5ww4ba\nd1tBPPeGX8Uog1moFvlCpdAZoSjRFU54AWvQQ5ZKkEM3A4SJB7TsR/br5ePLVKNc\nSvY5iZh9n4D5/CXXqZKs9r1qS4juTfnRIiuSfad9KQo33neuJWjo1gujT6Fw2Emq\nBo6uw9FlAgMBAAECggEAFnlnqIZTnoQSe1peWHNNJsmI5831cvxyz5FCBiCJRS9N\nLRblr0ZjxWvgOYR9LkJg4WCL5LMxU4hU8q8CgxTjSTr+0TgCr6b3SDQH9+7Y8npd\nC6ehBl5lOt0QzuWzQ1ae9xtMWQR+idRBENiD1wc0m/VX50tIjiUR4KSMiRw4DHPk\nfWP6zgyjqMuC4E+5wnIq6VbF4dzJs64O54Ox23iYJo/t19MuV5td21CEIjFKhxDp\nqB01fk8YSVGftGdHiwcivDMLYdBqoGv3zMmdw5B4jNPc5XfnvbNjr9YWocqLda9U\nIjPx8uCcsHPGKAZi6G6xBZvur4L4UbEMri6FFj20TQKBgQDwW1E/SonL9KpeeeO2\nWko2+breVsmBSsS/mb2usplTmUFMFaqSTeYwFU65UkcPx1/WOZP/1FX2jGJvduxC\nyUiiJH4kXz1cTmXD/TF2Dfx5kXHSWilZyrWUMTiPYG4zmo/eltd7XsYzaxu3lpP2\nHSor6uRtGr9MYTdiRbNaG1/NPwKBgQDJt6EX/2dNkwmYHTeMryBXkurPq74ZQk/v\nEHLKTyjFfzzPQosnUGQF9BWReNzKMEYV83qAxV1LMmn3f3liycOO1fM/HcQAPCom\nWY5GKdTxdB1MWrxn/n98ayjqh07CT0XU3YcFbnS+ZXMuwaoAkX0Ebf8r7sjCMac2\nOM0n+eckWwKBgDz8nrf1fNNgiF4ihXH+pPggE5dY5BZHV3baVrPeI2N/7n6UvMwU\nsgSfU3NYeil5yEp+H5x5TzqY0l1ACqDDnAdwRQWLmPEz/0RkmUlAMUDTc9MRB47+\nDWbFunk+2ZeEb17mXVSzbo0bb1P9BBwduFaeakl40PNbc4ce8mw5p+xXAoGBALwF\nRMwYjZK6ToQSH7greKsIT4SZIc1riRRdsZGvrWJBkk3iSdCwVztRY1VAYhS4YGuP\nko066hXwfONsV5nkVTrrZBtdxFcvvV4XtcziqxEQ2UpVfS42A2DWhcHts1TdDUs3\n3eYLKhhaeb2IWMzEz9H0MZgir9CK9cBNu7TadD/nAoGBAKrVYWLI7PZFQpiL+h/C\nQhJ5m/idJ78B8x7W6YLxZEWSR1mBoIc4kR3Oi/dRsW+sAJ2HaDifV1D52aSIT3OV\nU0HfpmnLbsSMKLNpU+yRJqLVJXWKyDGjOpvtGmc+QXbA2pYNUSFn16rO3mmmkBLS\n2C23AqVGktulUiCwAIwqrshD\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-d92c3@prod-notifications.iam.gserviceaccount.com",
+        "client_id": "108444424987749195644",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-d92c3%40prod-notifications.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "internalResumeApiUrl": "http://130.211.200.199/api/v1/utils/resumes",
+  "cvScanner": "https://glossarytech.com/scanner/analyze",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "superCredentials": {
+    "app_type": "talentscreen",
+    "type": "login",
+    "email_address": "kumar@whitebox-learning.com",
+    "password": "Excellence@123"
+  },
+  "talentMetaSql": {
+    "username": "whiteboxqa",
+    "password": "Innovapath1*",
+    "host": "mysql.dev.talentscreen.io",
+    "database": "talent_meta",
+    "port": 3306
+  },
+  "googleApi": {
+    "client_id": "357540165806-2e7qn3fstb3f86l85qhs68fd2gcok0u3.apps.googleusercontent.com",
+    "client_secret": "D1ll4wi6DWhG-LS-Z6K8Ysdy",
+    "grant_type": "refresh_token"
+  },
+  "isLocalMachine": false,
+  "opsUrl": "https://ops.dev.talentscreen.io/v1/private/keys",
+  "accessKey": "cixn5bd2l000080u0fy940dtm" ,
+  "questionLimit": 5
+}
+

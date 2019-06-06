@@ -1,0 +1,320 @@
+{
+  "ANALYTICS_QUESTIONS": {
+    "TEST_FOR_GET_ALL_ANALYTICS_QUESTIONS": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ALL_ANALYTICS_QUESTIONS_OF_AUDIO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CHOICE": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_TYPED": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_VIDEO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_AUDIO_AND_CHOICE": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_AUDIO_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_AUDIO_AND_TYPED": {
+      "expected": {
+        "count": 1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_AUDIO_AND_VIDEO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CHOICE_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CHOICE_AND_TYPED": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CHOICE_AND_VIDEO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CODING_AND_TYPED": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_CODING_AND_VIDEO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_TYPED_AND_VIDEO": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_AUDIO_AND_CHOICE_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": "subjectid",
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_SUBJECTID_VIDEO_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_SUBJECTID_VIDEO_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    },
+    "TEST_FOR_GET_ANALYTICS_QUESTIONS_OF_SUBJECTID_VIDEO_AND_CODING": {
+      "expected": {
+        "count": 1,
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "levelid": "levelid",
+        "questionid": "questionid",
+        "Highest_average_time": "Highest_average_time",
+        "totaltime": "totaltime",
+        "questiontype": "questiontype",
+        "reviewDone": "reviewDone"
+      }
+    }
+  }
+}

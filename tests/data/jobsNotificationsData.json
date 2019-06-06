@@ -1,0 +1,165 @@
+{
+  "JOBS_NOTIFICATIONS": {
+    "TEST_FOR_BASIC_GET_ALL_JOBS_NOTIFICATIONS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_JOB_NOTIFICATION_BY_ID": {
+      "input": {
+        "id": "58ad459acefc4e895fc43340"
+      },
+      "expected": {
+        "_id": "58ad459acefc4e895fc43340",
+        "name": "MassEmailCrawler",
+        "module": "mass-email-crawler",
+        "description": "update mongo db with marketing mails list",
+        "product_line": "Innovapath",
+        "lastmoddatetime": "2017-03-22T08:41:44.000Z",
+        "active": false,
+        "schedule": {
+          "type": "minutes",
+          "time": 10,
+          "end_date": "2018-12-12T00:00:00.000Z",
+          "start_date": "2013-01-01T00:00:00.000Z"
+        },
+        "job_details": {
+          "massemail_list": {
+            "test_email_list": []
+          },
+          "crawler": {
+            "email_list": [
+              {
+                "email_id": "marketing21.ip@gmail.com",
+                "password": "Crawler!23",
+                "delete_after_read": false
+              },
+              {
+                "email_id": "sonu.clr1@gmail.com",
+                "password": "Crawler!23",
+                "delete_after_read": false
+              },
+              {
+                "email_id": "sonu.clr2@gmail.com",
+                "password": "Crawler!23",
+                "delete_after_read": false
+              },
+              {
+                "email_id": "sonu.clr3@gmail.com",
+                "password": "Crawler!23",
+                "delete_after_read": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_JOBS_NOTIFICATIONa": {
+      "input": {
+        "name": "MassEmailCrawlerTestAutomation",
+        "module": "testingModule",
+        "description": " testing for updating mongo db with marketing mails list or not",
+        "product_line": "Innovapath",
+        "job_details": {
+          "crawler": {
+            "email_list": [
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "marketing21.ip@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr1@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr2@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr3@gmail.com"
+              }
+            ]
+          }
+        },
+        "active": false,
+        "schedule": {
+          "type": "minutes",
+          "time": 10,
+          "start_date": "01-01-2013",
+          "end_date": "12-12-2018"
+        }
+      },
+      "expected": {
+        "__v": 0,
+        "name": "MassEmailCrawlerTest456789",
+        "module": "testingModule",
+        "description": " testing for updating mongo db with marketing mails list or not",
+        "product_line": "Innovapath",
+        "lastmoddatetime": "2017-03-07T20:17:10.000Z",
+        "active": false,
+        "schedule": {
+          "type": "minutes",
+          "time": 10,
+          "start_date": "01-01-2013",
+          "end_date": "12-12-2018",
+          "reslt":{
+            "n": "1",
+            "nModified": "0",
+            "ok": "1"
+          }
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_JOBS_NOTIFICATIONS": {
+      "input": {
+        "name": "MassEmailCrawlerTestAutomation",
+        "module": "testingModule",
+        "description": " testing for updating mongo db with marketing mails list or not",
+        "product_line": "Innovapath",
+        "job_details": {
+          "crawler": {
+            "email_list": [
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "marketing.ip@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr1@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr2@gmail.com"
+              },
+              {
+                "delete_after_read": false,
+                "password": "Crawler!23",
+                "email_id": "sonu.clr3@gmail.com"
+              }
+            ]
+          }
+        },
+        "active": false,
+        "schedule": {
+          "type": "minutes",
+          "time": 10,
+          "start_date": "01-01-2013",
+          "end_date": "12-12-2018"
+        }
+      },
+      "expected":  {
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
+      }
+    }
+  }
+}

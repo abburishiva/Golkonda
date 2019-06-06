@@ -1,0 +1,9 @@
+{
+  "PUBLIC_REVIEWS":{
+    "TEST_FOR_BASIC_GET_ALL_PUBLIC_REVIEWS":{
+      "expected":{
+        "count":1
+      }
+    }
+  }
+}

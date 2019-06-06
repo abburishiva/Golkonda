@@ -1,0 +1,26 @@
+{
+  "EMPLOYER_INTERVIEWS_BASIC_DELETE":{
+    "TEST_FOR_BASIC_DELETE_SUPER": {
+      "expected": {
+        "deleteStatusCode":204,
+        "getStatusCode":404
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_EMPLOYEE": {
+      "expected": {
+        "deleteStatusCode":204,
+        "getStatusCode":404
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_CANDIDATE": {
+      "expected": {
+        "statusCode":403
+      }
+    },
+    "TEST_FOR_BASIC_DELETE_NEW_USER": {
+      "expected": {
+        "statusCode":401
+      }
+    }
+  }
+}

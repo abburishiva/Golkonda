@@ -1,0 +1,698 @@
+{
+  "UPDATE_CANDIDATES_INTERVIEWS":{
+    "WITH_VALID_DATA_FOR_SUPER": {
+      "input": {
+        "subject": {
+          "type": "employer",
+          "id": "56",
+          "name": "Javascript"
+        },
+        "detail": {
+          "level": "expert",
+          "makeChallenge": "user"
+        },
+        "positionDetails": {
+          "company": {
+            "name": "IP",
+            "location": "india",
+            "phone": 9848259830
+          },
+          "experience": 2,
+          "description":"may be required",
+          "position":"SOFTWARE",
+          "positionType": "perment",
+          "skills": ["HTML","CSS", "javascript"]
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "pravindra.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          }
+        ],
+        "definitionId": "59579267bdbf0e1ab3dd2967",
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEWS",
+          "subject": "Your Interview scheduled by kumar wbl",
+          "redirect_url": "https://app.dev.talentscreen.io/website-candidate/take-interview/5969f7037111cc48699de734",
+          "shareInterviewdata": {
+            "linkExpires": "The link will be available from"
+          }
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subject": {
+          "name": "Javascript",
+          "id": 56,
+          "type": "employer"
+        },
+        "quiz": {
+          "makeChallenge": "user",
+          "level": "expert"
+        },
+        "email": "pravindra.ip@gmail.com",
+        "interviewDetail": {
+          "definitionId": "59579267bdbf0e1ab3dd2967",
+          "interviewerEmail": "kumar@whitebox-learning.com",
+          "emp_id": "591af2215a19a2354ce16cac",
+          "interviewerName": "Kumar velupula",
+          "interviewName": "hello",
+          "interviewType": "schedule",
+          "interviewStartDateTime": "21/08/2017 20:40:00",
+          "interviewExpiredDateTime": "23/08/2017 04:49:00",
+          "events": [
+            "interviewOpened",
+            "interviewStarted",
+            "interviewCompleted"
+          ],
+          "access": {
+            "live": false,
+            "collaboration": true,
+            "screenSharing": true
+          },
+          "allowTime": 60
+        }
+      }
+    },
+    "WITH_VALID_DATA_FOR_EMPLOYEE": {
+      "input": {
+        "subject": {
+          "type": "employer",
+          "id": "56",
+          "name": "Javascript"
+        },
+        "detail": {
+          "level": "expert",
+          "makeChallenge": "user"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subject": {
+          "name": "Javascript",
+          "id": "56",
+          "type": "employer"
+        },
+        "detail": {
+          "makeChallenge": "user",
+          "level": "expert"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        
+        "_id": "59788871deb09f45b9204b50",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      }
+    },
+    "WITH_VALID_DATA_FOR_CANDIDATE": {
+      "input": {
+        "subject": {
+          "type": "employer",
+          "id": "56",
+          "name": "Javascript"
+        },
+        "detail": {
+          "level": "expert",
+          "makeChallenge": "user"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        
+        "subject": {
+          "name": "Javascript",
+          "id": "56",
+          "type": "employer"
+        },
+        "detail": {
+          "makeChallenge": "user",
+          "level": "expert"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        
+        "_id": "59788871deb09f45b9204b50",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      }
+    },
+    "WITH_VALID_DATA_FOR_NEW_USER": {
+      "input": {
+        "subject": {
+          "type": "employer",
+          "id": "56",
+          "name": "Javascript"
+        },
+        "detail": {
+          "level": "expert",
+          "makeChallenge": "user"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        
+        "subject": {
+          "name": "Javascript",
+          "id": "56",
+          "type": "employer"
+        },
+        "detail": {
+          "makeChallenge": "user",
+          "level": "expert"
+        },
+        "interviewName": "Test Interview",
+        "interviewStartDateTime": "7/26/2017, 6:00:00 AM",
+        "interviewExpiredDateTime": "7/27/2017, 7:00:00 AM",
+        "email": "kumar@whitebox-learning.com",
+        "emp_id": "591af2215a19a2354ce16cac",
+        "_id": "59788871deb09f45b9204b50",
+        "questions": {
+          "source": "talentscreen",
+          "type": "user",
+          "list": [
+            {
+              "question": "<p>Explain <strong>HTML DOM</strong> and it's relevance to JavaScript in detail?.</p><p><br></p><p>How do we Access the DOM?</p>",
+              "answer": "The Document Object Model allows JavaScript to obtain information about a page and manipulate it by adding or removing HTML elements,\n or by altering their attributes.  The DOM can be viewed as a programming interface for HTML, whereby you can access and alter its structure, \n attributes, styles, and events.\n “The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Essentially,\n it connects web pages to scripts or programming languages.\ufffd\u009d\n",
+              "time": 130,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <u>drawback</u> of creating <strong>true private methods</strong> in JavaScript?</p>",
+              "answer": "",
+              "time": 75,
+              "questiontype": "Video"
+            },
+            {
+              "question": "<p>What is the <strong>significance and benefits</strong> of including<strong>&nbsp;'use strict' </strong>at the beginning of a JavaScript source file?.</p>",
+              "answer": "",
+              "time": 120,
+              "questiontype": "Video"
+            }
+          ]
+        },
+        "events": [
+          "interviewCompleted",
+          "interviewExpired"
+        ],
+        "sendEmail": [
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": true,
+              "public": true
+            }
+          },
+          {
+            "email": "dbadri.ip@gmail.com",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksrikanth.ip@gmail.com",
+            "access": {
+              "live": true,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "definition": {
+          "id": "59579267bdbf0e1ab3dd2967",
+          "name": "test2"
+        }
+      }
+    }
+  }
+}

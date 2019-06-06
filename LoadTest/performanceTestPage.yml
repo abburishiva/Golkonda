@@ -1,0 +1,647 @@
+config:
+  target: "https://api.qa.talentscreen.io/v1/"
+  phases:
+    - duration: 2
+      arrivalRate: 2
+    - duration: 4
+      arrivalRate: 1
+      rampTo: 7
+    - duration: 5
+      arrivalRate: 5
+  processor: "./functions.js"
+defaults:
+    headers:
+      x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+scenarios:
+  - name: "TEST FOR LOGIN"
+    flow:
+
+      - function: "generateRandomData"
+      - post:
+          url: "https://api.qa.talentscreen.io/v1/user/authenticate"
+          json:
+            app_type: "talentscreen"
+            type: "login"
+            email_address: "{{ email_address }}"
+            password: "{{ password }}"
+            role: "candidate"
+
+      - log: "Sent a request to /user/authenticate with {{ name }}, {{ email }}, {{ password }}"
+  - name: "TEST FOR REGISTER"
+    flow:
+
+      - function: "generateRandomData"
+      - post:
+          url: "https://api.qa.talentscreen.io/v1/user/register"
+          json:
+            app_type: "talentscreen"
+            type: "string"
+            email_address: "{{ email_address }}"
+            message_type: "string"
+            password: "{{ password }}"
+            role: "candidate"
+
+      - log: "Sent a request to /user/register with {{ name }}, {{ email }}, {{ password }}"
+  - name: "TEST FOR CODING QUESTIONS"
+    flow:
+
+        - function: "generateRandomData"
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/coding/questions"
+            json:
+              subjectid: "{{ subjectid }}"
+              levelid: "{{ levelid }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$.id"
+              as: "id"
+
+        - log: "Sent a request to /coding/questions with {{ subjectid }}, {{ levelid }}"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/coding/questions/ {{ id }}"
+            json:
+              levelid: "{{ levelid }}"
+              question: "{{ question }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /coding/questions with {{ id }},{{ subjectid }}, {{ levelid }}, {{ question }}"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/coding/questions/ {{ id }}"
+            x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for coding questions"
+  - name: "TEST FOR CHOICE QUESTIONS"
+    flow:
+
+      - function: "generateRandomData"
+      - post:
+          url: "https://api.qa.talentscreen.io/v1/choice/questions"
+          json:
+            subjectid: "{{ subjectid }}"
+            levelid: "{{ levelid }}"
+            question: "{{ question }}"
+            choice1: "{{ choice1 }}"
+            choice2: "{{ choice2 }}"
+            choice3: "{{ choice3 }}"
+            choice4: "{{ choice4 }}"
+            headers:
+                x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+                json: "$.id"
+                as: "id"
+
+      - log: "Sent a request to /choice/questions with {{ subjectid }}, {{ levelid }}, {{ question }}, {{ choice1 }}, {{ choice2}}, {{ choice3 }}, {{ choice4 }}"
+
+      - put:
+          url: "https://api.qa.talentscreen.io/v1/choice/questions/ {{ id }}"
+          json:
+            levelid: "{{ levelid }}"
+            question: "{{ question }}"
+            choice1: "{{ choice1 }}"
+            choice2: "{{ choice2 }}"
+            choice3: "{{ choice3 }}"
+            choice4: "{{ choice4 }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+      - log: "Sent a request to /choice/questions with {{ id }},{{ subjectid }}, {{ levelid }}, {{ question }}, {{ choice1 }}, {{ choice2}}, {{ choice3 }}, {{ choice4 }}"
+
+      - delete:
+          url: "https://api.qa.talentscreen.io/v1/choice/questions/ {{ id }}"
+          headers:
+            x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+      - log: "Record with {{ id }} has been deleted"
+  - name: "TEST FOR CANDIDATES"
+    flow:
+
+      - function: "generateRandomData"
+      - post:
+           url: "https://api.qa.talentscreen.io/v1/candidates"
+           json:
+             app_type: "{{ app_type }}"
+             email_address: "{{ email_address }}"
+             password: "{{ password }}"
+             message_type: "{{ message_type }}"
+             type: "{{ type }}"
+             role: "{{ role }}"
+             headers:
+               x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+             capture:
+                 json: "$._id"
+                 as: "id"
+
+      - log: "Sent a request to /candidates with {{ id }}, {{ app_type }}, {{ email_address }}, {{ password }}, {{ message_type }}, {{ type}}, {{ role }}"
+
+      - put:
+          url: "https://api.qa.talentscreen.io/v1/candidates/ {{ id }}"
+          json:
+          app_type: "{{ app_type }}"
+          email_address: "{{ email_address }}"
+          password: "{{ password }}"
+          message_type: "{{ message_type }}"
+          type: "{{ type }}"
+          role: "{{ role }}"
+          headers:
+            x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+      - log: "Sent a request to /candidates with {{ id }}, {{ app_type }}, {{ email_address }}, {{ password }}, {{ message_type }}, {{ type}}, {{ role }}"
+
+      - delete:
+          url: "https://api.qa.talentscreen.io/v1/candidates/ {{ id }}"
+          headers:
+            x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+      - log: "Record with {{ id }} has been deleted for candidates"
+  - name: "TEST FOR COMMON TERMS"
+    flow:
+
+        - function: "generateRandomData"
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/common/terms"
+            json:
+              name: " {{ name }}"
+              description: "{{ description }}"
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+                 capture:
+                   json: "$._id"
+                   as: "id"
+
+        - log: "Sent a request to /coon/terms with {{ name }}, {{ description }}"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/common/terms/ {{ id }}"
+            json:
+            name: "{{ name }}"
+            description: "{{ description }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /common/terms with {{ name }}, {{ description }}"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/common/terms/ {{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for commonTerms"
+  - name: "TEST FOR GET ALL EMPLOYER INTERVIEWS"
+    flow:
+
+        - function: "generateRandomData"
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employers/{{employerid}}/interviews"
+            json:
+              emp_id: "{{ id }}"
+              challengeId: "{{ id }}"
+              type: "schedule" 
+              startDate: "{{ startDate}}"
+              endDate: "{{ endDate }}"
+              expiredTime: "{{ expiredTime }}"
+              access:
+              live: "{{ boolean }}"
+              collaboration: "{{ boolean }}"
+              screenSharing: "{{ boolean }}"
+              public: "{{ boolean }}"
+              events:
+              - "{{emp_int_events}}"
+              - "{{emp_int_events}}"
+              - "{{emp_int_events}}"
+              sendEmail:
+              - "{{email_address}}"
+              - "{{email_address}}"
+              - "{{email_address}}"
+              templateData:
+              message_type: "TS_EMPLOYER_INTERVIEW"
+              subject: "Interview Details"
+              redirect_url: "talentscreen.io/employer/interview"
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+                 capture:
+                   json: "$._id"
+                   as: "id"
+
+        - log: "Sent a request to /employer/interviews"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers/{{employerid}}/interviews/ {{ id }}"
+            json:
+              emp_id: "{{ id }}"
+              challengeId: "{{ id }}"
+              type: "schedule" 
+              startDate: "{{ startDate}}"
+              endDate: "{{ endDate }}"
+              expiredTime: "{{ expiredTime }}"
+              access:
+              live: "{{ boolean }}"
+              collaboration: "{{ boolean }}"
+              screenSharing: "{{ boolean }}"
+              public: "{{ boolean }}"
+              events:
+              - "{{emp_int_events}}"
+              - "{{emp_int_events}}"
+              - "{{emp_int_events}}"
+              sendEmail:
+              - "{{email_address}}"
+              - "{{email_address}}"
+              - "{{email_address}}"
+              templateData:
+              message_type: "TS_EMPLOYER_INTERVIEW"
+              subject: "Interview Details"
+              redirect_url: "talentscreen.io/employer/interview"
+  
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employer/interviews"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers/{{employerid}}/interviews/ {{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employer interviews"      
+  - name: "TEST FOR EMPLOYER INTERVIEWS"
+    flow:
+
+        - function: "generateRandomData"
+        
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/employers_interviews"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employers_interviews"
+            json:
+              emp_id: "{{ id }}"
+              challenge_id: "{{ id }}"
+              sendEmail:
+                - "{{ email_address}}"
+                - "{{ email_address}}"
+                - "{{ email_address}}"
+              type: "{{ type}}"
+              startDate: "{{ startDate}}"
+              endDate: "{{ endDate }}"
+              expiredTime: "{{ expiredTime }}"
+              events:
+                - "{{ emp_int_events }}"
+                - "{{ emp_int_events }}"
+                - "{{ emp_int_events }}"
+              access:
+                live: "{{ boolean }}"
+                collaboration: "{{ boolean }}"
+                screenSharing: "{{ boolean}}"
+                public: "{{ boolean }}"
+              templateData:
+                message_type: "TS_EMPLOYER_INTERVIEW"
+                subject: "Interview Details"
+                redirect_url: "talentscreen.io/employer/interview"
+              
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+                 capture:
+                   json: "$._id"
+                   as: "id"
+
+        - log: "Sent a request to /employer/interviews"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers_interviews/{{ id}}"
+            json:
+              emp_id: "{{ id }}"
+              challenge_id: "{{ id }}"
+              sendEmail:
+                - "{{ email_address}}"
+                - "{{ email_address}}"
+                - "{{ email_address}}"
+              type: "{{ type}}"
+              startDate: "{{ startDate}}"
+              endDate: "{{ endDate }}"
+              expiredTime: "{{ expiredTime }}"
+              events:
+                - "{{ emp_int_events }}"
+                - "{{ emp_int_events }}"
+                - "{{ emp_int_events }}"
+              access:
+                live: "{{ boolean }}"
+                collaboration: "{{ boolean }}"
+                screenSharing: "{{ boolean}}"
+                public: "{{ boolean }}"
+              templateData:
+                message_type: "TS_EMPLOYER_INTERVIEW"
+                subject: "Interview Details"
+                redirect_url: "talentscreen.io/employer/interview"
+  
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employer/interviews"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers_interviews/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employer interviews"      
+  - name: "TEST FOR EMPLOYER"
+    flow:
+
+        - function: "generateRandomData"
+        
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/employers"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+      
+            
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employer"
+            json:
+             app_type: "{{app_type}}"
+             email_address: "{{ email_address }}"
+             password: "{{ password }}"
+             message_type: "{{ message_type }}"
+             type: "{{ message_type }}"
+             role: "{{ role }}"
+             headers:
+                x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$._id"
+              as: "id"
+
+        - log: "Sent a request to /employers"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers/{{ id}}"
+            json:
+              auth_details:
+              registereddatetime: "{{ startDate }}"
+              last_verification_code: "{{ is_verified }}"
+              first_login_completed: "{{ is_verified }}"
+              is_user_verified: "{{ is_verified }}"
+              is_super: " {{ boolean }}"
+  
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employer/interviews"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers_interviews/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employer interviews"      
+  - name: "TEST FOR EMPLOYERS CHALLENGES"
+    flow:
+
+        - function: "employersChallenges"
+        
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+      
+            
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges"
+            json:
+            emp_id: "{{ id }}"
+            detail:
+               name: "{{ name }}"
+               types:
+               - "{{ types }}"
+               level: "{{ level }}"
+            subject:
+              id: "{{ id }}"
+              name: "javascript"
+              type: "{{ type }}"
+            access: {}
+            questions:
+              source: "{{ source }}"
+              type: "{{ type }}"
+              list:
+              - question: "{{ question }}"
+              answer: "{{ answer }}"
+              time_given: "{{ time_given}}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$._id"
+              as: "id"
+
+        - log: "Sent a request to /employers"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges/{{ id}}"
+            json:
+               emp_id: "{{ id }}"
+            detail:
+               name: "{{ name }}"
+               types:
+               - "{{ types }}"
+               level: "{{ level }}"
+            subject:
+              id: "{{ id }}"
+              name: "javascript"
+              type: "{{ type }}"
+            access: {}
+            questions:
+              source: "{{ source }}"
+              type: "{{ type }}"
+              list:
+              - question: "{{ question }}"
+              answer: "{{ answer }}"
+              time_given: "{{ time_given}}"
+
+  
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employer/interviews"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employer interviews"            
+  - name: "TEST FOR EMPLOYERS QUESTIONS"
+    flow:
+
+        - function: "employersQuestions"
+        
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/employers_questions"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+      
+            
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employers_questions"
+            json:
+            emp_id: "{{ emp_id }}"
+            question: "{{ question }}"
+            answer: " {{ answer }}"
+            time: "{{ time }}"
+            type:
+            id: "{{ id }}"
+            name: "{{ name }}"
+            level:
+              id: "{{ id }}"
+              name: "{{ name }}"
+            subject:
+              _id: "{{ _id }}"
+              subject_id: "{{ subject_id }}"
+              category_id: "{{ category_id }}"
+              name: "{{ Javascript Programming }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$._id"
+              as: "id"
+
+        - log: "Sent a request to /employers"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges/{{ id}}"
+            json:
+               emp_id: "{{ id }}"
+            detail:
+               name: "{{ name }}"
+               types:
+               - "{{ types }}"
+               level: "{{ level }}"
+            subject:
+              id: "{{ id }}"
+              name: "javascript"
+              type: "{{ type }}"
+            access: {}
+            questions:
+              source: "{{ source }}"
+              type: "{{ type }}"
+              list:
+              - question: "{{ question }}"
+              answer: "{{ answer }}"
+              time_given: "{{ time_given}}"
+
+  
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employer/interviews"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers_challenges/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employer interviews"                  
+  - name: "TEST FOR EMPLOYERS SUBJECTS"
+    flow:
+
+        - function: "employersSubjects"
+
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/employers_subjects"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/employers_subjects"
+            json:
+            emp_id: "{{ emp_id }}"
+            name: "{{ name }}"
+            description: "{{ description }}"
+            category:
+              id: "{{ id }}"
+              alias: "{{ alias }}"
+              description: "{{ description }}"
+              name: "{{ name }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$._id"
+              as: "id"
+
+        - log: "Sent a request to /employers_subjects with {{ emp_id }}, {{ name }}, {{ description }}, {{ id }}, {{ alias }}"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/employers_subjects/{{ id}}"
+            json:
+            emp_id: "{{ emp_id }}"
+            name: "{{ name }}"
+            description: "{{ description }}"
+            category:
+              id: "{{ id }}"
+              alias: "{{ alias }}"
+              description: "{{ description }}"
+              name: "{{ name }}"
+
+
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employers_subjects with {{ emp_id }}, {{ name }}, {{ description }}, {{ id }}, {{ alias }}"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/employers_subjects/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employers subjects"
+  - name: "TEST FOR SUBJECTS"
+    flow:
+
+        - function: "subjects"
+
+        - get:
+            url: "https://api.qa.talentscreen.io/v1/subjects"
+            json:
+              headers:
+                 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+
+        - post:
+            url: "https://api.qa.talentscreen.io/v1/subjects"
+            json:
+            name: "{{ name }}"
+            description: "{{ description }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+            capture:
+              json: "$._id"
+              as: "id"
+
+        - log: "Sent a request to /employers_subjects with {{ name }}, {{ description }}"
+
+        - put:
+            url: "https://api.qa.talentscreen.io/v1/subjects/{{ id}}"
+            json:
+            name: "{{ name }}"
+            description: "{{ description }}"
+
+
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Sent a request to /employers_subjects with {{ name }}, {{ description }}"
+
+        - delete:
+            url: "https://api.qa.talentscreen.io/v1/subjects/{{ id }}"
+            headers:
+              x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA1LTI0VDEwOjE5OjU4LjU0MloiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciBzYW1wYXRoIiwiZW1haWwiOiJrdW1hckB3aGl0ZWJveC1sZWFybmluZy5jb20ifSwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNDk1NjMyODk0LCJleHAiOjE0OTkyMzI4OTR9.HcQrSYI4mDLdgboY-OHZ33gx79WLHJSJhPB2K1Jupfs
+
+        - log: "Record with {{ id }} has been deleted for employers subjects"

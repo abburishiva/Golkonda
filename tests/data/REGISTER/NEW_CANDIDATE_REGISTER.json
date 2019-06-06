@@ -1,0 +1,22 @@
+{
+  "NEW_CANDIDATE_REGISTER": {
+    "TEST_FOR_NEW_CANDIDATE_REGISTER": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "sampath123.ip@gmail.com",
+        "password": "Excellence@123",
+        "message_type": "string",
+        "type": "string",
+        "role": "candidate"
+      },
+      "expected": {
+        "statusCode": 200,
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "USERS_NOTIFICATIONS": {
+    "TEST_FOR_BASIC_GET_ALL_USERS_NOTIFICATIONS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_USER_NOTIFICATION_BY_ID": {
+      "input": {
+        "id": "58c0e6eafc38f91fc13200f7"
+      },
+      "expected": {
+        "_id": "58c0e6eafc38f91fc13200f7",
+        "email": "grandrapidsjobs@kforce.com",
+        "name": "",
+        "phone_numbers": [],
+        "__v": 0,
+        "lastmoddatetime": "2017-03-08T14:38:40.000Z",
+        "subscriptions": [
+          {
+            "name": "massemail_distribution",
+            "unsubscribed_date": null,
+            "start_date": "2017-03-30T12:25:28.000Z",
+            "active": true
+          }
+        ],
+        "spam_bounce": false,
+        "hard_bounce": false,
+        "soft_bounce": false,
+        "phone": []
+      }
+    },
+    "TEST_FOR_BASIC_POST_USER_NOTIFICATIONS": {
+      "input": {
+        "email": "vincyhanamkonda@gmail.com",
+        "name": "Vincy Hanamkonda",
+        "active": true,
+        "__v": 0,
+        "subscriptions": [
+          {
+            "name": "massemail_distribution"
+          }
+        ],
+        "spam_bounce": "N",
+        "hard_bounce": "N",
+        "soft_bounce": "N"
+      },
+      "expected": {
+        "email": "vincyhanamkonda@gmail.com",
+        "name": "Vincy Hanamkonda",
+        "__v": 0,
+        "_id": "58bebb1380dc481793686091",
+        "lastmoddatetime": "2017-03-06T20:17:10.000Z",
+        "subscriptions": [
+          {
+            "name": "massemail_distribution"
+          }
+        ],
+        "spam_bounce": "N",
+        "hard_bounce": "N",
+        "soft_bounce": "N"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_USER_NOTIFICATIONS": {
+      "input": {
+        "email": "vincyYesupogula@gmail.com",
+        "name": "Vincy Yesupogula",
+        "active": true,
+        "__v": 0,
+        "subscriptions": [
+          {
+            "name": "massemail_distribution"
+          }
+        ],
+        "spam_bounce": "N",
+        "hard_bounce": "N",
+        "soft_bounce": "N"
+      },
+      "expected": {
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
+      }
+    },
+    "TEST_FOR_BASIC_POST_USER_NOTIFICATIONS_WITH_EXISTING_EMAIL_ID": {
+      "input": {
+        "email": "grandrapidsjobs@kforce.com",
+        "name": "",
+        "phone_numbers": [],
+        "__v": 0,
+        "lastmoddatetime": "2017-03-08T14:38:40.000Z",
+        "subscriptions": [
+          {
+            "name": "massemail_distribution",
+            "unsubscribed_date": null,
+            "start_date": "2017-03-30T12:25:28.000Z",
+            "active": true
+          }
+        ],
+        "spam_bounce": false,
+        "hard_bounce": false,
+        "soft_bounce": false,
+        "phone": []
+      },
+      "expected": {
+        "status": 500,
+        "error": {
+          "message": "user email already exist"
+        }
+      }
+    },
+    "TEST_FOR_UPDATE_USER_NOTIFICATIONS_WITH_EXISTING_EMAIL_ID":{
+      "input":{
+        "id":"58d60a9b12262b7a6d648330",
+        "email":"braintaz3@sbcglobal.net",
+        "subscriptions": [
+          {
+            "name": "mass_email_sending_",
+            "start_date": "2017-03-25T05:59:06.000Z"
+          }
+        ]
+      },
+      "expected":{
+        "statusCode":200,
+        "n": 1,
+        "nModified": 1,
+        "ok": 1,
+        "name": "engr0",
+        "email": "braintaz1@sbcglobal.net",
+        "__v": 0,
+        "lastmoddatetime": "2017-03-25T05:59:06.000Z",
+        "subscriptions": {
+          "name": "mass_email_sending_",
+          "unsubscribed_date": null,
+          "start_date": "2017-03-25T05:59:06.000Z",
+          "active": true
+        },
+        "spam_bounce": true,
+        "hard_bounce": false,
+        "soft_bounce": false,
+        "phone": [
+          "9848259830"
+        ]
+      }
+    }
+  }
+}

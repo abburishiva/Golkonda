@@ -1,0 +1,39 @@
+{
+  "SHARERESUMES": {
+    "TEST_FOR_GET_RESUME_BY_SHORTID_WITH_BASICINFO_PUBLIC_PERMISSIONS": {
+      "input": {
+        "resumeId" : "AV3AXu6bpr5dVejmNugn",
+        "shortUid" : "test@31",
+        "publicAccess" : {
+          "permissions" : ["basicInfo"]
+        },
+        "privateAccess" : []
+      },
+      "responce": {
+        "_index": "elastic",
+        "_type": "resumes",
+        "_id": "AV3AXu6bpr5dVejmNugn",
+        "_score": 1,
+        "_source": {
+          "basics": {
+            "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a \ufffdlength-limited\ufffd conversation!"
+          },
+          "education": [
+            {
+              "startDate": "01-12-2013",
+              "courses": [
+                "DB1101 - Basic SQL",
+                "CS2011 - Java Introduction"
+              ],
+              "area": "Information Technology",
+              "studyType": "Bachelor",
+              "gpa": "4.0",
+              "endDate": "01-12-2013",
+              "institution": "University of Oklahoma"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

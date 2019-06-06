@@ -1,0 +1,167 @@
+{
+  "getEmployerInterviewsById": {
+    "with valid interview Id for SUPER": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 200,
+        "_id": "5923d5a34f0eb45435e4123a",
+        "emp_id": "591af3005a19a2354ce16cae",
+        "type": "ondemand",
+        "expiredTime": "5",
+        "challengeId": "5921ee1a74a1e042bb16e9bc",
+        "access": {
+          "live": false,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeOpen",
+          "challengeComplete"
+        ],
+        "sendEmail": [
+          "dbadri.ip@gmail.com"
+        ]
+      },
+      "ifNoRecords": {
+        "statusCode": 404,
+        "status": 404,
+        "message": "Records Not Found"
+      }
+    },
+    "with valid interview Id for EMPLOYEE": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "with valid interview Id for CANDIDATE": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "with valid interview Id for NEW_USER": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    },
+    "with invalid interview Id for SUPER":{
+      "input":{
+        "id":"5975eb5a4d219a40baa100b!"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "status": 500,
+        "error": {
+          "message": "Cast to ObjectId failed for value \"5975eb5a4d219a40baa100b!\" at path \"_id\" for model \"employerInterviews\"",
+          "name": "CastError",
+          "stringValue": "\"5975eb5a4d219a40baa100b!\"",
+          "kind": "ObjectId",
+          "value": "5975eb5a4d219a40baa100b!",
+          "path": "_id"
+        }
+      }
+    },
+    "with invalid interview Id for EMPLOYEE":{
+      "input":{
+        "id":"5975eb5a4d219a40baa100b!"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode":403,
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "with invalid interview Id for CANDIDATE":{
+      "input":{
+        "id":"5975eb5a4d219a40baa100b!"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode":403,
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "with invalid interview Id for NEW_USER":{
+      "input":{
+        "id":"5975eb5a4d219a40baa100b!"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "statusCode": 401
+      }
+    },
+    "with invalid route for SUPER":{
+      "input":{
+        "id":"59757bd6dd02e83819e26eca"
+      },
+      "expected":{
+        "statusCode":200,
+        "count":1,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "ifNoRecords": {
+          "statusCode": 404,
+          "status": 404,
+          "message": "Records Not Found"
+        }
+      }
+    },
+    "with invalid route for EMPLOYEE":{
+      "input":{
+        "id":"59757bd6dd02e83819e26eca"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+          "statusCode": 403
+      }
+    },
+    "with invalid route for CANDIDATE":{
+      "input":{
+        "id":"59757bd6dd02e83819e26eca"
+      },
+      "expected":{
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+          "statusCode": 403
+      }
+    },
+    "with invalid route for NEW_USER":{
+      "input":{
+        "id":"59757bd6dd02e83819e26eca"
+      },
+      "expected":{
+          "statusCode": 401
+      }
+    }
+  }
+}

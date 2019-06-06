@@ -1,0 +1,262 @@
+{
+  "MULTIPLE_QUESTIONS":{
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_VIDEO":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_CHOICE":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_CODING":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_TYPED":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CHOICE_AND_CODING":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CHOICE_AND_TYPED":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CHOICE_AND_VIDEO":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CHOICE_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CODING_AND_TYPED":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CODING_AND_VIDEO":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_CODING_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_TYPED_AND_VIDEO":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_TYPED_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_VIDEO_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_AUDIO_AND_CHOICE_AND_CODING":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_TYPED_AND_VIDEO_AND_WHITEBOARD":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "subjectid":"subjectid",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_SUBJECTID_AUDIO_AND_CHOICE":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_SUBJECTID_AUDIO_AND_CHOICE":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    },
+    "TEST_FOR_GET_MULTIPLE_QUESTIONS_OF_SUBJECTID_AUDIO_AND_CHOICE":{
+      "expected": {
+        "count": 1,
+        "statusCode":200,
+        "headers":{
+          "content-type":"application/json; charset=utf-8"
+        },
+        "question":"question",
+        "levelid":"levelid",
+        "reviewDone":"reviewDone"
+      }
+    }
+
+  }
+}

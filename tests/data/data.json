@@ -1,0 +1,6936 @@
+{
+  "LOOKUP_EMPLOYEE_SALARY_UNITS": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 3,
+          "name": "AUSTRALIA NEW"
+        },
+        "last": {
+          "id": 2,
+          "name": "USA"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "USA"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "id": 3,
+        "name": "INDIA",
+        "description": "Indian Rupee",
+        "symbol": "₹",
+        "symbol_name": null,
+        "symbol_native": null,
+        "code": "INR"
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "name": "akrotiri and dhekelia",
+          "description": "akrotiri and dhekelia european euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Akrotiri and Dhekelia",
+          "description": "Akrotiri and Dhekelia European euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Aland Islands",
+          "description": "Aland Islands European euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Albania",
+          "description": "Albania Albanian lek"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "name": "akrotiri and dhekelia",
+          "description": "akrotiri and dhekelia european euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Akrotiri and Dhekelia",
+          "description": "Akrotiri and Dhekelia currency is European euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Aland Islands",
+          "description": "Aland Islands currency is European euro"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Albania",
+          "flag": "Allqq",
+          "description": "Albania currency is Albanian lek"
+        }
+      }
+    }
+  },
+  "LOOKUP_CITY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 33025,
+          "name": "'Abasan al Kabirah"
+        },
+        "last": {
+          "id": 7080,
+          "name": "Zyryanovsk"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Zyrya"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 15191
+      },
+      "expected": {
+        "id": 15191,
+        "name": "Zyrya",
+        "latitude": "40.3661",
+        "longitude": "50.2917"
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "countryid": 102,
+          "name": "Secundrabad",
+          "latitude": "17.439930",
+          "longitude": "78.498276"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Manilla",
+          "latitude": "42.88971",
+          "longitude": "-95.23222"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Manly",
+          "latitude": "41.90915",
+          "longitude": "-93.20215"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Manning",
+          "latitude": "41.90915",
+          "longitude": "-95.064999"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "countryid": 102,
+          "name": "Secundrabad twin city",
+          "latitude": "17.439930",
+          "longitude": "78.498276"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Manilla state",
+          "latitude": "42.88971",
+          "longitude": "-95.23222"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Manly",
+          "latitude": "41.90915",
+          "longitude": "-93.20215"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Manning state",
+          "latitude": "41.90915",
+          "longitude": "-95.064999"
+        }
+      }
+    }
+  },
+  "LOOKUP_EMPLOYEE_DESIGNATIONS": {
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 3051,
+          "name": ".Net Consultant"
+        },
+        "last": {
+          "id": 8045,
+          "name": ".Net Software Engineer"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Software Developer"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "Recruiting Assistant",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 4,
+          "name": "Recruiting Assistant"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 4
+      },
+      "expected": {
+        "name": "Recruiting Assistant",
+        "description": "Recruiter assistant is a person responsible for recruiting the correct person in the organization. They conduct different tests and take interviews before recruiting ."
+      }
+    },
+    "BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "name": "node",
+          "flag": "all",
+          "description": "entry-level management"
+        }
+      }
+    },
+    "BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Executive Management",
+          "flag": "All",
+          "description": "The Executive Management"
+        }
+      }
+    },
+    "BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Contractors",
+          "flag": "All",
+          "description": "The Contractors"
+        }
+      }
+    },
+    "BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "work from home",
+          "flag": "All",
+          "description": "The work from home"
+        }
+      }
+    },
+    "BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "name": "node",
+          "flag": "all",
+          "description": "the entry-level management manages the day to day marketing"
+        }
+      }
+    },
+    "BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Executive Management",
+          "flag": "All",
+          "description": "The Executive Management manages the day to day marketing"
+        }
+      }
+    },
+    "BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Contractors",
+          "flag": "All",
+          "description": "The Contractors manages the day to day Contracts"
+        }
+      }
+    },
+    "BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "work from home",
+          "flag": "All",
+          "description": "The work from home works from home"
+        }
+      }
+    }
+  },
+  "LOOKUP_WORK_STATUS": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 28,
+          "name": "A-1"
+        },
+        "last": {
+          "id": 24,
+          "name": "U-1"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "R"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "id": 13,
+        "name": "R",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 13,
+          "name": "R",
+          "description": "R visas are a type of short-term work visas available to people who've been offered jobs as religious workers in the United States."
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 36
+      },
+      "expected": {
+        "id": 36,
+        "name": "H4",
+        "description": "H4 visa holders for equal rights to receive SSN, work permit same as other US based immigrant dependents."
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "name": "EB-1",
+          "countryid": 236,
+          "description": "Foreign Nationals of Extraordinary Ability, Outstanding Professors and Researchers and Multinational Executives and Managers"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "EB-2",
+          "countryid": 236,
+          "description": "Workers with Advanced Degrees or Exceptional Ability in the Sciences, Arts or Business"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "EB-3",
+          "countryid": 236,
+          "description": "Skilled Workers and Professionals"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "EB-4",
+          "countryid": 236,
+          "description": "Special Immigrant Visas for Religious Workers"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "name": "EB-1",
+          "description": "The EB-1 visitor visa is for people traveling to the United States"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "EB-2",
+          "description": "The EB-2 visitor visa is for people traveling to the United States"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "EB-3",
+          "description": "The EB-3 visitor visa is for people traveling to the United States"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "EB-4",
+          "description": "The EB-4 visitor visa is for people traveling to the United States"
+        }
+      }
+    }
+  },
+  "SUBJECT": {
+    "TEST_FOR_BASIC_GET_ALL_SUBJECTS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_SORTING": {
+      "expected": {
+        "first": {
+          "id": 57,
+          "categoryid": 1,
+          "name": "Angular.js"
+        },
+        "last": {
+          "id": 1,
+          "categoryid": 5,
+          "name": "Selenium WebDriver",
+          "icon_class": "ts-seleniumwebdriver",
+          "description": "Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application."
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_WITH_NAME": {
+      "input": {
+        "name": "java"
+      },
+      "expected": {
+        "id": 37,
+        "categoryid": 1,
+        "name": "Java ",
+        "icon_class": "ts-javaprogramming",
+        "description": "Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
+        "lastmoddatetime": "Mar 22 2017 01:59 PM",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_WITH_CATEGORYID": {
+      "input": {
+        "categoryid": 5
+      },
+      "expected": [
+        {
+          "id": 1,
+          "categoryid": 5,
+          "name": "Selenium WebDriver",
+          "icon_class": "ts-seleniumwebdriver",
+          "description": "Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application.",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        },
+        {
+          "id": 60,
+          "categoryid": 5,
+          "name": "JUnit",
+          "icon_class": "ts-unittesting",
+          "description": "JUnit is a unit testing framework for the Java programming language. ",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        },
+        {
+          "id": 61,
+          "categoryid": 5,
+          "name": "TestNG",
+          "icon_class": "ts-testng",
+          "description": "TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing (testing a class in isolation of the others) to integration testing (testing entire systems made of several classes, several packages and even several external frameworks, such as application servers).",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORT": {
+      "input": {
+        "categoryid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 2,
+          "categoryid": 1,
+          "name": "C#"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_QUIZ_TYPE": {
+      "input": {
+        "quiz_type": "choice"
+      },
+      "expected": [
+        {
+          "subjectId": 2,
+          "name": "C#",
+          "subjects_count": 56
+        },
+        {
+          "subjectId": 37,
+          "name": "Java ",
+          "subjects_count": 47
+        },
+        {
+          "subjectId": 56,
+          "name": "Javascript",
+          "subjects_count": 51
+        }
+      ]
+    },
+    "TEST_FOR_GET_SUBJECTES_BASED_ON_LEVELS": {
+      "input": {
+        "subject_id": 56,
+        "quiz_type": "choice"
+      },
+      "expected": [
+        {
+          "levelId": 1,
+          "name": "BEGINNER",
+          "display_name": "Beginner",
+          "questions_count": 14
+        },
+        {
+          "levelId": 2,
+          "name": "INTERMEDIATE",
+          "display_name": "Intermediate",
+          "questions_count": 16
+        },
+        {
+          "levelId": 3,
+          "name": "ADVANCED",
+          "display_name": "Advanced",
+          "questions_count": 20
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_CHOICE": {
+      "input": {
+        "quiz_type": "choice"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_CODING": {
+      "input": {
+        "quiz_type": "coding"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_VIDEO": {
+      "input": {
+        "quiz_type": "video"
+      }
+    },
+    "TEST_FOR_GET_ONE_SUBJECT": {
+      "input": {
+        "id": 60
+      },
+      "expected": {
+        "id": 60,
+        "categoryid": 5,
+        "name": "JUnit"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "categoryid": 2,
+          "name": "testcase",
+          "description": "for testcase puepose only",
+          "icon_class": "ts-talentscreen",
+          "flag": "true"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "testcase",
+          "description": "for testcase puepose only",
+          "flag": "true"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "testcase",
+          "description": "for testcase puepose only",
+          "flag": "true"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "testcase",
+          "description": "for testcase puepose only",
+          "flag": "true"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "categoryid": 2,
+          "name": "testcase programme",
+          "icon_class": "ts-unix",
+          "description": "testcase programme for testing purpose",
+          "flag": "false"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "categoryid": 2,
+          "name": "testcase programme",
+          "icon_class": "ts-unix",
+          "description": "testcase programme for testing purpose",
+          "flag": "false"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "categoryid": 2,
+          "name": "testcase programme",
+          "icon_class": "ts-unix",
+          "description": "testcase programme for testing purpose",
+          "flag": "false"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "categoryid": 2,
+          "name": "testcase programme",
+          "icon_class": "ts-unix",
+          "description": "testcase programme for testing purpose",
+          "flag": "false"
+        }
+      }
+    }
+  },
+  "COMMON_TYPES": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "name": "CHOICE_QUIZ"
+        },
+        "last": {
+          "id": 2,
+          "name": "CODING_QUIZ"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 29
+      },
+      "expected": {
+        "statusCode": 200
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "APPLIED_JOBS"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 1,
+        "sort": "id"
+      },
+      "expected": [
+        {
+          "id": 1,
+          "name": "CHOICE_QUIZ",
+          "display_name": "",
+          "description": "This test consist of choice questions."
+        },
+        {
+          "id": 2,
+          "name": "CODING_QUIZ"
+        }
+      ]
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "entityid": 1,
+        "name": "CHOICE_QUIZ",
+        "display_name": "Choice Quiz",
+        "description": "This test consist of choice questions."
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 41
+      },
+      "expected": {
+        "common_entity": {
+          "id": 29,
+          "name": "BAR_CHART",
+          "displayname": "bar chart",
+          "description": "it is bar chart"
+        },
+        "name": "APPLIED_JOBS",
+        "display_name": "Applied Jobs",
+        "description": "applied jobs",
+        "lastmoddatetime": "11-28-2018 05:24:27"
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "CHOICE_QUIZ_DUPLICATE",
+          "display_name": "Choice quiz",
+          "description": "It consist test type of choice questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "CODING_QUIZ",
+          "display_name": "coding quiz",
+          "description": "It consist test type of coding questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "VIDEO_QUIZ",
+          "display_name": "video quiz",
+          "description": "It consist test type of video questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "DUMMY_QUIZ_TYPE",
+          "display_name": "dummy quiz type",
+          "description": "My Dummy Type Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "CHOICE_QUIZ_DUPLICATR",
+          "display_name": "Choice quiz duplicate",
+          "description": "It consists of test type of choice questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "CODING_QUIZ",
+          "display_name": "coding quiz",
+          "description": "It consist test type of coding questions dummy."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "VIDEO_QUIZ",
+          "display_name": "video quiz",
+          "description": "It consist test type of video questions dummy."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "DUMMY_QUIZ_TYPE",
+          "display_name": "dummy quiz type",
+          "description": "My Dummy updated Type Description."
+        }
+      }
+    }
+  },
+  "COMMON_LEVEL": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 3
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 39,
+          "name": "BACHELORS_OR_EQUIVALENT_LEVEL"
+        },
+        "last": {
+          "id": 29,
+          "name": "UPPER_SECONDARY_ EDUCATION"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 2
+      },
+      "expected": {
+        "count": 3
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "EXPERT"
+      },
+      "expected": {
+        "count": 0
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 2,
+        "sort": "name"
+      },
+      "expected": {
+        "first": {
+          "id": 2,
+          "name": "EXPERT"
+        },
+        "last": {
+          "id": 3,
+          "name": "PROFICIENT"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "id": 2,
+        "entityid": 2,
+        "name": "EXPERT",
+        "display_name": "Expert",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoddatetime": "05-21-2017 12:15:11",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "id": 2,
+        "common_entity": {
+          "id": 2,
+          "name": "TEST_DIFFICULTLY_LEVEL",
+          "display_name": "Test Difficulty Level",
+          "description": "It describes test difficultly levels."
+        },
+        "name": "EXPERT",
+        "display_name": "Expert",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoduserid": 99999,
+        "lastmoddatetime": "05-21-2017 12:15:11"
+      }
+    },
+    "TEST_FOR_BASIC_POST_LEVEL_BY_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "BEGINNER",
+          "display_name": "beginner",
+          "description": "It describes test difficulty level and it contains beginner level questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_LEVEL_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "INTERMEDIATE",
+          "display_name": "intermediate",
+          "description": "It describes test difficulty level and it contains intermediate level questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_LEVEL_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "ADVANCED",
+          "display_name": "advanced",
+          "description": "It describes test difficulty level and it contains advanced level questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_LEVEL_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "PROFICIENT",
+          "display_name": "Proficient",
+          "description": "It describes test difficulty level and it contains competent or skilled questions."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_LEVEL_BY_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "BEGINNER",
+          "display_name": "beginner",
+          "description": "It describes test difficulty level"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_LEVEL_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 4,
+          "name": "DUMMY_UPDATED_TYPE",
+          "display_name": "Dummy Updated Type",
+          "description": "Dummy Updated Type Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_LEVEL_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 8,
+          "name": "DUMMY_UPDATED_SUBJECT",
+          "display_name": "Dummy Updated Subject",
+          "description": "Dummy Updated Subject Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_LEVEL_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "MY_DUMMY_UPDATED_TYPE",
+          "display_name": "My Dummy Updated Type",
+          "description": "My Dummy Updated Type Description."
+        }
+      }
+    }
+  },
+  "COMMON_ROLE": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "name": "SUPER_ADMIN"
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 2,
+          "name": "ADMIN"
+        },
+        {
+          "id": 5,
+          "name": "SUPER_ADMIN11"
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 9
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "SUPER_ADMIN"
+      },
+      "expected": {
+        "count": 0
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 9,
+        "sort": "name"
+      },
+      "expected": {
+        "count": 4,
+        "first": {
+          "id": 2,
+          "name": "ADMIN"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "entityid": 9,
+        "name": "ADMIN",
+        "display_name": "Admin",
+        "description": "Rights to manage Admin"
+      }
+    },
+    "TEST_FOR_GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "common_entity": {
+          "id": 9,
+          "name": "APP_MGMT_EMPLOYEE_STATUS",
+          "displayname": "App Mgmt Employee Status",
+          "description": "It describes employee status."
+        },
+        "name": "ADMIN",
+        "display_name": "Admin",
+        "description": "Rights to manage Admin",
+        "lastmoddatetime": "07-25-2016 23:44:48"
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "research team",
+          "display_name": "research team",
+          "description": "research for new apps"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "development team",
+          "display_name": "development team",
+          "description": "development team for existing apps"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "marketing team",
+          "display_name": "marketing products",
+          "description": "marketing products"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "recruiting team",
+          "display_name": "recruiting team",
+          "description": "recruits candidates"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "research team",
+          "display_name": "research team for new apps",
+          "description": "research for new apps"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "development team",
+          "display_name": "development team for existing apps",
+          "description": "development team for existing apps"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "marketing team",
+          "display_name": "marketing products",
+          "description": "marketing finished products"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 1,
+          "name": "recruiting team",
+          "display_name": " candidate recruiting team",
+          "description": "recruits candidates"
+        }
+      }
+    }
+  },
+  "COMMON_STATUS": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "name": "ACTIVE"
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 21,
+          "name": "ACTIVE"
+        },
+        {
+          "id": 26,
+          "name": "BLACK_LISTED"
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 9
+      },
+      "expected": {
+        "count": 3
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "IN_ACTIVE"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 9,
+        "sort": "name"
+      },
+      "expected": {
+        "first": {
+          "id": 21,
+          "name": "ACTIVE"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 21
+      },
+      "expected": {
+        "id": 21,
+        "name": "ACTIVE",
+        "display_name": "Active",
+        "entityid": 9,
+        "description": "It describes active status of employee.",
+        "enabled": 1,
+        "lastmoddatetime": "08-20-2016 20:34:46",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_BASIC_POST_STATUS_BY_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 11,
+          "name": "BENCH",
+          "display_name": "employee",
+          "description": "It describes status of employee"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_STATUS_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "IN_ACTIVE",
+          "displayname": "inactive",
+          "description": "It describes recruiting lead category and currently not available."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_STATUS_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 7,
+          "name": "FUTURE",
+          "display_name": "future",
+          "description": "It describes recruiting lead status of future availability."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_STATUS_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 9,
+          "name": "CLOSED",
+          "display_name": "closed",
+          "description": "It describes recruiting lead status of closed status."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_STATUS_BY_SUPER": {
+      "input": {
+        "payload": {
+          "entityid": 11,
+          "name": "BENCH",
+          "display_name": "employee status",
+          "description": "It describes employees on bench"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_STATUS_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "IN_ACTIVE",
+          "display_name": "inactive",
+          "description": "It describes recruiting lead category"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_STATUS_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 7,
+          "name": "FUTURE",
+          "display_name": "future",
+          "description": "It describes recruiting lead status of future"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_STATUS_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 9,
+          "name": "CLOSED",
+          "display_name": "closed",
+          "description": "It describes recruiting dummy status of closed status."
+        }
+      }
+    }
+  },
+  "COMMON_CATEGORY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 4,
+          "name": "ARCHITECTURE"
+        },
+        {
+          "id": 1,
+          "name": "PROGRAMMING"
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 1
+      },
+      "expected": {
+        "count": 5
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "PROGRAMMING"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "sort": "name",
+        "entityid": 1,
+        "name": "MY_DUMMY_UPDATED_TYPE",
+        "display_name": "My Dummy Updated Type"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 4,
+          "name": "ARCHITECTURE"
+        },
+        "last": {
+          "id": 1,
+          "name": "PROGRAMMING"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "name": "TESTING",
+        "display_name": "Testing",
+        "entityid": 1,
+        "description": "It describes test type of testing. ",
+        "enabled": 1
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "id": 5,
+        "name": "TESTING",
+        "display_name": "Testing",
+        "common_entity": {
+          "id": 1,
+          "name": "TEST_TYPE",
+          "displayname": "Test Type",
+          "description": "It describes test challenge types."
+        },
+        "description": "It describes test type of testing. ",
+        "enabled": 1
+      }
+    },
+    "BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "name": "UTILS",
+          "display_name": "sending mass emails",
+          "entityid": 1,
+          "description": "It describes sending mass emails",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "ANDROID",
+          "display_name": "android",
+          "entityid": 1,
+          "description": "It describes android applications",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "HADOOP",
+          "display_name": "hadoop",
+          "entityid": 1,
+          "description": "It describes big data",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "SAP",
+          "display_name": "sap",
+          "entityid": 1,
+          "description": "It describes system applications programming",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "name": "UTILS",
+          "display_name": "mass emails sending",
+          "entityid": 1,
+          "description": "It describes sending mass emails",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "ANDROID IOS",
+          "display_name": "android",
+          "entityid": 1,
+          "description": "It describes android applications",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "BIG DATA",
+          "display_name": "hadoop",
+          "entityid": 1,
+          "description": "It describes big data",
+          "enabled": 1
+        }
+      }
+    },
+    "BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "SYSTEMS APPLICATION PROGRAMMING",
+          "display_name": "sap",
+          "entityid": 1,
+          "description": "It describes system applications programming",
+          "enabled": 1
+        }
+      }
+    }
+  },
+  "COMMON_COMPANY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "id": 8
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 10541,
+          "name": "AKRAYA, INC."
+        },
+        "last": {
+          "id": 16399,
+          "name": "[24]7"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "INNOVAPATH, INC."
+      },
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "email": "info@innova-path.com",
+        "sort": "name"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 8,
+          "name": "INNOVAPATH, INC.",
+          "email": "info@innova-path.com",
+          "phone": "408-708-9394 "
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 8
+      },
+      "expected": {
+        "name": "INNOVAPATH, INC.",
+        "email": "info@innova-path.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 9
+      },
+      "expected": {
+        "name": "INNOVAPATH, INC.",
+        "description": "info@innova-path.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "name": "DINESH KUAMR",
+          "email": "dineshkuamarinnovapath3@gmail.com",
+          "headquatersid": 20470,
+          "secondaryaddressid": {},
+          "hrcontactid": 28316,
+          "hmid": 28317,
+          "mgrcontactid": 32265,
+          "secondarycontactid": 28319
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "name": "INNOVAPATH, INC.",
+          "email": "info@innovak30.com",
+          "headquatersid": 20470,
+          "secondaryaddressid": 20474,
+          "hrcontactid": 28316,
+          "hmid": 28317,
+          "mgrcontactid": 32265,
+          "secondarycontactid": 28319
+        }
+      }
+    }
+  },
+  "COMMON_CANDIDATE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 279
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 3599,
+          "contactid": 28928,
+          "workstatusid": 10
+        },
+        "last": {
+          "id": 4180,
+          "contactid": 31650,
+          "workstatusid": 36
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_CONTACTID": {
+      "input": {
+        "contactid": 28938,
+        "firstname": "Ira"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "WHITEBOX LEARNING, INC."
+      },
+      "expected": {
+        "count": 300
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMAIL": {
+      "input": {
+        "email": "pvenu.ip@gmail.com",
+        "firstname": "Sunitha"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "padmaja",
+        "sort": "id"
+      },
+      "expected": [
+        {
+          "id": 28895,
+          "first": {
+            "email": "nandulapadmaja@gmail.com"
+          }
+        },
+        {
+          "id": 29896,
+          "last": {
+            "email": "padmanu@yahoo.com"
+          }
+        }
+      ]
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3599
+      },
+      "expected": {
+        "id": 3599,
+        "contactid": 28928,
+        "workstatusid": 10
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 3599
+      },
+      "expected": {
+        "common_contact": {
+          "id": 28928,
+          "firstname": "Sunitha",
+          "lastname": "",
+          "middlename": "Modugula"
+        }
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "contactid": 28925,
+          "workstatusid": 17,
+          "highesteducation": 10,
+          "contact": {
+            "firstname": "Sunitha123",
+            "lastname": "",
+            "middlename": "Modugulsfa",
+            "email": "suneetha9127@gmail.com",
+            "phone": "408-823-3666"
+          },
+          "lastmoduserid": 99999,
+          "lastmoddatetime": "08-01-2016 16:28:04"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "contactid": 28925,
+          "workstatusid": 17,
+          "highesteducation": 10,
+          "contact": {
+            "firstname": "Sunitha123",
+            "lastname": "",
+            "middlename": "Modugulsfa",
+            "email": "suneetha9127@gmail.com",
+            "phone": "408-823-3666"
+          },
+          "lastmoduserid": 99999,
+          "lastmoddatetime": "08-01-2016 16:28:04"
+        }
+      }
+    }
+  },
+  "COMMON_CONTACT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1199
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 28320,
+          "firstname": "Niranjani",
+          "lastname": "",
+          "middlename": "",
+          "email": "m.niranjani23@gmail.com"
+        },
+        "last": {
+          "id": 74959,
+          "name": "Rani Shivarudrappa"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "firstname": "Padmaja"
+      },
+      "expected": {
+        "count": 5
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "firstname": "Padmaja",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 5,
+        "first": {
+          "id": 28895,
+          "firstname": "Padmaja"
+        },
+        "last": {
+          "id": 29896,
+          "firstname": "Padmaja"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 28320
+      },
+      "expected": {
+        "firstname": "Niranjani",
+        "lastname": "",
+        "middlename": "",
+        "email": "m.niranjani23@gmail.com",
+        "phone": "408-768-9323",
+        "addressid": 18763
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 28320
+      },
+      "expected": {
+        "middlename": "",
+        "email": "m.niranjani23@gmail.com",
+        "phone": "408-768-9323",
+        "common_address": {
+          "id": 18763,
+          "address1": "535 south market street,apt305"
+        }
+      }
+    },
+    "BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "firstname": "dineship",
+          "lastname": "kumar",
+          "middlename": "raj",
+          "email": "dinesh@gmail.com",
+          "phone": "7788452196",
+          "addressid": 19990
+        }
+      }
+    },
+    "BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "firstname": "manasa",
+          "lastname": "inavolu",
+          "middlename": "",
+          "email": "imanasa@gmail.com",
+          "phone": "",
+          "addressid": 19993
+        }
+      }
+    },
+    "BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "firstname": "mounika",
+          "lastname": "bommathi",
+          "middlename": "",
+          "email": "bmounika@gmail.com",
+          "phone": "",
+          "addressid": 19991
+        }
+      }
+    },
+    "BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "firstname": "manasa",
+          "lastname": "lingabathula",
+          "middlename": "",
+          "email": "lmanasa@gmail.com",
+          "phone": "",
+          "addressid": 19992
+        }
+      }
+    },
+    "BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "firstname": "dineship",
+          "lastname": "",
+          "middlename": "",
+          "email": "dinesh@gmail.com",
+          "phone": "7788452197",
+          "addressid": 19990
+        }
+      }
+    },
+    "BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "firstname": "manasa",
+          "lastname": "inavolu",
+          "middlename": "",
+          "email": "imanasa26@gmail.com",
+          "phone": "",
+          "addressid": 19993
+        }
+      }
+    },
+    "BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "firstname": "mounika",
+          "lastname": "bommathi",
+          "middlename": "",
+          "email": "bmounika97@gmail.com",
+          "phone": "",
+          "addressid": 19991
+        }
+      }
+    },
+    "BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "firstname": "manasa",
+          "lastname": "lingabathula",
+          "middlename": "",
+          "email": "lmanasa@gmail.com",
+          "phone": "",
+          "addressid": 19990
+        }
+      }
+    }
+  },
+  "COMMON_ENTITY": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "id": 13
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 13,
+          "name": "APP_MGMT_COMPANY_STATUS"
+        },
+        "last": {
+          "id": 11,
+          "name": "CLIENT_STATUS"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "TEST_TYPES"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "filter": "TEST_TYPES",
+        "sort": "name"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "name": "TEST_TYPES"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 13
+      },
+      "expected": {
+        "name": "APP_MGMT_COMPANY_STATUS",
+        "display_name": "App Mgmt Company Status",
+        "description": "It describes company status"
+      }
+    },
+    "TEST_FOR_BASIC_POST_ENTITY_BY_SUPER": {
+      "input": {
+        "payload": {
+          "name": ".NET",
+          "display_name": ".net platform",
+          "description": "it describes .net subject"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_ENTITY_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "DUMMY_TEST_TYPE",
+          "display_name": "Dummy Type1",
+          "description": "Dummy Type Description1."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_ENTITY_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 8,
+          "name": "DUMMY_SUBJECT",
+          "display_name": "Dummy subject",
+          "description": "Dummy Subject Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_ENTITY_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "MY_DUMMY_TYPE1",
+          "display_name": "My Dummy Type1",
+          "description": "My Dummy Type Description1."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_ENTITY_BY_SUPER": {
+      "input": {
+        "payload": {
+          "name": ".NET",
+          "display_name": "test subject name ",
+          "description": "it describes test subject."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_ENTITY_BY_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "entityid": 4,
+          "name": "DUMMY_UPDATED_TYPE",
+          "display_name": "Dummy Updated Type",
+          "description": "Dummy Updated Type Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_ENTITY_BY_CANDIDATE": {
+      "input": {
+        "payload": {
+          "entityid": 8,
+          "name": "DUMMY_UPDATED_SUBJECT",
+          "display_name": "Dummy Updated Subject",
+          "description": "Dummy Updated Subject Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_ENTITY_BY_NEW_USER": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "MY_DUMMY_UPDATED_TYPE",
+          "display_name": "My Dummy Updated Type",
+          "description": "My Dummy Updated Type Description."
+        }
+      }
+    }
+  },
+  "COMMON_EMPLOYEE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 153
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 280,
+          "hiredate": "  04-06-2016, 00:00:00",
+          "startdate": "  04-06-2016, 00:00:00",
+          "first": {
+            "id": 32195,
+            "firstname": "",
+            "lastname": "Somineni"
+          }
+        },
+        {
+          "id": 206,
+          "hiredate": "  09-25-2014, 00:00:00",
+          "startdate": "  09-25-2014, 00:00:00",
+          "last": {
+            "id": 32133,
+            "firstname": "Zumana",
+            "lastname": "",
+            "middlename": "Bakir"
+          }
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "firstname": "Sampath"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "firstname": "Sampath",
+        "sort": "firstname"
+      },
+      "expected": [
+        {
+          "id": 149,
+          "hiredate": "  09-01-2011, 00:00:00",
+          "startdate": "  09-01-2011, 00:00:00",
+          "first": {
+            "id": 32090,
+            "firstname": "Sampath",
+            "lastname": "",
+            "middlename": "Velupula",
+            "email": "sampath@innova-path.com",
+            "phone": "925-998-3725"
+          }
+        },
+        {
+          "id": 302,
+          "hiredate": "  09-01-2011, 00:00:00",
+          "startdate": "  09-01-2011, 00:00:00",
+          "last": {
+            "id": 32090,
+            "firstname": "Sampath",
+            "lastname": "",
+            "middlename": "Velupula",
+            "email": "sampath@innova-path.com",
+            "phone": "925-998-3725"
+          }
+        }
+      ]
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 149
+      },
+      "expected": {
+        "contactid": 32090,
+        "hiredate": "2011-09-01T00:00:00.000Z",
+        "startdate": "2011-09-01T00:00:00.000Z"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 149,
+        "hiredate": "  09-01-2011, 00:00:00",
+        "startdate": "  09-01-2011, 00:00:00",
+        "lastmoddatetime": "  08-23-2016 12:08:43",
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "common_contact": {
+          "id": 32090,
+          "firstname": "Sampath",
+          "lastname": "",
+          "middlename": "Velupula",
+          "email": "sampath@innova-path.com",
+          "phone": "925-998-3725",
+          "secondaryemail": "Sampath.Velupula@gmail.com",
+          "secondaryphone": "925-399-4169",
+          "secondarycontactid": null,
+          "sourcecontactid": null,
+          "designation": null,
+          "workemail": null,
+          "workphone": null,
+          "workaddressid": null,
+          "dob": " 00-00-0000, 00:00:00",
+          "linkedin": null,
+          "skype": "sampuv",
+          "facebook": null,
+          "twitter": null,
+          "common_address": {
+            "id": null,
+            "address1": null,
+            "address2": null,
+            "cityid": null,
+            "usercity": null,
+            "region": null,
+            "countryid": null,
+            "lookup_city": {
+              "name": null,
+              "latitude": null,
+              "region": null,
+              "lookup_country": {
+                "iso2": null,
+                "short_name": null,
+                "long_name": null
+              }
+            },
+            "lokup_city": {
+              "lookup_country": {
+                "is03": null
+              }
+            }
+          }
+        },
+        "contact": {
+          "entrydate": " 00-00-0000, 00:00:00",
+          "address": {
+            "city": {
+              "longitude": null
+            }
+          }
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      }
+    }
+  },
+  "LOOKUP_EDUCATION_LEVEL": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "name": "Associate of Computer Science"
+        },
+        "last": {
+          "id": 7,
+          "name": "Upper Secondary Education"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Lower Secondary Education"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "id": 6,
+        "name": "Lower Secondary Education",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 6,
+          "name": "Lower Secondary Education"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "name": "Primary Education",
+        "description": "Primary education often in primary school is typically the first stage of compulsory education, coming between early childhood education and secondary education."
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 6
+      },
+      "expected": {
+        "lookup_education_level": {
+          "id": 6,
+          "name": "Lower Secondary Education",
+          "description": "Programmes at ISCED level 2, or lower secondary education, are typically designed to build on"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "name": "master of Computer Science",
+          "description": "Associate of Computer Science level Description."
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "name": "Bachelor of Computer Science",
+          "description": "Bachelor of Computer Science, providing learning activities in computer science"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "name": "Master of Computer Science",
+          "description": "Master of Science, providing learning activities in computer science"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "name": "Doctor of Computer Science",
+          "description": "Tertiary education builds on Doctor of Computer Science, providing learning activities in Computer Science"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "name": "master of Computer Science",
+          "description": "Territory knowledge is build on Associate of Computer Science"
+        }
+      },
+      "BASIC_PUT_EMPLOYEE": {
+        "input": {
+          "payload": {
+            "name": "Bachelor of Computer Science",
+            "description": "Builds knowledge on Bachelor of Computer Science"
+          }
+        }
+      },
+      "BASIC_PUT_CANDIDATE": {
+        "input": {
+          "payload": {
+            "name": "Master of Computer Science",
+            "description": "Territory knowledge on Master of Science"
+          }
+        }
+      },
+      "BASIC_PUT_NEW_USER": {
+        "input": {
+          "payload": {
+            "name": "Doctor of Computer Science",
+            "description": " Tertiary education builds on Doctor of Computer Science"
+          }
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "input": {
+          "payload": {
+            "name": "Bachelor of Computer Science",
+            "description": "providing learning activities in computer science"
+          }
+        }
+      },
+      "BASIC_PUT_EMPLOYEE": {
+        "input": {
+          "payload": {
+            "name": "Bachelor of Computer Science",
+            "description": "Builds knowledge on Bachelor of Computer Science"
+          }
+        }
+      },
+      "BASIC_PUT_CANDIDATE": {
+        "input": {
+          "payload": {
+            "name": "Master of Computer Science",
+            "description": "Territory knowledge on Master of Science"
+          }
+        }
+      },
+      "BASIC_PUT_NEW_USER": {
+        "input": {
+          "payload": {
+            "name": "Doctor of Computer Science",
+            "description": " Tertiary education builds on Doctor of Computer Science"
+          }
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "input": {
+          "payload": {
+            "name": "Master of Computer Science",
+            "description": "providing learning activities in computer science"
+          }
+        }
+      },
+      "BASIC_PUT_EMPLOYEE": {
+        "input": {
+          "payload": {
+            "name": "Bachelor of Computer Science",
+            "description": "Builds knowledge on Bachelor of Computer Science"
+          }
+        }
+      },
+      "BASIC_PUT_CANDIDATE": {
+        "input": {
+          "payload": {
+            "name": "Master of Computer Science",
+            "description": "Territory knowledge on Master of Science"
+          }
+        }
+      },
+      "BASIC_PUT_NEW_USER": {
+        "input": {
+          "payload": {
+            "name": "Doctor of Computer Science",
+            "description": " Tertiary education builds on Doctor of Computer Science"
+          }
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "input": {
+          "payload": {
+            "name": "Doctor of Computer Science",
+            "description": "providing learning activities in Computer Science"
+          }
+        }
+      },
+      "BASIC_PUT_EMPLOYEE": {
+        "input": {
+          "payload": {
+            "name": "Bachelor of Computer Science",
+            "description": "Builds knowledge on Bachelor of Computer Science"
+          }
+        }
+      },
+      "BASIC_PUT_CANDIDATE": {
+        "input": {
+          "payload": {
+            "name": "Master of Computer Science",
+            "description": "Territory knowledge on Master of Science"
+          }
+        }
+      },
+      "BASIC_PUT_NEW_USER": {
+        "input": {
+          "payload": {
+            "name": "Doctor of Computer Science",
+            "description": " Tertiary education builds on Doctor of Computer Science"
+          }
+        }
+      }
+    }
+  },
+  "COMMON_ADDRESS": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "address1": "",
+        "address2": "",
+        "cityid": 37864,
+        "usercity": null,
+        "region": "california",
+        "countryid": 236
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 20485,
+        "address1": "1212 hidden ridge apt .20",
+        "address2": null,
+        "cityid": 9672,
+        "usercity": null,
+        "region": "texas",
+        "countryid": 236
+      }
+    },
+    "GET_ALL_FILTERING_BY_REGION": {
+      "input": {
+        "region": "texas"
+      },
+      "expected": {
+        "count": 7862
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "countryid": 236,
+        "sort": "id",
+        "address1": "1212 hidden ridge apt 2043"
+      },
+      "expected": {
+        "id": 9672,
+        "name": "Dallas",
+        "latitude": "32.78306",
+        "longitude": "-96.80667",
+        "region": "Texas"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 18762
+      },
+      "expected": {
+        "address1": "1212 hidden ridge apt 2043",
+        "address2": null,
+        "cityid": 9672,
+        "usercity": null,
+        "region": "texas",
+        "countryid": 236
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 18762,
+        "address1": "1212 hidden ridge apt .20",
+        "address2": null
+      },
+      "expected": {
+        "lookup_city": {
+          "id": 9672,
+          "name": "Dallas",
+          "latitude": "32.78306",
+          "longitude": "-96.80667",
+          "region": "Texas",
+          "zipcode": "75201",
+          "countryid": 236
+        },
+        "contact": {
+          "entrydate": " 00-00-0000, 00:00:00",
+          "address": {
+            "city": {
+              "longitude": null
+            }
+          }
+        }
+      }
+    },
+    "BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "address1": "hyderabad",
+          "cityid": 1133,
+          "countryid": 102,
+          "region": "telangana"
+        }
+      }
+    },
+    "BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "address1": "AMARVATHI",
+          "cityid": 1133,
+          "countryid": 103,
+          "region": "Andhra Pradesh"
+        }
+      }
+    },
+    "BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "address1": "5th avenue street",
+          "cityid": 1134,
+          "countryid": 236,
+          "region": "Texas"
+        }
+      }
+    },
+    "BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "address1": "Bismarck",
+          "cityid": 1135,
+          "countryid": 102,
+          "region": "Dakota"
+        }
+      }
+    },
+    "BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "address1": "Hyderabad",
+          "cityid": 1113,
+          "countryid": 102,
+          "region": "telangana"
+        }
+      }
+    },
+    "BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "address1": "Amaravathi",
+          "cityid": 1133,
+          "countryid": 103,
+          "region": "Andhra Pradesh"
+        }
+      }
+    },
+    "BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "address1": "5th street",
+          "cityid": 1134,
+          "countryid": 236,
+          "region": "Texas"
+        }
+      }
+    },
+    "BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "address1": "Bismarck Capital of Dakota",
+          "cityid": 1135,
+          "countryid": 102,
+          "region": "Dakota"
+        }
+      }
+    }
+  },
+  "COURSE_BATCH": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 153
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "courseid": 1,
+        "name": "2012-04",
+        "orientationdate": "04-08-2012 00:00:00",
+        "startdate": "04-08-2012 00:00:00",
+        "enddate": "06-15-2012 00:00:00"
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 1
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Quality Engineering"
+      },
+      "expected": {
+        "name": "Quality Engineering"
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "Quality Engineering",
+        "sort": "id"
+      },
+      "expected": {
+        "course": {
+          "id": 1,
+          "name": "Quality Engineering",
+          "alias": "QA",
+          "description": "Software quality assurance engineer oversees the entire development process, which includes software testing, from start to finish"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 1,
+        "name": "2012-04",
+        "orientationdate": "04-08-2012 00:00:00",
+        "startdate": "04-08-2012 00:00:00",
+        "enddate": "06-15-2012 00:00:00"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "name": "2012-04",
+        "lastmoduserid": 99999,
+        "orientationdate": "04-08-2012 00:00:00",
+        "startdate": "04-08-2012 00:00:00",
+        "enddate": "06-15-2012 00:00:00"
+      },
+      "expected": {
+        "course": {
+          "id": 1,
+          "name": "Quality Engineering",
+          "alias": "QA",
+          "description": "Software quality assurance engineer oversees the entire development process, which includes software testing, from start to finish"
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "courseid": 4,
+            "name": "dinesh",
+            "orientationdate": "30-12-1991",
+            "startdate": "08-03-2016",
+            "enddate": "08-20-2016 00:00:00"
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "courseid": 4,
+            "name": "kumar",
+            "orientationdate": "30-12-1991",
+            "startdate": "08-03-2016",
+            "enddate": "08-20-2016 00:00:00"
+          }
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "courseid": 4,
+            "name": "dinesh",
+            "orientationdate": "00-00-0000 00:00:00",
+            "startdate": "00-00-0000 00:00:00",
+            "enddate": "00-00-0000 00:00:00"
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "courseid": 4,
+            "name": "kumar",
+            "orientationdate": "00-00-0000 00:00:00",
+            "startdate": "00-00-0000 00:00:00",
+            "enddate": "00-00-0000 00:00:00"
+          }
+        }
+      }
+    }
+  },
+  "COURSE_CONTENT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "courseid": 4
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "week": "Week1"
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 2
+      },
+      "expected": {
+        "id": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "week": "Week1"
+      },
+      "expected": {
+        "id": 23,
+        "courseid": 4
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "week": "Week1",
+        "sort": "id"
+      },
+      "expected": {
+        "id": 1,
+        "courseid": 2,
+        "week": "Week1"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 2,
+        "week": "Week1",
+        "morning": "SOFTWARE ARCHITECTURES, \r\nSDLC, Agile?Scrum, \r\nXP, TDD ,SOA, SaaS.",
+        "evening": "HTTP, Front End Fundamentals, HTML, XHTML DOM XML, XPATH, XSD, XSLT, CSS"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 2,
+        "name": "UI/UX Development",
+        "alias": "UI",
+        "description": "User Interface Design is its compliment, the look and feel, the presentation and interactivity of a product"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "contactid": 32090,
+          "hiredate": "2011-09-01T00:00:00.000Z",
+          "startdate": "2011-09-01T00:00:00.000Z"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "contactid": 32090,
+          "hiredate": "2011-09-01T00:00:00.000Z",
+          "startdate": "2011-09-01T00:00:00.000Z"
+        }
+      }
+    }
+  },
+  "COURSE_DEMO": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "courseid": 4
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "courseid": 1,
+        "videoid": "MrqPzYpZ8LQ",
+        "title": "Testing Fundamentals",
+        "description": "Software Testing is important as it may cause mission failure, impact on operational performance and reliability if not done properly. Effective software testing delivers quality software products sat",
+        "lastmoddatetime": "06-22-2016,17:38:17"
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 1
+      },
+      "expected": {
+        "title": "Testing Fundamentals"
+      }
+    },
+    "GET_ALL_FILTERING_BY_TITLE": {
+      "input": {
+        "title": "Testing Fundamentals"
+      },
+      "expected": {
+        "videoid": "MrqPzYpZ8LQ"
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "title": "Testing Fundamentals",
+        "sort": "id"
+      },
+      "expected": {
+        "id": 1,
+        "courseid": 1,
+        "videoid": "MrqPzYpZ8LQ",
+        "title": "Testing Fundamentals",
+        "description": "Software Testing is important as it may cause mission failure, impact on operational performance and reliability if not done properly. Effective software testing delivers quality software products sat"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 1,
+        "videoid": "MrqPzYpZ8LQ",
+        "title": "Testing Fundamentals",
+        "description": "Software Testing is important as it may cause mission failure, impact on operational performance and reliability if not done properly. Effective software testing delivers quality software products sat",
+        "lastmoddatetime": "06-22-2016,17:38:17"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "videoid": "MrqPzYpZ8LQ",
+        "title": "Testing Fundamentals",
+        "description": "Software Testing is important as it may cause mission failure, impact on operational performance and reliability if not done properly. Effective software testing delivers quality software products sat"
+      },
+      "expected": {
+        "course": {
+          "id": 1,
+          "name": "Quality Engineering",
+          "alias": "QA",
+          "description": "Software quality assurance engineer oversees the entire development process, which includes software testing, from start to finish"
+        }
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "courseid": 4,
+          "videoid": "787847",
+          "title": "Java Class",
+          "description": "my name is khan"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "courseid": 4,
+          "videoid": "787847",
+          "title": "Java Class",
+          "description": "my name is khan"
+        }
+      }
+    }
+  },
+  "COURSE_FAQ": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "id": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "courseid": 0
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 0
+      },
+      "expected": {
+        "question": "Do you provide corporate training?"
+      }
+    },
+    "GET_ALL_FILTERING_BY_QUESTION": {
+      "input": {
+        "question": "Are all your classes online or in-class?"
+      },
+      "expected": {
+        "id": 4
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "courseid": 4,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 21,
+        "courseid": 4,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 0,
+        "category": "FAQ",
+        "question": "What are the courses Whitebox-Learning Offers?",
+        "answer": "QA (Manual, Automation with SoapUI, JMeter, QTP & Selenium), JavaStack, UI and .NET. For more information visit\r\n <a href=\"http://whiteboxqa.com\">www.whiteboxqa.com</a>, \r\n <a href=\"http://msnetframework.com\">www.msnetframework.com</a>, \r\n <a href=\"http://uiprogrammer.com\">www.uiprogrammer.com</a> and \r\n <a href=\"http://javastackdeveloper.com\">www.javastackdeveloper.com</a>"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "courseid": 0,
+          "question": "What are the courses Whitebox-Learning Offers?",
+          "answer": "www.javastackdeveloper.com"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "courseid": 0,
+          "question": "What are the courses Whitebox-Learning Offers?",
+          "answer": "www.javastackdeveloper.com"
+        }
+      }
+    }
+  },
+  "COURSE_MATERIAL": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "name": "Javascript Fundamentals"
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "type": "P"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      },
+      "expected": {
+        "link": "https://goo.gl/Su02So"
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Javascript Fundamentals"
+      },
+      "expected": {
+        "courseid": 2
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 56,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 21,
+        "courseid": 4,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 0,
+        "category": "FAQ",
+        "question": "What are the courses Whitebox-Learning Offers?",
+        "answer": "QA (Manual, Automation with SoapUI, JMeter, QTP & Selenium), JavaStack, UI and .NET. For more information visit\r\n <a href=\"http://whiteboxqa.com\">www.whiteboxqa.com</a>, \r\n <a href=\"http://msnetframework.com\">www.msnetframework.com</a>, \r\n <a href=\"http://uiprogrammer.com\">www.uiprogrammer.com</a> and \r\n <a href=\"http://javastackdeveloper.com\">www.javastackdeveloper.com</a>"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "courseid": 0,
+          "question": "What are the courses Whitebox-Learning Offers?",
+          "answer": "www.javastackdeveloper.com"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "courseid": 0,
+          "question": "What are the courses Whitebox-Learning Offers?",
+          "answer": "www.javastackdeveloper.com"
+        }
+      }
+    }
+  },
+  "COURSE_SCHEDULE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "day": "Monday"
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "day": "Monday"
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 1
+      },
+      "expected": {
+        "day": "Monday"
+      }
+    },
+    "GET_ALL_FILTERING_BY_DAY": {
+      "input": {
+        "day": "Monday"
+      },
+      "expected": {
+        "id": 21
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "courseid": 4,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 21,
+        "courseid": 4,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 1,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      },
+      "expected": {
+        "course": {
+          "id": 1,
+          "name": "Quality Engineering",
+          "alias": "QA",
+          "description": "Software quality assurance engineer oversees the entire development process, which includes software testing, from start to finish"
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      }
+    }
+  },
+  "COURSE_SUBJECT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "courseid": 4
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "courseid": 1,
+        "subjectid": 38,
+        "lastmoddatetime": "08-30-2016 12:23:56"
+      }
+    },
+    "GET_ALL_FILTERING_BY_COURSEID": {
+      "input": {
+        "courseid": 1
+      },
+      "expected": {
+        "day": "Monday"
+      }
+    },
+    "GET_ALL_FILTERING_BY_DAY": {
+      "input": {
+        "day": "Monday"
+      },
+      "expected": {
+        "id": 21
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "courseid": 4,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 21,
+        "courseid": 4,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "courseid": 1,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "day": "Monday",
+        "morning": "09:30AM-12:00PM PST",
+        "evening": "6:30PM - 8:30PM PST"
+      },
+      "expected": {
+        "course": {
+          "id": 1,
+          "name": "Quality Engineering",
+          "alias": "QA",
+          "description": "Software quality assurance engineer oversees the entire development process, which includes software testing, from start to finish"
+        }
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "courseid": 4,
+          "day": "Monday",
+          "morning": "breakfat and lunch Time",
+          "evening": "honer of request"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "courseid": 4,
+          "day": "Monday",
+          "morning": "breakfat and lunch Time",
+          "evening": "honer of request"
+        }
+      }
+    }
+  },
+  "COURSE_TESTIMONIAL": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "name": "Javascript Fundamentals"
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 280,
+          "hiredate": "  04-06-2016, 00:00:00",
+          "startdate": "  04-06-2016, 00:00:00",
+          "first": {
+            "id": 32195,
+            "firstname": "",
+            "lastname": "Somineni"
+          }
+        },
+        {
+          "id": 206,
+          "hiredate": "  09-25-2014, 00:00:00",
+          "startdate": "  09-25-2014, 00:00:00",
+          "last": {
+            "id": 32133,
+            "firstname": "Zumana",
+            "lastname": "",
+            "middlename": "Bakir"
+          }
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "firstname": "Sampath"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "firstname": "Sampath",
+        "sort": "firstname"
+      },
+      "expected": [
+        {
+          "id": 149,
+          "hiredate": "  09-01-2011, 00:00:00",
+          "startdate": "  09-01-2011, 00:00:00",
+          "first": {
+            "id": 32090,
+            "firstname": "Sampath",
+            "lastname": "",
+            "middlename": "Velupula",
+            "email": "sampath@innova-path.com",
+            "phone": "925-998-3725"
+          }
+        },
+        {
+          "id": 302,
+          "hiredate": "  09-01-2011, 00:00:00",
+          "startdate": "  09-01-2011, 00:00:00",
+          "last": {
+            "id": 32090,
+            "firstname": "Sampath",
+            "lastname": "",
+            "middlename": "Velupula",
+            "email": "sampath@innova-path.com",
+            "phone": "925-998-3725"
+          }
+        }
+      ]
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 149
+      },
+      "expected": {
+        "contactid": 32090,
+        "hiredate": "2011-09-01T00:00:00.000Z",
+        "startdate": "2011-09-01T00:00:00.000Z"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 149,
+        "hiredate": "  09-01-2011, 00:00:00",
+        "startdate": "  09-01-2011, 00:00:00",
+        "lastmoddatetime": "  08-23-2016 12:08:43",
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "common_contact": {
+          "id": 32090,
+          "firstname": "Sampath",
+          "lastname": "",
+          "middlename": "Velupula",
+          "email": "sampath@innova-path.com",
+          "phone": "925-998-3725",
+          "secondaryemail": "Sampath.Velupula@gmail.com",
+          "secondaryphone": "925-399-4169",
+          "secondarycontactid": null,
+          "sourcecontactid": null,
+          "designation": null,
+          "workemail": null,
+          "workphone": null,
+          "workaddressid": null,
+          "dob": " 00-00-0000, 00:00:00",
+          "linkedin": null,
+          "skype": "sampuv",
+          "facebook": null,
+          "twitter": null,
+          "common_address": {
+            "id": null,
+            "address1": null,
+            "address2": null,
+            "cityid": null,
+            "usercity": null,
+            "region": null,
+            "countryid": null,
+            "lookup_city": {
+              "name": null,
+              "latitude": null,
+              "region": null,
+              "lookup_country": {
+                "iso2": null,
+                "short_name": null,
+                "long_name": null
+              }
+            },
+            "lokup_city": {
+              "lookup_country": {
+                "is03": null
+              }
+            }
+          }
+        },
+        "contact": {
+          "entrydate": " 00-00-0000, 00:00:00",
+          "address": {
+            "city": {
+              "longitude": null
+            }
+          }
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "contactid": 32090,
+            "hiredate": "2011-09-01T00:00:00.000Z",
+            "startdate": "2011-09-01T00:00:00.000Z"
+          }
+        }
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "contactid": 32090,
+          "hiredate": "2011-09-01T00:00:00.000Z",
+          "startdate": "2011-09-01T00:00:00.000Z"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "contactid": 32090,
+          "hiredate": "2011-09-01T00:00:00.000Z",
+          "startdate": "2011-09-01T00:00:00.000Z"
+        }
+      }
+    }
+  },
+  "LEAD_SOURCE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 3,
+          "type": "Online",
+          "description": "candidates are attented through Online"
+        },
+        "last": {
+          "id": 6,
+          "type": "University",
+          "description": "Candidates refered through University"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_TYPE": {
+      "input": {
+        "type": "Radio"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "type": "Radio",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "type": "Radio",
+          "description": "Candidates are refered through radio"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 1,
+        "type": "Radio",
+        "description": "Candidates are refered through radio"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "type": "new type data",
+          "description": "new leadsource description"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "type": "type neww",
+          "description": "description new leadsource"
+        }
+      }
+    }
+  },
+  "USER_LOGIN": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "loginid": 1,
+          "logintypeid": 5
+        },
+        "last": {
+          "id": 3,
+          "loginid": 5
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_LOGINID": {
+      "input": {
+        "loginid": 1
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "loginid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "loginid": 1,
+          "logintypeid": 5
+        },
+        "last": {
+          "id": 1,
+          "loginid": 1,
+          "logintypeid": 5
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "loginid": 1,
+        "logintypeid": 5
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "loginid": 1,
+          "logintypeid": 5
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "loginid": 1,
+          "logintypeid": 5
+        }
+      }
+    }
+  },
+  "USER_LOGIN_FACEBOOK": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "username": "samuel",
+          "email": "samuelrajsams@gmail.com"
+        },
+        "last": {
+          "id": 3,
+          "username": "sithara"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USERNAME": {
+      "input": {
+        "username": "sithara"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "username": "sithara",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 3,
+          "username": "sithara",
+          "email": "sithara@123"
+        },
+        "last": {
+          "id": 3,
+          "username": "sithara",
+          "email": "sithara@123"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "username": "sithara",
+        "email": "sithara@123"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "username": "kiran",
+          "email": "kiran@123"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "username": "kiranmai",
+          "email": "xyz"
+        }
+      }
+    }
+  },
+  "USER_LOGIN_GITHUB": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "username": "kumar",
+          "email": "kumar@whitebox.qa.com"
+        },
+        "last": {
+          "id": 1,
+          "username": "kumar"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USERNAME": {
+      "input": {
+        "username": "kumar"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "username": "kumar",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 3,
+          "username": "kumar",
+          "email": "kumar@whitebox.qa.com"
+        },
+        "last": {
+          "id": 3,
+          "username": "kumar",
+          "email": "kumar@whitebox.qa.com3"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "username": "kumar",
+        "email": "kumar@whitebox.qa.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "username": "kiran",
+          "email": "kiran@123"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "username": "kiranmai",
+          "email": "xyz"
+        }
+      }
+    }
+  },
+  "USER_LOGIN_GOOGLE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "username": "kumar",
+          "email": "engr1@innova-path.com"
+        },
+        "last": {
+          "id": 2,
+          "username": "dathu"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USERNAME": {
+      "input": {
+        "username": "kumar"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "username": "kumar",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "username": "kumar",
+          "email": "engr1@innova-path.com"
+        },
+        "last": {
+          "id": 3,
+          "username": "kumar",
+          "email": "engr1@innova-path.com"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "username": "kumar",
+        "email": "engr1@innova-path.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "username": "kiran",
+          "email": "kiran@123"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "username": "kiranmai",
+          "email": "xyz"
+        }
+      }
+    }
+  },
+  "USER_LOGIN_HISTORY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "history_loginid": 1,
+          "ip_address": "183.83.226.216"
+        },
+        "last": {
+          "id": 2,
+          "history_loginid": 1
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USER_LOGINID": {
+      "input": {
+        "loginid": 1
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "loginid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "history_loginid": 1,
+          "ip_address": "183.83.226.216"
+        },
+        "last": {
+          "id": 1,
+          "history_loginid": 1,
+          "ip_address": "183.83.226.216"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "history_loginid": 1,
+        "ip_address": "183.83.226.216"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "history_loginid": 1,
+          "ip_address": "183.83.226.217"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "history_loginid": 1,
+          "ip_address": "183.83.226.217"
+        }
+      }
+    }
+  },
+  "USER_LOGIN_HISTORY_INVALID": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "apptype": "abc",
+          "email": "kiran@gmail.com"
+        },
+        "last": {
+          "id": 1,
+          "apptype": "abc"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMAIL": {
+      "input": {
+        "email": "kiran@gmail.com"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "apptype": "abc",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "apptype": "abc",
+          "email": "kiran@gmail.com"
+        },
+        "last": {
+          "id": 1,
+          "apptype": "abc"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "apptype": "abc",
+        "email": "kiran@gmail.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "apptype": "abcd",
+          "email": "kiran@gmail.com"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "apptype": "abcd",
+          "email": "kiran@gmail.com"
+        }
+      }
+    }
+  },
+  "USER_LOGIN_LINKEDIN": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "username": "samuel",
+          "email": "samuelrajsams@gmail.com"
+        },
+        "last": {
+          "id": 3,
+          "username": "sithara"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USERNAME": {
+      "input": {
+        "username": "sithara"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "username": "sithara",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 3,
+          "username": "sithara",
+          "email": "sithara@123"
+        },
+        "last": {
+          "id": 3,
+          "username": "sithara",
+          "email": "sithara@123"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "username": "sithara",
+        "email": "sithara@123"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "username": "kiran",
+          "email": "kiran@123"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "username": "kiranmai",
+          "email": "xyz"
+        }
+      }
+    }
+  },
+  "USER_ROLE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 3
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "userid": 1,
+          "roleid": 1
+        },
+        "last": {
+          "id": 4,
+          "userid": 1
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_USERID": {
+      "input": {
+        "userid": 1
+      },
+      "expected": {
+        "count": 3
+      }
+    },
+    "GET_ALL_FILTERING_BY_ROLEID": {
+      "input": {
+        "roleid": 1
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "roleid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "userid": 1,
+          "roleid": 1
+        },
+        "last": {
+          "id": 1,
+          "userid": 1,
+          "roleid": 1
+        }
+      },
+      "GET_ONE": {
+        "input": {
+          "id": 1
+        },
+        "expected": {
+          "id": 1,
+          "userid": 1,
+          "roleid": 1
+        }
+      },
+      "BASIC_POST": {
+        "input": {
+          "payload": {
+            "userid": 1,
+            "roleid": 1
+          }
+        }
+      },
+      "BASIC_PUT": {
+        "input": {
+          "payload": {
+            "userid": 1,
+            "roleid": 1
+          }
+        }
+      }
+    }
+  },
+  "CHOICE_QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_CHOICE_QUESTIONS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_CHOICE_QUESTIONS_BY_SORTING": {
+      "expected": {
+        "first": {
+          "id": 140,
+          "subjectid": 2,
+          "levelid": 1
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_CHOICE_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_CHOICE_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "id": 5,
+        "ts_subjectid": 56,
+        "levelid": 1
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "question": "The basic difference between JavaScript and Java is",
+          "choice1": "There is no difference",
+          "choice2": "Functions are considered as fields",
+          "choice3": "Variables are specific",
+          "choice4": "functions are values, and there is no hard distinction between methods and fields"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 3
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CHOICE_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 4
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 4
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CHOICE_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 38,
+          "levelid": 3
+        }
+      }
+    }
+  },
+  "APP_EMPLOYER_CONTACT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "appcompanyid": 1,
+        "companyid": 8,
+        "statusid": 21
+      }
+    },
+    "GET_ALL_FILTERING_BY_APPCOMPANYID": {
+      "input": {
+        "appcompanyid": 1
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "INNOVAPATH, INC."
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "companyid": 8,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 8,
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 293
+      },
+      "expected": {
+        "appcompanyid": 1,
+        "companyid": 8,
+        "leadid": null,
+        "statusid": 21
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 8,
+        "name": "INNOVAPATH, INC.",
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837",
+        "url": "http://www.innova-path.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "appcompanyid": 1,
+          "companyid": 8,
+          "leadid": null,
+          "statusid": 21
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "appcompanyid": 1,
+          "companyid": 8,
+          "leadid": null,
+          "statusid": 21
+        }
+      }
+    }
+  },
+  "APP_EMPLOYER_LEAD": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "categoryid": 1,
+        "companyid": 8,
+        "statusid": 21
+      }
+    },
+    "GET_ALL_FILTERING_BY_COMPANYID": {
+      "input": {
+        "appcompanyid": 1
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "INNOVAPATH, INC."
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "companyid": 8,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 8,
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 293
+      },
+      "expected": {
+        "appcompanyid": 1,
+        "companyid": 8,
+        "leadid": null,
+        "statusid": 21
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 8,
+        "name": "INNOVAPATH, INC.",
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837",
+        "url": "http://www.innova-path.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "categoryid": 1,
+          "companyid": 8,
+          "leadid": null,
+          "statusid": 21
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "categoryid": 1,
+          "companyid": 8,
+          "leadid": null,
+          "statusid": 21
+        }
+      }
+    }
+  },
+  "APP_MGMT_COMPANY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "alias": "IP",
+        "companyid": 8,
+        "statusid": 21
+      }
+    },
+    "GET_ALL_FILTERING_BY_COMPANYID": {
+      "input": {
+        "companyid": 1
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "INNOVAPATH, INC."
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "companyid": 8,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 8,
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 293
+      },
+      "expected": {
+        "alias": "IP",
+        "companyid": 8,
+        "statusid": 21
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 8,
+        "name": "INNOVAPATH, INC.",
+        "email": "info@innova-path1.com",
+        "phone": "408-708-9394 ",
+        "fax": "925-353-2837",
+        "url": "http://www.innova-path.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "alias": "IP",
+          "companyid": 8,
+          "statusid": 21
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "alias": "IP",
+          "companyid": 8,
+          "statusid": 21
+        }
+      }
+    }
+  },
+  "APP_MGMT_EMPLOYEE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "appcompanyid": 1,
+        "employeeid": 8,
+        "statusid": 21
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMPLOYEEID": {
+      "input": {
+        "employeeid": 1
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "firstname": "Sampath"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "employeeid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "appcompanyid": 1,
+        "statusid": 21,
+        "loginid": null
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 314
+      },
+      "expected": {
+        "id": 314,
+        "employeeid": 149,
+        "appcompanyid": 1,
+        "statusid": 21,
+        "loginid": null
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 32090,
+        "firstname": "Sampath",
+        "lastname": "",
+        "middlename": "Velupula",
+        "email": "sampath@innova-path.com",
+        "phone": "925-998-3725",
+        "addressid": 20416
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "employeeid": 149,
+          "appcompanyid": 1,
+          "statusid": 21,
+          "loginid": null
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "employeeid": 149,
+          "appcompanyid": 1,
+          "statusid": 21,
+          "loginid": null
+        }
+      }
+    }
+  },
+  "CLASS_MOCKS": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "subjectid": 53,
+        "title": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "statusid": 36,
+        "videoid": "osDVxMVSz9I"
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 4455
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "categoryid": 1,
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "employeeid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "appcompanyid": 1,
+        "statusid": 21,
+        "loginid": null
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "title": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "statusid": 36,
+        "classdate": "11-01-2014 00:00:00",
+        "videoid": "osDVxMVSz9I",
+        "type": "Job Help",
+        "categoryid": 9
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 32090,
+        "title": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "videoid": "osDVxMVSz9I",
+        "type": "Job Help",
+        "categoryid": 9
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "subjectid": 53,
+          "title": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+          "statusid": 36,
+          "classdate": "11-01-2014 00:00:00",
+          "videoid": "osDVxMVSz9I",
+          "type": "Job Help",
+          "categoryid": 9
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "subjectid": 53,
+          "title": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+          "statusid": 36,
+          "classdate": "11-01-2014 00:00:00",
+          "videoid": "osDVxMVSz9I",
+          "type": "Job Help",
+          "categoryid": 9
+        }
+      }
+    }
+  },
+  "MKT_CANDIDATE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "candidateid": 4455,
+        "statusid": 39,
+        "leadid": ""
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 4456
+      },
+      "expected": {
+        "count": 11
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "candidateid": 1,
+        "firstname": "IN_PROGRESS"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "candidateid": 1,
+        "statusid": 21
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "candidateid": 1,
+        "statusid": 39,
+        "leadid": 1
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "name": "ACTIVE",
+        "displayname": "Active",
+        "entityid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidateid": 4455,
+          "statusid": 39,
+          "leadid": 3
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidateid": 4457,
+          "statusid": 36,
+          "leadid": 4
+        }
+      }
+    }
+  },
+  "MKT_CANDIDATE_ASSIGNMENT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "candidateid": 4455,
+        "statusid": 39,
+        "mmid": 11,
+        "emailcandidateid": 12
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 4456
+      },
+      "expected": {
+        "count": 11
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "candidateid": 1,
+        "firstname": "IN_PROGRESS"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMAIL": {
+      "input": {
+        "id": 53,
+        "candidateid": 1,
+        "email": "swetha.choula@gmail.com"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "candidateid": 54,
+        "statusid": 1,
+        "mmid": 21,
+        "emailaccountid": 25
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "candidate": 1,
+        "statusid": 21,
+        "mmid": 1,
+        "emailaccountid": 258
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "contactid": 99
+      },
+      "expected": {
+        "id": 6,
+        "firstname": "ACTIVE",
+        "email": "asantoshsagar@gmail.com",
+        "addressid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidate": 1,
+          "statusid": 21,
+          "mmid": 1,
+          "emailaccountid": 258
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidate": 5,
+          "statusid": 21,
+          "mmid": 1,
+          "emailaccountid": 25
+        }
+      }
+    }
+  },
+  "MKT_CANDIDATE_LEAD": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "sourceid": 44,
+        "contactid": 39,
+        "statusid": 4,
+        "categoryid": 54,
+        "levelid": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_CONTACTID": {
+      "input": {
+        "contactid": 44
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMAIL": {
+      "input": {
+        "id": 53,
+        "email": "all@innova-path.com"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "firstname": "Innovapath"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "candidateid": 1,
+        "statusid": 21
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "candidateid": 1,
+        "statusid": 39,
+        "leadid": 1
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "name": "ACTIVE",
+        "displayname": "Active",
+        "entityid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidateid": 4455,
+          "statusid": 39,
+          "leadid": 3
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidateid": 4457,
+          "statusid": 36,
+          "leadid": 4
+        }
+      }
+    }
+  },
+  "CLASS_NOTES": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 149,
+        "subjectid": 49,
+        "classdate": "04-25-2012 00:00:00"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 53
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "categoryid": 1,
+        "statusid": 21,
+        "notes": "anynotes"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "notes": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "categoryid": 9
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 32090,
+        "notes": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "categoryid": 9
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "classdate": "04-25-2012 00:00:00",
+          "notes": "<p class=\"MsNormal\"><o:p>"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "classdate": "04-25-2012 00:00:00",
+          "notes": "<p class=\"MsNormal\"><o:p>"
+        }
+      }
+    }
+  },
+  "CLASS_MATERIAL": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 46
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 149,
+        "subjectid": 49,
+        "classdate": "04-25-2012 00:00:00"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 53
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "categoryid": 1,
+        "statusid": 21,
+        "notes": "anynotes"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "notes": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "categoryid": 9
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 32090,
+        "notes": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "categoryid": 9
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "classdate": "04-25-2012 00:00:00",
+          "notes": "<p class=\"MsNormal\"><o:p>"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "classdate": "04-25-2012 00:00:00",
+          "notes": "<p class=\"MsNormal\"><o:p>"
+        }
+      }
+    }
+  },
+  "CLASS_ASSIGNMENT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 750
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 149,
+        "subjectid": 49,
+        "question": "Please write a use case for login and registration features for whiteboxqa.com"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 53
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "categoryid": 1,
+        "name": 1,
+        "description": "ASP.NET Web Forms"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "question": "Please write a use case for login and registration features for whiteboxqa.com"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "subjectid": 39,
+        "question": "Please write a use case for login and registration features for whiteboxqa.com"
+      },
+      "expected": {
+        "id": 38,
+        "categoryid": 1,
+        "name": "Http and Web"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "question": "What is OPTIONS command in HTTP"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "subjectid": 49,
+          "question": "Write me 10 metrics you have done in your project"
+        }
+      }
+    }
+  },
+  "CLASS_QUESTION": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1317
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 180,
+        "subjectid": 40,
+        "question": "\tCan we use PUT and POST interchangeably?"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 53
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 42,
+        "sort": "id"
+      },
+      "expected": {
+        "subjectid": 40,
+        "question": "\tCan we use PUT and POST interchangeably?"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "question": "\tCan we use PUT and POST interchangeably?"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 40,
+        "name": "Web Services",
+        "description": "Web Services, SOAP, WSDL, REST"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "id": 189,
+          "subjectid": 40,
+          "question": "\tCan we use PUT and POST interchangeably?"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "id": 181,
+          "subjectid": 40,
+          "question": "\tCneww an we use PUT and POST interchangeably?"
+        }
+      }
+    }
+  },
+  "MOCK_CANDIDATE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 343
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "candidateid": "kumar",
+          "mocid": "kumar@whitebox.qa.com"
+        },
+        "last": {
+          "id": 1,
+          "candidateid": "kumar",
+          "mocid": ""
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 4187
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "categoryid": 1,
+        "statusid": 21,
+        "notes": "anynotes"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "subjectid": 53,
+        "notes": "Venki Nov 01,2014 JH StubHub WebDriver(Vijaya)",
+        "classdate": "11-01-2014 00:00:00",
+        "categoryid": 9
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 19,
+        "candidateid": 4187,
+        "mockid": 13
+      },
+      "expected": {
+        "id": 32090,
+        "firstname": "Gopi",
+        "lastname": "Chilukuri",
+        "email": "gopibabu@hotmail.com"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidateid": 4187,
+          "mockid": 13
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidateid": 418,
+          "mockid": 13
+        }
+      }
+    }
+  },
+  "CLASS_RECORDING": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1696
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 21063,
+        "subjectid": 34,
+        "classdate": "12-21-2015,00:00:00",
+        "description": "S kumar Microsoft NET ASP NET Tutorial 12",
+        "videoid": "nyjAoO3hNxs"
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 53
+      },
+      "expected": {
+        "count": 41
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "id": 53,
+        "categoryid": 1,
+        "description": "ASP.NET Web Forms",
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "subjectid": 149,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 21063,
+        "subjectid": 34,
+        "classdate": "12-21-2015,00:00:00",
+        "description": "S kumar Microsoft NET ASP NET Tutorial 12",
+        "videoid": "nyjAoO3hNxs"
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 21063
+      },
+      "expected": {
+        "subjectid": 34,
+        "classdate": "12-21-2015,00:00:00",
+        "description": "S kumar Microsoft NET ASP NET Tutorial 12",
+        "videoid": "nyjAoO3hNxs"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "subjectid": 97,
+        "description": "S kumar Microsoft NET ASP NET Tutorial 12"
+      },
+      "expected": {
+        "id": 34,
+        "name": "ASP.NET Web Forms",
+        "categoryid": 1,
+        "description": "ASP.NET Web Forms"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "id": 21063,
+          "subjectid": 34,
+          "classdate": "12-21-2015,00:00:00",
+          "description": "S kumar Microsoft NET ASP NET Tutorial 12",
+          "videoid": "nyjAoO3hNxs",
+          "link": "http://youtu.be/nyjAoO3hNxs"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "id": 21063,
+          "subjectid": 54,
+          "classdate": "12-21-2015,00:00:00",
+          "description": " new S kumar Microsoft NET ASP NET Tutorial 12",
+          "videoid": "nyjAoO3hNxsgg",
+          "link": "http://youtu.be/nyjAoO3hNxs"
+        }
+      }
+    }
+  },
+  "CANDIDATE_ASSIGNMENT": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 633
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 2815,
+          "candidateid": 1,
+          "assignmentid": 145
+        },
+        "last": {
+          "id": 2834,
+          "candidateid": 2,
+          "assignmentid": 58
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 1
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_ASSIGNMENTID": {
+      "input": {
+        "assignmentid": 8
+      },
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "id": 53,
+        "categoryid": 1,
+        "name": "Selenium WebDriver"
+      },
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "batchid": 8,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 4,
+        "first": {
+          "id": 2821,
+          "candidateid": 2,
+          "assignmentid": 45
+        },
+        "last": {
+          "id": 2825,
+          "candidateid": 5111,
+          "assignmentid": 30
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 2825
+      },
+      "expected": {
+        "candidateid": 5111,
+        "assignmentid": 126
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "candidateid": 4187,
+        "assignmentid": 99999
+      },
+      "expected": {
+        "id": 5111,
+        "candidateid": 4187,
+        "portalid": 862,
+        "notes": 862
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidateid": 5113,
+          "assignmentid": 140
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidateid": 5241,
+          "ip_address": 145
+        }
+      }
+    }
+  },
+  "CANDIDATE_QUESTION": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 778
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 2815,
+          "candidateid": 1,
+          "questionid": 204
+        },
+        "last": {
+          "id": 5834,
+          "candidateid": 2,
+          "assignmentid": 58
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_QUESTIONID": {
+      "input": {
+        "qustionid": 1
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_QUESTION": {
+      "input": {
+        "questionid": "What are views? Can you update views?"
+      },
+      "expected": {
+        "count": 5
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "questionid": 598,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 4,
+        "first": {
+          "id": 138,
+          "candidateid": 2,
+          "questionid": 723
+        },
+        "last": {
+          "id": 2825,
+          "candidateid": 5111,
+          "questionid": 204
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 75
+      },
+      "expected": {
+        "candidateid": 5441,
+        "questionid": 22
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "candidateid": 4187,
+        "assignmentid": 99999
+      },
+      "expected": {
+        "id": 5111,
+        "candidateid": 4187,
+        "portalid": 862,
+        "notes": 862
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "candidateid": 5113,
+          "questionid": 140
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "candidateid": 5241,
+          "questionid": 145
+        }
+      }
+    }
+  },
+  "CANDIDATE_CHALLENGES": {
+    "TEST_FOR_BASIC_GET_ALL_SUPER": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYEE": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_CANDIDATE": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_NEW_USER": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_LEVEL": {
+      "_id": "5898e9efa5a96438f40b167a",
+      "candidate_id": "587f05688f6c240e2a527384",
+      "__v": 0,
+      "lastmoddatetime": "2017-02-06T20:21:12.000Z",
+      "public_view": {
+        "review": 0,
+        "likes": 0,
+        "status": true
+      },
+      "geo_location": {
+        "ip_address": null
+      },
+      "browser": null,
+      "location": null,
+      "challengedatetime": "2017-02-06T20:21:12.000Z",
+      "screen_sharing_id": null,
+      "is_screen_sharing": false,
+      "youtube_id": null,
+      "total_time": 1260,
+      "time_taken": 0,
+      "attempted": 0,
+      "correct": 0,
+      "quiz": {
+        "id": 1,
+        "name": "choice"
+      },
+      "subject": {
+        "id": 56,
+        "name": "Javascript Programming",
+        "icon": "ts-javascriptprogramming"
+      },
+      "level": {
+        "id": 3,
+        "name": "ADVANCED"
+      },
+      "questions": [
+        {
+          "rowNo": 0,
+          "question_id": 11,
+          "question": "\n what will be output of following code?\n\n<code>\n\nvar text = 'outside';\nfunction logIt(){\n    console.log(text);\n    var text = 'inside';\n};\nlogIt();\n\n\n</code>",
+          "answerOne": "The number of milliseconds since January 1st, 1970",
+          "answerTwo": "The number of days since January 1st, 1900",
+          "answerThree": " The number of seconds since Netscape's public stock offering.",
+          "answerFour": "None of the above",
+          "originalAnswer": "a",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 1,
+          "question_id": 16,
+          "question": "\n What does the <noscript> tag do?\n",
+          "answerOne": " Enclose text to be displayed by non-JavaScript browsers.",
+          "answerTwo": "Prevents scripts on the page from executing.",
+          "answerThree": "Describes certain low-budget movies.",
+          "answerFour": "None of the above",
+          "originalAnswer": "a",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 2,
+          "question_id": 18,
+          "question": "\nWhich of the following is not considered a JavaScript operator?\n",
+          "answerOne": "new",
+          "answerTwo": "this",
+          "answerThree": "delete",
+          "answerFour": "typeof",
+          "originalAnswer": "b",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 3,
+          "question_id": 19,
+          "question": "\n______method evaluates a string of JavaScript code in the context of the specified object.\n",
+          "answerOne": ".  Eval",
+          "answerTwo": "ParseInt",
+          "answerThree": "ParseFloat",
+          "answerFour": "Efloat",
+          "originalAnswer": "a",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 4,
+          "question_id": 20,
+          "question": "<p>Does JavaScript pass parameter by value or by reference? ???Explain with example</p>",
+          "answerOne": "onfocus",
+          "answerTwo": "onblur",
+          "answerThree": "onclick",
+          "answerFour": "ondblclick",
+          "originalAnswer": "b",
+          "time": 420,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 5,
+          "question_id": 22,
+          "question": "\nThe _______ method of an Array object adds and/or removes elements from an array.\n",
+          "answerOne": "Reverse",
+          "answerTwo": "Shift",
+          "answerThree": "Slice",
+          "answerFour": "Splice",
+          "originalAnswer": "d",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 6,
+          "question_id": 24,
+          "question": "\nWhich tag(s) can handle mouse events in Netscape?\n",
+          "answerOne": " <IMG>",
+          "answerTwo": "<A>",
+          "answerThree": "<BR>",
+          "answerFour": "None of the above",
+          "originalAnswer": "b",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 7,
+          "question_id": 26,
+          "question": "\nIn JavaScript, _________ is an object of the target language data type that encloses an object of the source language.\n",
+          "answerOne": "a wrapper",
+          "answerTwo": "a link",
+          "answerThree": "a cursor",
+          "answerFour": " a form",
+          "originalAnswer": "a",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 8,
+          "question_id": 29,
+          "question": "\nThe syntax of capture events method for document object is ______________\n",
+          "answerOne": " captureEvents()",
+          "answerTwo": "captureEvents(args eventType)",
+          "answerThree": "captureEvents(eventType)",
+          "answerFour": " captureEvents(eventVal)",
+          "originalAnswer": "c",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 9,
+          "question_id": 30,
+          "question": "\nWhich best explains getSelection()?\n",
+          "answerOne": "Returns the VALUE of a selected OPTION.",
+          "answerTwo": "Returns document.URL of the window in focus.",
+          "answerThree": "Returns the value of cursor-selected text",
+          "answerFour": "Returns the VALUE of a checked radio input.",
+          "originalAnswer": "c",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 10,
+          "question_id": 32,
+          "question": "\nWhat will be the output  ?\n\n<code>\n\n(function(){\n  var a = b = 3;\n})();\nconsole.log(\"a defined? \" + (typeof a !== 'undefined'));\nconsole.log(\"b defined? \" + (typeof b !== 'undefined'));\n\n\n</code>",
+          "answerOne": "true, false",
+          "answerTwo": "false, true",
+          "answerThree": "false, false",
+          "answerFour": "true, true",
+          "originalAnswer": "b",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 11,
+          "question_id": 46,
+          "question": "mock1",
+          "answerOne": "1",
+          "answerTwo": "2",
+          "answerThree": "3",
+          "answerFour": "4",
+          "originalAnswer": "d",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 12,
+          "question_id": 47,
+          "question": "mock2",
+          "answerOne": "1",
+          "answerTwo": "2",
+          "answerThree": "3",
+          "answerFour": "4",
+          "originalAnswer": "d",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 13,
+          "question_id": 48,
+          "question": "mock3",
+          "answerOne": "1",
+          "answerTwo": "2",
+          "answerThree": "3",
+          "answerFour": "4",
+          "originalAnswer": "d",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        },
+        {
+          "rowNo": 14,
+          "question_id": 49,
+          "question": "mock4",
+          "answerOne": "1",
+          "answerTwo": "2",
+          "answerThree": "3",
+          "answerFour": "4",
+          "originalAnswer": "d",
+          "time": 60,
+          "candidateAnswer": null,
+          "attempted": "N",
+          "correctOrNot": "N",
+          "time_taken": 0
+        }
+      ]
+    }
+  },
+  "REC_CANDIDATE": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 2
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "batchid": 4455,
+        "candidateid": 4191,
+        "statusid": 39,
+        "leadid": ""
+      }
+    },
+    "GET_ALL_FILTERING_BY_CANDIDATEID": {
+      "input": {
+        "candidateid": 4456
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_BATCHID": {
+      "input": {
+        "batchid": 56
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "candidateid": 1,
+        "firstname": "IN_PROGRESS"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "batchid": 1,
+        "candidateid": 1,
+        "statusid": 21,
+        "leadid": 1
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "batchid": 4,
+        "candidateid": 1,
+        "statusid": 39,
+        "leadid": 1
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "firstname": "ACTIVE",
+        "email": "Active",
+        "addressid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "batchid": 1,
+          "candidateid": 4191,
+          "statusid": 15,
+          "leadid": 29014
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "batchid": 1,
+          "candidateid": 4191,
+          "statusid": 15,
+          "leadid": 29014
+        }
+      }
+    }
+  },
+  "REC_CANDIDATE_LEAD": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 3768
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "sourceid": 44,
+        "contactid": 491,
+        "statusid": 39,
+        "categoryid": 4,
+        "levelid": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_CONTACTID": {
+      "input": {
+        "contactid": 4456
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_EMAIL": {
+      "input": {
+        "email": "maniehmy@gmail.com"
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_FIRST_NAME": {
+      "input": {
+        "id": 53,
+        "candidateid": 1,
+        "firstname": "IN_PROGRESS"
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 29207,
+        "sourceid": 3,
+        "contactid": 28661,
+        "statusid": 9,
+        "categoryid": 7,
+        "levelid": 5
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 29207,
+        "sourceid": 3,
+        "contactid": 28661,
+        "statusid": 9,
+        "categoryid": 7,
+        "levelid": 5
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "firstname": "ACTIVE",
+        "email": "Active",
+        "addressid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "sourceid": 1,
+          "contactid": 8,
+          "statusid": 21
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "sourceid": 1,
+          "contactid": 54,
+          "statusid": 28
+        }
+      }
+    }
+  },
+  "REC_CANDIDATE_LOGIN": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1581
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 29,
+        "uname": "sindhustar24@gmail.com",
+        "passwd": "c185ddac8b5a8f5aa23c5b80bc12d214",
+        "contactid": 29012,
+        "statusid": 43
+      }
+    },
+    "GET_ALL_FILTERING_BY_CONTACTID": {
+      "input": {
+        "contactid": 4456
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_ADDTESSID": {
+      "input": {
+        "addressid": 5
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_UNAME": {
+      "input": {
+        "uname": "sindhustar24@gmail.com"
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "uname": "sindhustar24@gmail.com",
+        "passwd": "c185ddac8b5a8f5aa23c5b80bc12d214",
+        "contactid": 29012,
+        "statusid": 43
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "uname": "sindhustar24@gmail.com",
+        "passwd": "c185ddac8b5a8f5aa23c5b80bc12d214",
+        "contactid": 29012,
+        "statusid": 43
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "firstname": "ACTIVE",
+        "email": "Active",
+        "addressid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "uname": "sindhustar24@gmail.com",
+          "passwd": "c185ddac8b5a8f5aa23c5b80bc12d214",
+          "contactid": 29012,
+          "statusid": 43
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "uname": "kiran@gmail.com",
+          "passwd": "c185ddac8b5a8f5aa23c5b80bc12d214",
+          "contactid": 290548,
+          "statusid": 54
+        }
+      }
+    }
+  },
+  "REC_CANDIDATE_LOGIN_HISTORY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 80102
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "id": 1,
+        "loginid": 920,
+        "logindatetime": "2013-09-15T01:12:39.000Z",
+        "ipaddress": null,
+        "useragent": null
+      }
+    },
+    "GET_ALL_FILTERING_BY_USEAGENT": {
+      "input": {
+        "useragent": 4456
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_IPADDRESS": {
+      "input": {
+        "ipaddress": 5
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "candidateid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "id": 1,
+        "loginid": 920,
+        "logindatetime": "2013-09-15T01:12:39.000Z",
+        "ipaddress": null,
+        "useragent": null
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 1,
+        "loginid": 920,
+        "logindatetime": "2013-09-15T01:12:39.000Z",
+        "ipaddress": null,
+        "useragent": null
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 1,
+        "statusid": 21,
+        "lastmoduserid": 99999
+      },
+      "expected": {
+        "id": 6,
+        "firstname": "ACTIVE",
+        "email": "Active",
+        "addressid": 6
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "loginid": 920,
+          "logindatetime": "2013-09-15T01:12:39.000Z",
+          "ipaddress": null,
+          "useragent": null
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "loginid": 950,
+          "logindatetime": "2013-09-15T01:12:39.000Z",
+          "ipaddress": null,
+          "useragent": null
+        }
+      }
+    }
+  },
+  "CODING_QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_CODING_QUESTIONS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_CODING_QUESTIONS_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "subjectid": 2,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_CODING_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 2
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "levelid": "2",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "subjectid": 56,
+          "levelid": 1
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_CODING_QUESTIONS_SORT_BY_ID": {
+      "expected": {
+        "first": {
+          "id": 1
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_CODING_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "id": 3,
+        "subjectid": 2,
+        "levelid": 3
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 1
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CODING_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 1
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CODING_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3
+        }
+      }
+    }
+  },
+  "RECORDINGS_LIST": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 5562
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "name": "-Nithya-June-04-,2015-SQL-Final.wmv",
+          "link": "http://youtu.be/UW7dB9czQBs",
+          "recordingdate": "01-01-0001 00:00:00"
+        },
+        "last": {
+          "id": 15,
+          "name": "2015-01-20 22.21 SampathAvatar Job Applications.wmv",
+          "link": "http://youtu.be/JWrQNojmmeI",
+          "recordingdate": "01-20-2015 00:00:00"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 12
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "2015-01-19 Sampath JUnit Selenium.wmv"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "2015-01-19 Sampath JUnit Selenium.wmv",
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 14,
+          "name": "2015-01-19 Sampath JUnit Selenium.wmv",
+          "link": "http://youtu.be/nydwqva8o7o",
+          "recordingdate": "01-19-2015 00:00:00"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 14,
+        "name": "2015-01-19 Sampath JUnit Selenium.wmv",
+        "link": "http://youtu.be/nydwqva8o7o",
+        "recordingdate": "01-19-2015 00:00:00"
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "id": 14,
+          "name": "2015-01-19 Sampath JUnit Selenium.wmv",
+          "link": "http://youtu.be/nydwqva8o7o",
+          "recordingdate": "01-19-2015 00:00:00"
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "id": 15,
+          "name": "2015-01-20 22.21 SampathAvatar Job Applications.wmv",
+          "link": "http://youtu.be/JWrQNojmmeI",
+          "recordingdate": "01-20-2015 00:00:00"
+        }
+      }
+    }
+  },
+  "VIDEO_QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_VIDEO_QUESTIONS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_VIDEO_QUESTIONS_SORTING": {
+      "expected": {
+        "first": {
+          "id": 48,
+          "subjectid": 2,
+          "levelid": 1,
+          "question": "<p>Explain in detail what is <strong>boxing</strong> and <strong>unboxing</strong> in C#?.</p>",
+          "answer": "",
+          "time": 120,
+          "lastmoddatetime": "04-15-2017 08:02:37",
+          "lastmoduserid": 99999,
+          "questiontype": "Video"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_VIDEO_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      },
+      "expected": {
+        "statusCode": 200
+      }
+    },
+    "TEST_FOR_GET_ALL_VIDEO_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 16
+      },
+      "expected": {
+        "id": 16,
+        "subjectid": 56,
+        "levelid": 2,
+        "question": "<p>Name the <strong>truthy </strong>and <strong>falsy </strong>values in JavaScript ?</p><p><strong>What </strong>will be the output of the code below ?</p><p><br></p><pre spellcheck=\"false\">console.log(false == 0);\nconsole.log(false === 0); \n</pre>",
+        "answer": "falsy: In javascript 6 things are falsy and they are- false, null, undefined, '', 0, NaN\ntruthy: There are only two truthy things- true and everything that is not false\n",
+        "time": 150,
+        "lastmoddatetime": "04-13-2017 07:07:42",
+        "lastmoduserid": 99999,
+        "questiontype": "Video"
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_VIDEO_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 1
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4
+        }
+      }
+    }
+  },
+  "QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_QUESTIONS": {
+      "expected": {
+        "count": 7
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 4,
+        "questiontype": "Video"
+      },
+      "expected": {
+        "id": 4,
+        "subjectid": 56,
+        "levelid": 2,
+        "question": "<p><a href=\"http://stackoverflow.com/questions/31683075/how-to-do-a-deep-comparison-between-2-objects-with-lodash\" target=\"_blank\" style=\"color: rgb(36, 39, 41);\">How to do a deep comparison between 2 objects with <strong>lodash</strong>?</a> <strong>Justify </strong>your answer with examples..</p>",
+        "answer": "You will see 20.99",
+        "time": 300,
+        "lastmoddatetime": "04-10-2017 05:04:29",
+        "lastmoduserid": 99999,
+        "questiontype": "Video"
+      }
+    },
+    "TEST_FOR_GET_ALL_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      },
+      "expected": [
+        {
+          "id": 27,
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>",
+          "answer": "",
+          "time": 0,
+          "lastmoddatetime": "03-23-2017 03:17:07",
+          "lastmoduserid": 99999,
+          "questiontype": "Video"
+        }
+      ]
+    },
+    "TEST_FOR_BASIC_POST_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>",
+          "icon_class": "",
+          "answer": "java",
+          "time": 205
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>",
+          "icon_class": "",
+          "answer": "java",
+          "time": 205
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>",
+          "icon_class": "",
+          "answer": "java",
+          "time": 205
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 37,
+          "levelid": 1,
+          "question": "<p>what is java</p>",
+          "icon_class": "",
+          "answer": "java",
+          "time": 205
+        }
+      }
+    }
+  },
+  "LOOKUP_COUNTRY": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 10
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "iso2": "AF",
+          "short_name": "Afghanistan",
+          "long_name": "Islamic Republic of Afghanistan",
+          "iso3": "AFG",
+          "numcode": "4",
+          "un_member": "yes",
+          "calling_code": "93",
+          "cctld": ".af",
+          "lastmoddatetime": "May 16 2016 08:58 AM",
+          "lastmoduserid": 99999,
+          "name": "Afghanistan"
+        },
+        "last": {
+          "id": 250,
+          "iso2": "ZW",
+          "short_name": "Zimbabwe",
+          "long_name": "Republic of Zimbabwe",
+          "iso3": "ZWE",
+          "numcode": "716",
+          "un_member": "yes",
+          "calling_code": "263",
+          "cctld": ".zw",
+          "lastmoddatetime": "May 16 2016 08:58 AM",
+          "lastmoduserid": 99999,
+          "name": "Zimbabwe"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_SHORT_NAME": {
+      "input": {
+        "short_name": "Afghanistan"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "name": "Afghanistan",
+        "iso2": "AF",
+        "iso3": "AFG",
+        "long_name": "Islamic Republic of Afghanistan",
+        "short_name": "Afghanistan"
+      }
+    },
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "payload": {
+          "iso2": "21",
+          "short_name": "tamil nadu",
+          "long_name": "Tamil Nadu",
+          "iso3": "Any"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "iso2": "IN-AR",
+          "short_name": "ARP",
+          "long_name": "Arunachal Pradesh",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "payload": {
+          "iso2": "IN-AS",
+          "short_name": "Assam",
+          "long_name": "Assam",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "payload": {
+          "iso2": "IN-CT",
+          "short_name": "Chhattisgarh",
+          "long_name": "Chhattisgarh",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_SUPER": {
+      "input": {
+        "payload": {
+          "iso2": "21",
+          "short_name": "tamil nadu",
+          "long_name": "Tamil Nadu",
+          "iso3": "Any"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "iso2": "IN-AR",
+          "short_name": "ARP",
+          "long_name": "Arunachal Pradesh state",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_CANDIDATE": {
+      "input": {
+        "payload": {
+          "iso2": "IN-AS",
+          "short_name": "Assam",
+          "long_name": "Assam state",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_NEW_USER": {
+      "input": {
+        "payload": {
+          "iso2": "IN-CT",
+          "short_name": "Chhattisgar",
+          "long_name": "Chhattisgarh state",
+          "iso3": "ANY"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ISO2": {
+      "input": {
+        "iso2": "AF"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ISO3": {
+      "input": {
+        "iso3": "AFG"
+      },
+      "expected": {
+        "count": 9
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "sort": "id",
+        "short_name": "Afghanistan"
+      },
+      "expected": {
+        "count": 6
+      }
+    }
+  },
+  "LOOKUP_EMPLOYEE_DESIGNATION_TEST": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 50
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 203,
+          "name": "Account Manager"
+        },
+        "last": {
+          "id": 7,
+          "name": "| DIRECTOR OF RECRUITING |"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "| DIRECTOR OF RECRUITING |"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "name": "Less than Primary Education",
+        "sort": "name"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 2,
+          "name": "Less than Primary Education"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 3
+      },
+      "expected": {
+        "name": "Primary Education",
+        "description": "Primary education provides learning and educational activities typically designed to provide students"
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 6
+      },
+      "expected": {
+        "lookup_education_level": {
+          "id": 6,
+          "name": "Lower Secondary Education",
+          "description": "Programmes at ISCED level 2, or lower secondary education, are typically designed to build on"
+        }
+      }
+    },
+    "BASIC_POST": {
+      "input": {
+        "payload": {
+          "payload": {
+            "name": "siddhu",
+            "description": "Programmes at ISCED level 2, or lower secondary education, are typically designed to build on"
+          }
+        }
+      }
+    },
+    "BASIC_PUT": {
+      "input": {
+        "payload": {
+          "entityid": 2,
+          "name": "MY_DUMMY_UPDATED_TYPE",
+          "displayname": "My Dummy Updated Type",
+          "description": "My Dummy Updated Type Description."
+        }
+      }
+    }
+  }
+}

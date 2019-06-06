@@ -1,0 +1,64 @@
+{
+  "AUDIO_QUESTIONS": {
+    "TEST_FOR_BASIC_PUT_AUDIO_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "time": 300,
+          "question": "How can you create an Object in JavaScript?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_AUDIO_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "time": 300,
+          "question": "How can you create a constructor in JavaScript?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_AUDIO_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 4,
+          "time": 300,
+          "question": "How can you create an Array in JavaScript?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_AUDIO_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 3,
+          "time": 300,
+          "question": "How can you create an Array in JavaScript?"
+        }
+      },
+      "expected": {
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "TYPED_QUESTIONS": {
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "question": "Typing is one of those things that have appeared in our society only in the last two centuries, creating jobs that were not existent in the past. It is done by almost anyone at a computer today but few people actually still use the typing machine. If you ",
+          "preparetime": 60,
+          "time": 300
+        }
+      },
+      "expected":
+      {
+      "statusCode":200,
+        "headers":
+        {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "question": "Typing is one of those things that have appeared in our society only in the last two centuries, creating jobs that were not existent in the past. It is done by almost anyone at a computer today but few people actually still use the typing machine. If you ",
+          "preparetime": 60,
+          "time": 300
+        }
+      },
+      "expected":
+      {      "statusCode":403,
+        "headers":
+        {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "question": "Typing is one of those things that have appeared in our society only in the last two centuries, creating jobs that were not existent in the past. It is done by almost anyone at a computer today but few people actually still use the typing machine. If you ",
+          "preparetime": 60,
+          "time": 300
+        }
+      },
+      "expected":
+      {"statusCode":403,
+        "headers":
+        {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "payload": {
+          "subjectid": 56,
+          "levelid": 2,
+          "question": "Typing is one of those things that have appeared in our society only in the last two centuries, creating jobs that were not existent in the past. It is done by almost anyone at a computer today but few people actually still use the typing machine. If you ",
+          "preparetime": 60,
+          "time": 300
+        }
+      },
+      "expected":
+      {"statusCode":401,
+        "headers":
+        {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

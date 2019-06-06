@@ -1,0 +1,159 @@
+{
+  "LOGIN": {
+    "TEST_FOR_CANDIDATE_LOGIN": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudhaaa.ip@gmail.com",
+        "password": "Excellence@123",
+        "role": "candidate"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "_id": "591af1d85a19a2354ce16caa",
+          "resume_id": "AVw8DcirqVBUHEX445Z8",
+          "demo_details": {
+            "choice_demo": true,
+            "coding_demo": true,
+            "video_demo": true
+          },
+          "auth_details": {
+            "registereddatetime": "2017-05-16T12:34:32.000Z",
+            "first_login_completed": "Y",
+            "is_user_verified": "Y"
+          },
+          "source_details": {
+            "username": "sudhaaa.ip@gmail.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "name": "Sudha WBL",
+            "email": "sudhaaa.ip@gmail.com",
+            "phone": "+918926464631",
+            "country_name": "India"
+          },
+          "role": "candidate"
+        }
+      }
+    },
+    "TEST_FOR_EMPLOYEE_LOGIN": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudha@innova-path.com",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "_id": "591af3005a19a2354ce16cae",
+          "auth_details": {
+            "registereddatetime": "2017-05-16T12:39:28.000Z",
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": false
+          },
+          "employer_details": {
+            "company_name": "Innova-path",
+            "country_name": "India",
+            "company_size": "500-999",
+            "job_title": "VP"
+          },
+          "source_details": {
+            "username": "sudha@innova-path.com",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "source": "talentscreen"
+          },
+          "user_profile": {
+            "phone": "+919676454532",
+            "name": "Sudha WBL",
+            "email": "sudha@innova-path.com"
+          },
+          "role": "employee"
+        }
+      }
+    },
+    "TEST_FOR_SUPER_LOGIN": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "kumar@whitebox-learning.com",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "Authentication Successful",
+        "status": 200,
+        "userData": {
+          "_id": "591af2215a19a2354ce16cac",
+          "lastmoddatetime": "2017-06-26T13:50:58.563Z",
+          "__v": 0,
+          "lastmoduserid": "591af2215a19a2354ce16cac",
+          "auth_details": {
+            "registereddatetime": "2017-05-16T12:35:45.000Z",
+            "last_verification_code": "c6nqh33q",
+            "first_login_completed": "Y",
+            "is_user_verified": "Y",
+            "is_super": true
+          },
+          "employer_details": {
+            "company_name": "Google",
+            "country_name": "United States",
+            "company_size": "5000+",
+            "job_title": "Engineering Manager"
+          },
+          "source_details": {
+            "source": "talentscreen",
+            "password": "16a2174aa0099047aaefd63853516d7c",
+            "username": "kumar@whitebox-learning.com"
+          },
+          "user_profile": {
+            "phone": "+19254247411",
+            "name": "Kumar velupula",
+            "email": "kumar@whitebox-learning.com"
+          },
+          "role": "employee"
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJsYXN0bW9kZGF0ZXRpbWUiOiIyMDE3LTA2LTI2VDEzOjUwOjU4LjU2M1oiLCJfX3YiOjAsImxhc3Rtb2R1c2VyaWQiOiI1OTFhZjIyMTVhMTlhMjM1NGNlMTZjYWMiLCJhdXRoX2RldGFpbHMiOnsicmVnaXN0ZXJlZGRhdGV0aW1lIjoiMjAxNy0wNS0xNlQxMjozNTo0NS4wMDBaIiwibGFzdF92ZXJpZmljYXRpb25fY29kZSI6ImM2bnFoMzNxIiwiZmlyc3RfbG9naW5fY29tcGxldGVkIjoiWSIsImlzX3VzZXJfdmVyaWZpZWQiOiJZIiwiaXNfc3VwZXIiOnRydWV9LCJlbXBsb3llcl9kZXRhaWxzIjp7ImNvbXBhbnlfbmFtZSI6Ikdvb2dsZSIsImNvdW50cnlfbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJjb21wYW55X3NpemUiOiI1MDAwKyIsImpvYl90aXRsZSI6IkVuZ2luZWVyaW5nIE1hbmFnZXIifSwic291cmNlX2RldGFpbHMiOnsic291cmNlIjoidGFsZW50c2NyZWVuIiwicGFzc3dvcmQiOiIxNmEyMTc0YWEwMDk5MDQ3YWFlZmQ2Mzg1MzUxNmQ3YyIsInVzZXJuYW1lIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInVzZXJfcHJvZmlsZSI6eyJwaG9uZSI6IisxOTI1NDI0NzQxMSIsIm5hbWUiOiJLdW1hciB2ZWx1cHVsYSIsImVtYWlsIjoia3VtYXJAd2hpdGVib3gtbGVhcm5pbmcuY29tIn0sInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTQ5ODU2NDk3MywiZXhwIjoxNTAyMTY0OTczfQ.dDDa6qKnV57CE8czVCZzLHYxdlrPPaMGPTLU5CraFMI",
+        "ipAddress": "::ffff:124.123.88.194"
+      }
+    },
+    "TEST_FOR_INVALID_USER_LOGIN": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "kasthurih.com",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "You have not registered. Please sign up."
+      }
+    },
+    "TEST_FOR_USER_LOGIN_WITH_WRONG_PASSWORD": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "sudhaaa.ip@gmail.com",
+        "password": "Excellence"
+      },
+      "expected": {
+        "message": "Wrong password. Try again."
+      }
+    },
+    "TEST_FOR_USER_LOGIN_WITH_INCORRECT_USER_NAME": {
+      "input": {
+        "app_type": "talentscreen",
+        "type": "login",
+        "email_address": "kumar@whitebox-learning.co",
+        "password": "Excellence@123"
+      },
+      "expected": {
+        "message": "You have not registered. Please sign up."
+      }
+    }
+  }
+}
+

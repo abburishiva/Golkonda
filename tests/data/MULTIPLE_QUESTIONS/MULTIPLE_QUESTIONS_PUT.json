@@ -1,0 +1,180 @@
+{
+  "MULTIPLE_QUESTIONS": {
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 201,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 403,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 403,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_VIDEO_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 401,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_SUPER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 201,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_EMPLOYEE": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 403,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_CANDIDATE": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 403,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    },
+    "TEST_FOR_BASIC_PUT_TYPED_QUESTIONS_FOR_NEW_USER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      },
+      "expected": {
+        "statusCode": 401,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "subjectid": 56,
+        "levelid": 1,
+        "question": "<p>How do you <strong>handle exceptions</strong> in JavaScript?.</p>",
+        "preparetime": 0,
+        "time": 180,
+        "reviewDone": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "EMPLOYERS_SUBJECTS": {
+    "TEST_FOR_BASIC_GET_EMPLOYERS_SUBJECTS_BY_ID_FOR_SUPER": {
+      "input": {
+        "id": "595f7b8caf75904d34c7def1"
+      },
+      "expected":{
+        "_id": "595f7b8caf75904d34c7def1",
+        "emp_id": "591af3005a19a2354ce16cae",
+        "name": "c#",
+        "template": "//Talentscreen.Program.Main is the entry point for your code. Don't change it.\nusing System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text.RegularExpressions;\n\nnamespace Talentscreen\n{\n    public class Program\n    {\n        public static void Main(string[] args)\n        {\n            //Your code goes here\n\n        }\n    }\n}",
+        "description": "c# programming",
+        "codemirror_theme": "lang-csharp",
+        "category": {
+          "id": 1,
+          "name": "PROGRAMMING",
+          "description": "It describes subject categories and responsible for performing all activities related to maintaining a successful programming environment"
+        }
+      },
+      "no_records":{
+        "status": 404,
+        "message": "Records Not Found"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_SUBJECTS_BY_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "595f7b8caf75904d34c7def1"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_SUBJECTS_BY_ID_FOR_CANDIDATE": {
+      "input": {
+        "id": "595f7b8caf75904d34c7def1"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_SUBJECTS_BY_ID_FOR_NEW_USER": {
+      "input": {
+        "id": "595f7b8caf75904d34c7def1"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "categoryid": 1,
+        "description": "chakram Automation",
+        "icon_class": "ts_java",
+        "name": "chakram",
+        "template": ""
+      },
+      "expected": {
+        "description": "chakram Automation",
+        "name": "chakram",
+        "template": "",
+        "category": {
+          "id": 1,
+          "name": "PROGRAMMING",
+          "description": "chakram Automation"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "categoryid": 1,
+        "description": "Jest and Enzyme for mobile automation",
+        "icon_class": "ts_java",
+        "name": "Jest and Enzyme",
+        "template": ""
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "categoryid": 1,
+        "description": "React Native for developing mobile apps",
+        "icon_class": "ts_java",
+        "name": "React Native",
+        "template": ""
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "categoryid": 1,
+        "description": "Night Watch foe UI automation",
+        "icon_class": "ts_java",
+        "name": "Night Watch",
+        "template": ""
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER": {
+      "input": {
+        "categoryid": 1,
+        "description": "chakram Automation",
+        "icon_class": "ts_chakram",
+        "name": "chakram",
+        "template": ""
+      },
+      "expected": {
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE": {
+      "input": {
+        "categoryid": 1,
+        "description": "Jest and Enzyme for mobile automation",
+        "icon_class": "ts_jest",
+        "name": "Jest and Enzyme",
+        "template": ""
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE": {
+      "input": {
+        "categoryid": 1,
+        "description": "React Native for developing mobile apps",
+        "icon_class": "ts_reactNative",
+        "name": "React Native",
+        "template": ""
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER": {
+      "input": {
+        "categoryid": 1,
+        "description": "Night Watch foe UI automation",
+        "icon_class": "ts_nightWatch",
+        "name": "Night Watch",
+        "template": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "EMPLOYER_INTERVIEWS": {
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEWS_BY_ID_FOR_SUPER": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      },
+      "expected":{
+        "_id": "5923d5a34f0eb45435e4123a",
+        "emp_id": "591af3005a19a2354ce16cae",
+        "lastmoddatetime": "2017-05-23T06:24:35.091Z",
+        "__v": 0,
+        "type": "ondemand",
+        "expiredTime": "5",
+        "challengeId": "5921ee1a74a1e042bb16e9bc",
+        "access": {
+          "live": false,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeOpen",
+          "challengeComplete"
+        ],
+        "sendEmail": [
+          "dbadri.ip@gmail.com"
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEWS_BY_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEWS_BY_ID_FOR_CANDIDATE": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYER_INTERVIEWS_BY_ID_FOR_NEW_USER": {
+      "input": {
+        "id": "5923d5a34f0eb45435e4123a"
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_SUPER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "__v": 0,
+        "emp_id": "59008ae121857e29ec55f19c",
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "_id": "5919528e1222b9410d6f5002",
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_EMPLOYEE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_CANDIDATE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_NEW_USER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "start_date": "2017-05-15T06:38:26.168Z",
+        "end_date": "2017-05-16T06:38:26.168Z",
+        "expired_time": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_SUPER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_EMPLOYEE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_CANDIDATE": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_EMPLOYER_INTERVIEWS_FOR_NEW_USER": {
+      "input": {
+        "emp_id": "59008ae121857e29ec55f19c",
+        "challenge_id": "59008ae121857e29ec55f19c",
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com",
+          "hkasthuri.ip@gmail.com"
+        ],
+        "type": "schedule",
+        "startDate": "2017-05-15T06:38:26.168Z",
+        "endDate": "2017-05-16T06:38:26.168Z",
+        "expiredTime": "2017-05-16T06:38:26.168Z",
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screenSharing": false,
+          "public": true
+        },
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      }
+    }
+  }
+}

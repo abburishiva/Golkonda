@@ -1,0 +1,22 @@
+{
+  "NEW_EMPLOYEE_REGISTER": {
+    "TEST_FOR_NEW_EMPLOYEE_REGISTER": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "raju1@whiebox-learning.com",
+        "password": "Excellence@123",
+        "message_type": "register",
+        "type": "register",
+        "role": "employee"
+      },
+      "expected": {
+        "statusCode": 200,
+        "data": {
+          "code": 200,
+          "message": "success"
+        },
+        "status": 200
+      }
+    }
+  }
+}

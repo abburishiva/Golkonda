@@ -1,0 +1,25 @@
+{
+  "super":{
+    "app_type": "talentscreen",
+    "type": "login",
+    "email_address": "kumar@whitebox-learning.com",
+    "password":"Excellence@123"
+  },
+  "employee":{
+    "app_type": "talentscreen",
+    "type": "login",
+    "email_address": "sudha@innova-path.com",
+    "password":"Excellence@123"
+  },
+  "candidate":{
+    "app_type": "talentscreen",
+    "type": "login",
+    "email_address": "sudhaaa.ip@gmail.com",
+    "password":"Excellence@123"
+  },
+  "mochaUrl":"https://api.qa.talentscreen.io/v1/",
+  "devQaUrl":"https://api.devqa.talentscreen.io/v1/",
+  "qaUrl":"https://api.qa.talentscreen.io/v1/",
+  "stagUrl":"https://api.stag.talentscreen.io/v1/",
+  "productionUrl":"https://api.talentscreen.io/v1/"
+}

@@ -1,0 +1,136 @@
+{
+  "ROUTES_DELETION_FOR_COMMON_LEVEL_ROUTE":{
+    "TEST_FOR_GET_ALL_BASE_URL":{
+      "expected":{
+        "statusCode":200,
+  "id": 1,
+  "entityid": 2,
+  "name": "BEGINNER",
+  "display_name": "Beginner",
+  "description": "It describes test difficulty level and it contains beginner level questions.",
+  "enabled": 1,
+  "lastmoddatetime": "03-02-2016 07:12:04",
+  "lastmoduserid": 99999
+
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_BASE_URL":{
+     "input":{
+    "payload":{
+  "route" : "/v1/common/levels",
+  "type" : "all"
+    }
+  },
+      "expected":{
+        "statusCode":200,
+        "message":"CacheRoutes are Deleted...!"
+      }
+},
+    "TEST_FOR_GET_ALL_SORTING_FOR_SUPER":{
+      "expected":{
+         "statusCode":200,
+  "id": 3,
+  "common_entity": {
+    "id": 2,
+    "name": "TEST_DIFFICULTLY_LEVEL",
+    "display_name": "Test Difficulty Level",
+    "description": "It describes test difficultly levels."
+  },
+  "name": "ADVANCED",
+  "display_name": "Advanced",
+  "description": "It describes test difficulty level and it contains advanced level questions.",
+  "enabled": 1,
+  "lastmoduserid": 99999,
+  "lastmoddatetime": "03-02-2016 07:13:27"
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING_FOR_EMPLOYEE":{
+      "expected":{
+        "statusCode":200,
+        "id": 3,
+        "common_entity": {
+          "id": 2,
+          "name": "TEST_DIFFICULTLY_LEVEL",
+          "display_name": "Test Difficulty Level",
+          "description": "It describes test difficultly levels."
+        },
+        "name": "ADVANCED",
+        "display_name": "Advanced",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoduserid": 99999,
+        "lastmoddatetime": "03-02-2016 07:13:27"
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING_FOR_CANDIDATE":{
+      "expected":{
+        "statusCode":200,
+        "id": 3,
+        "common_entity": {
+          "id": 2,
+          "name": "TEST_DIFFICULTLY_LEVEL",
+          "display_name": "Test Difficulty Level",
+          "description": "It describes test difficultly levels."
+        },
+        "name": "ADVANCED",
+        "display_name": "Advanced",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoduserid": 99999,
+        "lastmoddatetime": "03-02-2016 07:13:27"
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING_FOR_NEW_USER":{
+      "expected":{
+        "statusCode":200
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_SUPER":{
+      "input": {
+        "payload": {
+          "route": "/v1/common/levels?type=all&sort=name",
+          "type": "one"
+        }
+      },
+        "expected":{
+          "statusCode":200,
+          "message":"CacheRoute Is Deleted...!"
+        }
+      },
+    "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_EMPLOYEE":{
+      "input": {
+        "payload": {
+          "route": "/v1/common/levels?type=all&sort=name",
+          "type": "one"
+        }
+      },
+      "expected":{
+        "statusCode":200,
+        "message":"CacheRoute Is Deleted...!"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_CANDIDATE":{
+      "input": {
+        "payload": {
+          "route": "/v1/common/levels?type=all&sort=name",
+          "type": "one"
+        }
+      },
+      "expected":{
+        "statusCode":403,
+        "message":"CacheUrl Is Deleted...!"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_NEW_USER":{
+      "input": {
+        "payload": {
+          "route": "/v1/common/levels?type=all&sort=name",
+          "type": "one"
+        }
+      },
+      "expected":{
+        "statusCode":401
+      }
+    }
+    }
+  }

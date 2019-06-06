@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_SUPER": {
+      "input": {
+        "candidate_name": "MadhuBala",
+        "resume_name": "MadhuBala Reddy",
+        "resumeId": "AV8QIl6xYBPzgHfkJe5t"
+      },
+      "expected": {
+        "shortUid": "mreddy",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "MadhuBala",
+        "resume_name": "MadhuBala Reddy",
+        "resumeId": "AV8QIl6xYBPzgHfkJe5t"
+      },
+      "expected": {
+        "shortUid": "mreddy",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "MadhuBala",
+        "resume_name": "MadhuBala Reddy",
+        "resumeId": "AV8QIl6xYBPzgHfkJe5t"
+      },
+      "expected": {
+        "shortUid": "mreddy",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_ONE_WORD_AND_RESUME_NAME_HAS_TWO_WORDS_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "MadhuBala",
+        "resume_name": "MadhuBala Reddy",
+        "resumeId": "AV8QIl6xYBPzgHfkJe5t"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_SUPER": {
+      "input": {
+        "resumeId": "AV8FxVvlYBPzgHfkJe41"
+      },
+      "expected": {
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_EMPLOYEE": {
+      "input": {
+        "resumeId": "AV8FxVvlYBPzgHfkJe41"
+      },
+      "expected": {
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_CANDIDATE": {
+      "input": {
+        "resumeId": "AV8FxVvlYBPzgHfkJe41"
+      },
+      "expected": {
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_AND_RESUME_NAME_HAS_TWO_WORDS_EACH_AND_BOTH_ARE_SIMILAR_FOR_NEW_USER": {
+      "input": {
+        "resumeId": "AV8FxVvlYBPzgHfkJe41"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

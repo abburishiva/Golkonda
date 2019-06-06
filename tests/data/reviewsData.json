@@ -1,0 +1,206 @@
+{
+  "USER_REVIEWS": {
+    "TEST_FOR_BASIC_GET_ALL_USER_REVIEWS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_USER_REVIEW_BY_ID":
+    {
+      "input": {
+        "_id": "5893257688d3175a8aafd841"
+      },
+      "responce": {
+        "_id": "5893257688d3175a8aafd841",
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "",
+        "message": "kasthuri",
+        "rating": null,
+        "__v": 0,
+        "lastmoddatetime": "2017-02-02T12:17:34.000Z",
+        "is_used_for_marketing": true,
+        "is_public": false,
+        "improve_message": "",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1 version",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      },
+      "responce": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1 version",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      },
+      "responce": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen.Talentscreen is an excellent app",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1 version",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      },
+      "responce": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen.Talentscreen is an excellent app",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1 version",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "TalentScreen 0.1 version",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      },
+      "responce": {
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "TalentScreen",
+        "message": "Welcome to TalentScreen",
+        "rating": null,
+        "is_used_for_marketing": true,
+        "is_public": true,
+        "improve_message": "",
+        "feedback": null,
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50"
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER": {
+      "input": {
+        "_id": "58942a331abec165ab7314b6"
+      },
+      "responce": {
+        "_id": "58942a331abec165ab7314b6",
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "",
+        "message": "sudha",
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50",
+        "improve_message": "work hard in silence",
+        "rating": null,
+        "is_used_for_marketing": "true",
+        "is_public": false,
+        "ststusCode": 200
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE": {
+      "input": {
+        "_id": "58942a331abec165ab7314b6"
+      },
+      "responce": {
+        "_id": "58942a331abec165ab7314b6",
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "",
+        "message": "sudha",
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50",
+        "improve_message": "work hard in silence",
+        "rating": null,
+        "is_used_for_marketing": "true",
+        "is_public": false,
+        "ststusCode": 200
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_CANDIDATE": {
+      "input": {
+        "_id": "58942a331abec165ab7314b6"
+      },
+      "responce": {
+        "_id": "58942a331abec165ab7314b6",
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "",
+        "message": "sudha",
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50",
+        "improve_message": "work hard in silence",
+        "rating": null,
+        "is_used_for_marketing": "true",
+        "is_public": false,
+        "ststusCode": 200
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_NEW_USER": {
+      "input": {
+        "_id": "58942a331abec165ab7314b6"
+      },
+      "responce": {
+        "_id": "58942a331abec165ab7314b6",
+        "candidate_Id": "583356072e4aba0d724c7e77",
+        "source": "",
+        "message": "sudha",
+        "profile_image": "https://lh4.googleusercontent.com/-GAEcu4FMF6E/AAAAAAAAAAI/AAAAAAAAZew/prBqwq_ZqHc/photo.jpg?sz=50",
+        "improve_message": "work hard in silence",
+        "rating": null,
+        "is_used_for_marketing": "true",
+        "is_public": false,
+        "ststusCode": 200
+      }
+    }
+  },
+  "PUBLIC_REVIEWS":{
+    "TEST_FOR_BASIC_GET_ALL_PUBLIC_REVIEWS":{
+      "expected":{
+        "count":1
+      }
+    }
+  }
+}
+
+
+
+
+
+

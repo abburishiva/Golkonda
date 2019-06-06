@@ -1,0 +1,760 @@
+{
+  "LOOKUP_CITY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 33025,
+          "name": "'Abasan al Kabirah"
+        },
+        "last": {
+          "id": 7080,
+          "name": "Zyryanovsk"
+        }
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "Zyrya"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 15191
+      },
+      "expected": {
+        "id": 15191,
+        "name": "Zyrya",
+        "latitude": "40.3661",
+        "longitude": "50.2917"
+      }
+    }
+  },
+  "SUBJECT": {
+    "TEST_FOR_BASIC_GET_ALL_SUBJECTS": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_SORTING": {
+      "expected": {
+        "first": {
+          "id": 57,
+          "categoryid": 1,
+          "name": "Angular.js"
+        },
+        "last": {
+          "id": 1,
+          "categoryid": 5,
+          "name": "Selenium WebDriver",
+          "icon_class": "ts-seleniumwebdriver",
+          "description": "Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application."
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_WITH_NAME": {
+      "input": {
+        "name": "java"
+      },
+      "expected": {
+        "id": 37,
+        "categoryid": 1,
+        "name": "Java ",
+        "icon_class": "ts-javaprogramming",
+        "description": "Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
+        "lastmoddatetime": "Mar 22 2017 01:59 PM",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_WITH_CATEGORYID": {
+      "input": {
+        "categoryid": 5
+      },
+      "expected": [
+        {
+          "id": 1,
+          "categoryid": 5,
+          "name": "Selenium WebDriver",
+          "icon_class": "ts-seleniumwebdriver",
+          "description": "Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application.",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        },
+        {
+          "id": 60,
+          "categoryid": 5,
+          "name": "JUnit",
+          "icon_class": "ts-unittesting",
+          "description": "JUnit is a unit testing framework for the Java programming language. ",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        },
+        {
+          "id": 61,
+          "categoryid": 5,
+          "name": "TestNG",
+          "icon_class": "ts-testng",
+          "description": "TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing (testing a class in isolation of the others) to integration testing (testing entire systems made of several classes, several packages and even several external frameworks, such as application servers).",
+          "lastmoddatetime": "Mar 22 2017 02:05 PM",
+          "lastmoduserid": 99999
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORT": {
+      "input": {
+        "categoryid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 2,
+          "categoryid": 1,
+          "name": "C#"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_QUIZ_TYPE": {
+      "input": {
+        "quiz_type": "choice"
+      },
+      "expected": [
+        {
+          "subjectId": 2,
+          "name": "C#",
+          "subjects_count": 56
+        },
+        {
+          "subjectId": 37,
+          "name": "Java ",
+          "subjects_count": 47
+        },
+        {
+          "subjectId": 56,
+          "name": "Javascript",
+          "subjects_count": 51
+        }
+      ]
+    },
+    "TEST_FOR_GET_SUBJECTES_BASED_ON_LEVELS": {
+      "input": {
+        "subject_id": 56,
+        "quiz_type": "choice"
+      },
+      "expected": [
+        {
+          "levelId": 1,
+          "name": "BEGINNER",
+          "display_name": "Beginner",
+          "questions_count": 14
+        },
+        {
+          "levelId": 2,
+          "name": "INTERMEDIATE",
+          "display_name": "Intermediate",
+          "questions_count": 16
+        },
+        {
+          "levelId": 3,
+          "name": "ADVANCED",
+          "display_name": "Advanced",
+          "questions_count": 20
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_CHOICE": {
+      "input": {
+        "quiz_type": "choice"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_CODING": {
+      "input": {
+        "quiz_type": "coding"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_VIDEO": {
+      "input": {
+        "quiz_type": "video"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_AUDIO": {
+      "input": {
+        "quiz_type": "audio"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_PASSING_QUIZ_TYPE_AS_TYPED": {
+      "input": {
+        "quiz_type": "typed"
+      }
+    },
+    "TEST_FOR_GET_ONE_SUBJECT": {
+      "input": {
+        "id": 60
+      },
+      "expected": {
+        "id": 60,
+        "categoryid": 5,
+        "name": "JUnit"
+      }
+    }
+  },
+  "COMMON_LEVEL": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 3
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 39,
+          "name": "BACHELORS_OR_EQUIVALENT_LEVEL"
+        },
+        "last": {
+          "id": 29,
+          "name": "UPPER_SECONDARY_ EDUCATION"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 2
+      },
+      "expected": {
+        "count": 3
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "EXPERT"
+      },
+      "expected": {
+        "count": 0
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 2,
+        "sort": "name"
+      },
+      "expected": {
+        "first": {
+          "id": 2,
+          "name": "EXPERT"
+        },
+        "last": {
+          "id": 3,
+          "name": "PROFICIENT"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "id": 2,
+        "entityid": 2,
+        "name": "EXPERT",
+        "display_name": "Expert",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoddatetime": "05-21-2017 12:15:11",
+        "lastmoduserid": 99999
+      }
+    },
+    "TEST_FOR_GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "id": 2,
+        "common_entity": {
+          "id": 2,
+          "name": "TEST_DIFFICULTLY_LEVEL",
+          "display_name": "Test Difficulty Level",
+          "description": "It describes test difficultly levels."
+        },
+        "name": "EXPERT",
+        "display_name": "Expert",
+        "description": "It describes test difficulty level and it contains advanced level questions.",
+        "enabled": 1,
+        "lastmoduserid": 99999,
+        "lastmoddatetime": "05-21-2017 12:15:11"
+      }
+    }
+  },
+  "COMMON_ROLE": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "name": "SUPER_ADMIN"
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 2,
+          "name": "ADMIN"
+        },
+        {
+          "id": 5,
+          "name": "SUPER_ADMIN11"
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 9
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "SUPER_ADMIN"
+      },
+      "expected": {
+        "count": 0
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 9,
+        "sort": "name"
+      },
+      "expected": {
+        "count": 4,
+        "first": {
+          "id": 2,
+          "name": "ADMIN"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "entityid": 9,
+        "name": "ADMIN",
+        "display_name": "Admin",
+        "description": "Rights to manage Admin"
+      }
+    },
+    "TEST_FOR_GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 2
+      },
+      "expected": {
+        "common_entity": {
+          "id": 9,
+          "name": "APP_MGMT_EMPLOYEE_STATUS",
+          "displayname": "App Mgmt Employee Status",
+          "description": "It describes employee status."
+        },
+        "name": "ADMIN",
+        "display_name": "Admin",
+        "description": "Rights to manage Admin",
+        "lastmoddatetime": "07-25-2016 23:44:48"
+      }
+    }
+  },
+  "COMMON_STATUS": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "name": "ACTIVE"
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 34,
+          "name": "ACTIVE"
+        },
+        {
+          "id": 27,
+          "name": "SOMETHING"
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 9
+      },
+      "expected": {
+        "count": 4
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "IN_ACTIVE"
+      },
+      "expected": {
+        "count": 3
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 9,
+        "sort": "name"
+      },
+      "expected": {
+        "first": {
+          "id": 21,
+          "name": "ACTIVE"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 21
+      },
+      "expected": {
+        "id": 21,
+        "name": "ACTIVE",
+        "display_name": "Active",
+        "entityid": 9,
+        "description": "It describes active status of employee.",
+        "enabled": 1,
+        "lastmoddatetime": "08-20-2016 20:34:46",
+        "lastmoduserid": 99999
+      }
+    }
+  },
+  "COMMON_CATEGORY": {
+    "BASIC_GET_ALL": {
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_SORTING": {
+      "expected": [
+        {
+          "id": 4,
+          "name": "ARCHITECTURE"
+        },
+        {
+          "id": 5,
+          "name": "TESTING"
+        }
+      ]
+    },
+    "GET_ALL_FILTERING_BY_ENTITY": {
+      "input": {
+        "entityid": 1
+      },
+      "expected": {
+        "count": 6
+      }
+    },
+    "GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "PROGRAMMING"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "sort": "name",
+        "entityid": 1,
+        "name": "MY_DUMMY_UPDATED_TYPE",
+        "display_name": "My Dummy Updated Type"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 4,
+          "name": "ARCHITECTURE"
+        },
+        "last": {
+          "id": 5,
+          "name": "TESTING"
+        }
+      }
+    },
+    "GET_ONE": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "name": "TESTING",
+        "display_name": "Testing",
+        "entityid": 1,
+        "description": "It describes test type of testing. ",
+        "enabled": 1
+      }
+    },
+    "GET_ONE_TYPE_ALL": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "id": 5,
+        "name": "TESTING",
+        "display_name": "Testing",
+        "common_entity": {
+          "id": 1,
+          "name": "TEST_TYPE",
+          "displayname": "Test Type",
+          "description": "It describes test challenge types."
+        },
+        "description": "It describes test type of testing. ",
+        "enabled": 1
+      }
+    }
+  },
+  "COMMON_ENTITY": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "id": 13
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 13,
+          "name": "APP_MGMT_COMPANY_STATUS"
+        },
+        "last": {
+          "id": 10,
+          "name": "VENDOR_STATUS"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_NAME": {
+      "input": {
+        "name": "TEST_TYPES"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "filter": "TEST_TYPES",
+        "sort": "name"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 1,
+          "name": "TEST_TYPES"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 13
+      },
+      "expected": {
+        "name": "APP_MGMT_COMPANY_STATUS",
+        "display_name": "App Mgmt Company Status",
+        "description": "It describes company status"
+      }
+    }
+  },
+  "QUESTIONS": {
+    "quizzes": [
+      "choice",
+      "audio",
+      "coding",
+      "typed",
+      "video",
+      "whiteboard"
+    ],
+    "TEST_FOR_BASIC_GET_ALL_QUESTIONS": {
+      "expected": {
+        "count": 7
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 4,
+        "questiontype": "Video"
+      },
+      "expected": {
+        "id": 4,
+        "subjectid": 56,
+        "levelid": 2,
+        "question": "<p><a href=\"http://stackoverflow.com/questions/31683075/how-to-do-a-deep-comparison-between-2-objects-with-lodash\" target=\"_blank\" style=\"color: rgb(36, 39, 41);\">How to do a deep comparison between 2 objects with <strong>lodash</strong>?</a> <strong>Justify </strong>your answer with examples..</p>",
+        "answer": "You will see 20.99",
+        "time": 300,
+        "lastmoddatetime": "04-10-2017 05:04:29",
+        "lastmoduserid": 99999,
+        "questiontype": "Video"
+      }
+    },
+    "TEST_FOR_GET_CHOICE_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_CHOICE_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    },
+    "TEST_FOR_GET_AUDIO_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_AUDIO_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    },
+    "TEST_FOR_GET_CODING_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_CODING_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    },
+    "TEST_FOR_GET_TYPED_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_TYPED_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    },
+    "TEST_FOR_GET_VIDEO_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 3
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_VIDEO_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    },
+    "TEST_FOR_GET_WHITEBOARD_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 2
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_WHITEBOARD_QUESTIONS_FILTERING_BY_SUBJECTID": {
+      "input": {
+        "subjectid": 56
+      }
+    }
+  },
+  "LOOKUP_COUNTRY": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "count": 10
+      }
+    },
+    "TEST_FOR_GET_ALL_SORTING": {
+      "expected": {
+        "first": {
+          "id": 1,
+          "iso2": "AF",
+          "short_name": "Afghanistan",
+          "long_name": "Islamic Republic of Afghanistan",
+          "iso3": "AFG",
+          "numcode": "4",
+          "un_member": "yes",
+          "calling_code": "93",
+          "cctld": ".af",
+          "lastmoddatetime": "May 16 2016 08:58 AM",
+          "lastmoduserid": 99999,
+          "name": "Afghanistan"
+        },
+        "last": {
+          "id": 250,
+          "iso2": "ZW",
+          "short_name": "Zimbabwe",
+          "long_name": "Republic of Zimbabwe",
+          "iso3": "ZWE",
+          "numcode": "716",
+          "un_member": "yes",
+          "calling_code": "263",
+          "cctld": ".zw",
+          "lastmoddatetime": "May 16 2016 08:58 AM",
+          "lastmoduserid": 99999,
+          "name": "Zimbabwe"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_SHORT_NAME": {
+      "input": {
+        "short_name": "Afghanistan"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "name": "Afghanistan",
+        "iso2": "AF",
+        "iso3": "AFG",
+        "long_name": "Islamic Republic of Afghanistan",
+        "short_name": "Afghanistan"
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ISO2": {
+      "input": {
+        "iso2": "AF"
+      },
+      "expected": {
+        "count": 1
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_BY_ISO3": {
+      "input": {
+        "iso3": "AFG"
+      },
+      "expected": {
+        "count": 5
+      }
+    },
+    "TEST_FOR_GET_ALL_FILTERING_AND_SORT": {
+      "input": {
+        "sort": "id",
+        "short_name": "Afghanistan"
+      },
+      "expected": {
+        "count": 5
+      }
+    }
+  }
+}

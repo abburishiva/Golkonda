@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_SUPER": {
+      "input": {
+        "candidatae_name": "Hanamkonda Kasthuri",
+        "resume_name": "kasthuri",
+        "resumeId": "AV8LgSI0YBPzgHfkJe5J"
+      },
+      "expected": {
+        "shortUid": "hkasthuri",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_EMPLOYEE": {
+      "input": {
+        "candidatae_name": "Hanamkonda Kasthuri",
+        "resume_name": "kasthuri",
+        "resumeId": "AV8LgSI0YBPzgHfkJe5J"
+      },
+      "expected": {
+        "shortUid": "hkasthuri",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_CANDIDATE": {
+      "input": {
+        "candidatae_name": "Hanamkonda Kasthuri",
+        "resume_name": "kasthuri",
+        "resumeId": "AV8LgSI0YBPzgHfkJe5J"
+      },
+      "expected": {
+        "shortUid": "hkasthuri",
+        "statusCode": 204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_TWO_WORDS_AND_RESUME_NAME_HAS_ONE_WORD_FOR_NEW_USER": {
+      "input": {
+        "candidatae_name": "Hanamkonda Kasthuri",
+        "resume_name": "kasthuri",
+        "resumeId": "AV8LgSI0YBPzgHfkJe5J"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

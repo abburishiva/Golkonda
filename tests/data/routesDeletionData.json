@@ -1,0 +1,280 @@
+{
+  "TEST_FOR_ROUTES_DELETION_FOR_SUBJECTS_ROUTE": {
+    "TEST_FOR_GET_ALL_SUBJECTS": {
+      "expected": {
+        "statusCode": 200
+      }
+    },
+    "TEST_FOR_GET_SUBJECT_BY_ID": {
+      "input": {
+        "id": "57"
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORT": {
+      "input": {
+        "categoryid": 1,
+        "sort": "id"
+      },
+      "expected": {
+        "count": 1,
+        "first": {
+          "id": 2,
+          "categoryid": 1,
+          "name": "C#",
+          "icon_class": "ts-csharp",
+          "description": "C# is an object-oriented programming language from Microsoft that aims to combine the computing power of C++ with the programming ease of Visual Basic.",
+          "lastmoddatetime": "Apr 19 2017 11:29 AM",
+          "lastmoduserid": 99999
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_SORTING": {
+      "expected": {
+        "id": 57,
+        "categoryid": 1,
+        "name": "Angular.js",
+        "icon_class": "ts-angularjs",
+        "description": "Angular.js  is a complete JavaScript-based open-source front-end web application framework mainly maintained by Google.",
+        "lastmoddatetime": "Apr 21 2017 05:41 AM",
+        "lastmoduserid": 99999
+      },
+      "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS": {
+        "input": {
+          "base_url": "/v1/subjects",
+          "type": "one"
+        },
+        "expected": {
+          "statusCode": 404,
+          "msg": "No subkeys found on this base url to delete"
+        }
+      },
+      "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_SUPER": {
+        "input": {
+          "payload": {
+            "route": "/v1/common/levels?type=all&sort=name",
+            "type": "one"
+          }
+        },
+        "expected": {
+          "statusCode": 200,
+          "message": "CacheRoute Is Deleted...!"
+        }
+      },
+      "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_EMPLOYEE": {
+        "input": {
+          "payload": {
+            "route": "/v1/common/levels?type=all&sort=name",
+            "type": "one"
+          }
+        },
+        "expected": {
+          "statusCode": 200,
+          "message": "CacheRoute Is Deleted...!"
+        }
+      },
+      "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_CANDIDATE": {
+        "input": {
+          "payload": {
+            "route": "/v1/common/levels?type=all&sort=name",
+            "type": "one"
+          }
+        },
+        "expected": {
+          "statusCode": 403,
+          "message": "CacheUrl Is Deleted...!"
+        }
+      },
+      "TEST_FOR_DELETE_ROUTE_FOR_TEST_FOR_GET_ALL_SORTING_FOR_NEW_USER": {
+        "input": {
+          "payload": {
+            "route": "/v1/common/levels?type=all&sort=name",
+            "type": "one"
+          }
+        },
+        "expected": {
+          "statusCode": 401
+        }
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_SORTING_FOR_SUPER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects?sort=name",
+        "type":"one"
+      },
+      "expected":{
+        "msg": "No subkeys found on this base url to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_SORTING_FOR_EMPLOYEE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects?sort=name",
+        "type":"one"
+      },
+      "expected":{
+        "msg": "No subkeys found on this base url to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_SORTING_FOR_CANDIDATE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects?sort=name",
+        "type":"one"
+      },
+      "expected":{
+        "msg": "No subkeys found on this base url to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_SORTING_FOR_NEW_USER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects?sort=name",
+        "type":"one"
+      },
+      "expected":{
+        "msg": "No subkeys found on this base url to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_SUBJECT_BY_ID_FOR_SUPER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/57"
+      },
+      "expected":{
+        "msg": "successfully deleted subkey on this base url"
+      },
+      "redeleted_output":{
+        "msg": "No cacheBaseUrl found to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_SUBJECT_BY_ID_FOR_EMPLOYEE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/57"
+      },
+      "expected":{
+        "msg": "successfully deleted subkey on this base url"
+      },
+      "redeleted_output":{
+        "msg": "No cacheBaseUrl found to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_SUBJECT_BY_ID_FOR_CANDIDATE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/57"
+      },
+      "expected":{
+        "msg": "successfully deleted subkey on this base url"
+      },
+      "redeleted_output":{
+        "msg": "No cacheBaseUrl found to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_SUBJECT_BY_ID_FOR_NEW_USER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/57"
+      },
+      "expected":{
+        "msg": "successfully deleted subkey on this base url"
+      },
+      "redeleted_output":{
+        "msg": "No cacheBaseUrl found to delete"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORTING_FOR_SUPER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/sort=id&categoryid=1",
+        "type":"one"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORTING_FOR_EMPLOYEE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/sort=id&categoryid=1",
+        "type":"one"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORTING_FOR_CANDIDATE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/sort=id&categoryid=1",
+        "type":"one"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_BY_FILTERING_AND_SORTING_FOR_NEW_USER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects/sort=id&categoryid=1",
+        "type":"one"
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_FOR_SUPER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects",
+        "type":"one"
+      },
+      "type_one_expected":{
+        "msg": "No subkeys found on this base url to delete"
+      },
+      "type_all_expected":{
+        "msg": "All routes are deleted based on below route",
+        "route": [
+          "/v1/subjects"
+        ]
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_FOR_EMPLOYEE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects",
+        "type":"one"
+      },
+      "type_one_expected":{
+        "msg": "No subkeys found on this base url to delete"
+      },
+      "type_all_expected":{
+        "msg": "All routes are deleted based on below route",
+        "route": [
+          "/v1/subjects"
+        ]
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_FOR_CANDIDATE":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects",
+        "type":"one"
+      },
+      "type_one_expected":{
+        "msg": "No subkeys found on this base url to delete"
+      },
+      "type_all_expected":{
+        "msg": "All routes are deleted based on below route",
+        "route": [
+          "/v1/subjects"
+        ]
+      }
+    },
+    "TEST_FOR_DELETE_ROUTE_FOR_GET_ALL_SUBJECTS_FOR_NEW_USER":{
+      "input":{
+        "base_url":"/v1/subjects",
+        "delete_url":"/v1/subjects",
+        "type":"one"
+      },
+      "type_one_expected":{
+        "msg": "No subkeys found on this base url to delete"
+      },
+      "type_all_expected":{
+        "msg": "All routes are deleted based on below route",
+        "route": [
+          "/v1/subjects"
+        ]
+      }
+    }
+  }
+}

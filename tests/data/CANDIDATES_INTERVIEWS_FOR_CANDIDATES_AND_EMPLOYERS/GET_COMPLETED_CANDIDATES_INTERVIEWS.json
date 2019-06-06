@@ -1,0 +1,218 @@
+{
+  "GET_COMPLETED_CANDIDATES_INTERVIEWS": {
+    "GET_ALL_COMPLETED_CANDIDATES_INTERVIEWS_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "properties": {
+          "_id": "",
+          "email":"",
+          "candidate_id":"",
+          "subject": {
+            "type": "",
+            "id": "",
+            "name": ""
+          },
+          "quiz" : {
+            "makeChallenge": "",
+            "name": ""
+          },
+          "level" : {
+            "name" : ""
+          },
+          "challengeCreatedDatetime":"",
+          "time_taken": "",
+          "total_time": "",
+          "attempted" : "",
+          "correct" : "",
+          "interviewDetail" : {
+            "definitionId" : "",
+            "interviewerEmail" : "",
+            "emp_id" : "",
+            "interviewerName" : "",
+            "interviewName" : "",
+            "interviewType" : "",
+            "interviewStartDateTime" : "",
+            "interviewExpiredDateTime" : "",
+            "events" : [
+            ],
+            "access" : {
+              "live" : "",
+              "collaboration" : "",
+              "screenSharing" : ""
+            },
+            "allowTime" : ""
+          },
+          "questions": [],
+          "challengeCompletedDatetime" : "",
+          "allowTime":""
+        }
+      }
+    },
+    "GET_ALL_COMPLETED_CANDIDATES_INTERVIEWS_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "properties": {
+          "_id": "",
+          "email":"sudhaaa.ip@gmail.com",
+          "candidate_id":"",
+          "subject": {
+            "type": "",
+            "id": "",
+            "name": ""
+          },
+          "quiz" : {
+            "makeChallenge": "",
+            "name": ""
+          },
+          "level" : {
+            "name" : ""
+          },
+          "challengeCreatedDatetime":"",
+          "time_taken": "",
+          "total_time": "",
+          "attempted" : "",
+          "correct" : "",
+          "interviewDetail" : {
+            "definitionId" : "",
+            "interviewerEmail" : "",
+            "emp_id" : "",
+            "interviewerName" : "",
+            "interviewName" : "",
+            "interviewType" : "",
+            "interviewStartDateTime" : "",
+            "interviewExpiredDateTime" : "",
+            "events" : [
+            ],
+            "access" : {
+              "live" : "",
+              "collaboration" : "",
+              "screenSharing" : ""
+            },
+            "allowTime" : ""
+          },
+          "questions": [],
+          "challengeCompletedDatetime" : "",
+          "allowTime":""
+        }
+      }
+    },
+    "GET_ALL_COMPLETED_CANDIDATES_INTERVIEWS_FOR_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_EMPLOYEE": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "properties": {
+          "_id": "",
+          "email":"",
+          "candidate_id":"",
+          "subject": {
+            "type": "",
+            "id": "",
+            "name": ""
+          },
+          "quiz" : {
+            "makeChallenge": "",
+            "name": ""
+          },
+          "level" : {
+            "name" : ""
+          },
+          "challengeCreatedDatetime":"",
+          "time_taken": "",
+          "total_time": "",
+          "attempted" : "",
+          "correct" : "",
+          "interviewDetail" : {
+            "definitionId" : "",
+            "interviewerEmail" : "",
+            "emp_id" : "",
+            "interviewerName" : "",
+            "interviewName" : "",
+            "interviewType" : "",
+            "interviewStartDateTime" : "",
+            "interviewExpiredDateTime" : "",
+            "events" : [
+            ],
+            "access" : {
+              "live" : "",
+              "collaboration" : "",
+              "screenSharing" : ""
+            },
+            "allowTime" : ""
+          },
+          "questions": [],
+          "challengeCompletedDatetime" : "",
+          "allowTime":""
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_CANDIDATE": {
+      "expected": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "properties": {
+          "_id": "",
+          "email":"",
+          "candidate_id":"",
+          "subject": {
+            "type": "",
+            "id": "",
+            "name": ""
+          },
+          "quiz" : {
+            "makeChallenge": "",
+            "name": ""
+          },
+          "level" : {
+            "name" : ""
+          },
+          "challengeCreatedDatetime":"",
+          "time_taken": "",
+          "total_time": "",
+          "attempted" : "",
+          "correct" : "",
+          "interviewDetail" : {
+            "definitionId" : "",
+            "interviewerEmail" : "",
+            "emp_id" : "",
+            "interviewerName" : "",
+            "interviewName" : "",
+            "interviewType" : "",
+            "interviewStartDateTime" : "",
+            "interviewExpiredDateTime" : "",
+            "events" : [
+            ],
+            "access" : {
+              "live" : "",
+              "collaboration" : "",
+              "screenSharing" : ""
+            },
+            "allowTime" : ""
+          },
+          "questions": [],
+          "challengeCompletedDatetime" : "",
+          "allowTime":""
+        }
+      }
+    },
+    "GET_CANDIDATES_INTERVIEWS_WITH_VALID_ID_FOR_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

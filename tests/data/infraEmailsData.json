@@ -1,0 +1,988 @@
+{
+  "INFRA_EMAILS":{
+    "TEST_FOR_IP_SITE_CONTACT_FOR_SUPER":{
+      "input":{
+        "message_type":"IP_SITE_CONTACT",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_CONTACT",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_CONTACT_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"IP_SITE_CONTACT",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_CONTACT",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_CONTACT_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"IP_SITE_CONTACT",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_CONTACT",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_CONTACT_FOR_NEW_USER":{
+      "input":{
+        "message_type":"IP_SITE_CONTACT",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{"message_type": "IP_SITE_CONTACT",
+      "to": "kasthuri.hanamkonda@gmail.com",
+      "subject": "Thank you for contacting us",
+      "name": "kasthuri",
+      "from": "engr1@innova-path.com",
+      "engine": "smtp/postmark/postageapp/sendgrid",
+      "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_JOB_APPLICATION_FOR_SUPER":{
+      "input":{
+        "message_type":"IP_SITE_JOB_APPLICATION",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_JOB_APPLICATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_JOB_APPLICATION_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"IP_SITE_JOB_APPLICATION",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_JOB_APPLICATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_JOB_APPLICATION_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"IP_SITE_JOB_APPLICATION",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_JOB_APPLICATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_IP_SITE_JOB_APPLICATION_FOR_NEW_USER":{
+      "input":{
+        "message_type":"IP_SITE_JOB_APPLICATION",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "IP_SITE_JOB_APPLICATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Thank you for contacting us",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_CANDIDATE_FIRST_LOGIN_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_CANDIDATE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_CANDIDATE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_CANDIDATE_FIRST_LOGIN_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_CANDIDATE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_CANDIDATE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_CANDIDATE_FIRST_LOGIN_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_CANDIDATE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_CANDIDATE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_CANDIDATE_FIRST_LOGIN_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_CANDIDATE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_CANDIDATE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "your first login is successful",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_FORGOT_PASSWORD_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_FORGOT_PASSWORD",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_FORGOT_PASSWORD",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_FORGOT_PASSWORD_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_FORGOT_PASSWORD",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_FORGOT_PASSWORD",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_FORGOT_PASSWORD_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_FORGOT_PASSWORD",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_FORGOT_PASSWORD",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_FORGOT_PASSWORD_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_FORGOT_PASSWORD",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_FORGOT_PASSWORD",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please reset your password here to login in to talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_SIGNUP_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_SIGNUP",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_SIGNUP",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_SIGNUP_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_SIGNUP",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_SIGNUP",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_SIGNUP_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_SIGNUP",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_SIGNUP",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_SIGNUP_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_SIGNUP",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_SIGNUP",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "please give a valid email id to signup for talentscreen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_EMPLOYEE_FIRST_LOGIN_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_EMPLOYEE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_EMPLOYEE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_EMPLOYEE_FIRST_LOGIN_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_EMPLOYEE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_EMPLOYEE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_EMPLOYEE_FIRST_LOGIN_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_EMPLOYEE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_EMPLOYEE_FIRST_LOGIN",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_EMPLOYEE_FIRST_LOGIN_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_EMPLOYEE_FIRST_LOGIN",
+
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected": {
+  "message_type": "TS_EMPLOYEE_FIRST_LOGIN",
+  "to": "kasthuri.hanamkonda@gmail.com",
+  "subject": "Welcome to talentscreen now you are a registered member of talentsceen",
+  "name": "kasthuri",
+  "from": "engr1@innova-path.com",
+  "engine": "smtp/postmark/postageapp/sendgrid",
+  "test": true
+}
+
+    },
+    "TEST_FOR_TS_VERIFY_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_VERIFY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_VERIFY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_VERIFY_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_VERIFY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_VERIFY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_VERIFY_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_VERIFY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_VERIFY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_VERIFY_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_VERIFY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_VERIFY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To verify your email address please click the below link ",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_TEST_COMPLETE_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_TEST_COMPLETE",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_TEST_COMPLETE",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_TEST_COMPLETE_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_TEST_COMPLETE",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_TEST_COMPLETE",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_TEST_COMPLETE_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_TEST_COMPLETE",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_TEST_COMPLETE",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_TEST_COMPLETE_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_TEST_COMPLETE",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_TEST_COMPLETE",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully completed your test",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_NEWS_LETTER_FOR_SUPER":{
+      "input":{
+        "message_type":"TS_NEWS_LETTER",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_NEWS_LETTER",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_NEWS_LETTER_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TS_NEWS_LETTER",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_NEWS_LETTER",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_NEWS_LETTER_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TS_NEWS_LETTER",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_NEWS_LETTER",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TS_NEWS_LETTER_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TS_NEWS_LETTER",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TS_NEWS_LETTER",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully subscribes for talentscreen newsletter",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_REGISTRATION_FOR_SUPER":{
+      "input":{
+        "message_type":"TW_REGISTRATION",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_REGISTRATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_REGISTRATION_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TW_REGISTRATION",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_REGISTRATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_REGISTRATION_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TW_REGISTRATION",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_REGISTRATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_REGISTRATION_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TW_REGISTRATION",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_REGISTRATION",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "You have successfully registered to talentWorks",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_PASSWORD_RECOVERY_FOR_SUPER":{
+      "input":{
+        "message_type":"TW_PASSWORD_RECOVERY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_PASSWORD_RECOVERY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_PASSWORD_RECOVERY_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"TW_PASSWORD_RECOVERY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_PASSWORD_RECOVERY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_PASSWORD_RECOVERY_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"TW_PASSWORD_RECOVERY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_PASSWORD_RECOVERY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_TW_PASSWORD_RECOVERY_FOR_NEW_USER":{
+      "input":{
+        "message_type":"TW_PASSWORD_RECOVERY",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "TW_PASSWORD_RECOVERY",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_MASS_EMAIL_FOR_SUPER":{
+      "input":{
+        "message_type":"MASS_EMAIL",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "MASS_EMAIL",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_MASS_EMAIL_FOR_EMPLOYEE":{
+      "input":{
+        "message_type":"MASS_EMAIL",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "MASS_EMAIL",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_MASS_EMAIL_FOR_CANDIDATE":{
+      "input":{
+        "message_type":"MASS_EMAIL",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "MASS_EMAIL",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    },
+    "TEST_FOR_MASS_EMAIL_FOR_NEW_USER":{
+      "input":{
+        "message_type":"MASS_EMAIL",
+        "to":"kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name":"kasthuri",
+        "from":"engr1@innova-path.com",
+        "engine":"smtp/postmark/postageapp/sendgrid",
+        "test":true
+      },
+      "expected":{
+        "message_type": "MASS_EMAIL",
+        "to": "kasthuri.hanamkonda@gmail.com",
+        "subject": "To recover your password please click the below link",
+        "name": "kasthuri",
+        "from": "engr1@innova-path.com",
+        "engine": "smtp/postmark/postageapp/sendgrid",
+        "test": true
+      }
+    }
+  }
+}

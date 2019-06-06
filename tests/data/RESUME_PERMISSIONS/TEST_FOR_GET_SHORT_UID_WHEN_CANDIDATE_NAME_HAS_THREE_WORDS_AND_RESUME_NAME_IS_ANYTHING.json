@@ -1,0 +1,56 @@
+{
+  "RESUME_PERMISSIONS": {
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_SUPER": {
+      "input": {
+        "candidate_name": "V SKumar",
+        "resume_name": "Velupula SKumar",
+        "resumeId": "AV8Lfw0iYBPzgHfkJe5H"
+      },
+      "expected": {
+        "shortUid": "vskumar",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_EMPLOYEE": {
+      "input": {
+        "candidate_name": "V SKumar",
+        "resume_name": "Velupula SKumar",
+        "resumeId": "AV8Lfw0iYBPzgHfkJe5H"
+      },
+      "expected": {
+        "shortUid": "vskumar",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_CANDIDATE": {
+      "input": {
+        "candidate_name": "V SKumar",
+        "resume_name": "Velupula SKumar",
+        "resumeId": "AV8Lfw0iYBPzgHfkJe5H"
+      },
+      "expected": {
+        "shortUid": "vskumar",
+        "statusCode":204,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_SHORT_UID_WHEN_CANDIDATE_NAME_HAS_THREE_WORDS_AND_RESUME_NAME_IS_ANYTHING_FOR_NEW_USER": {
+      "input": {
+        "candidate_name": "V Sampath Kumar",
+        "resume_name": "Velupula SKumar",
+        "resumeId": "AV4yTdPLYBPzgHfkJe2e"
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

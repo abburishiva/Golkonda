@@ -1,0 +1,144 @@
+{
+  "COMPILER": {
+    "TEST_FOR_BASIC_GET_ALL": {
+      "expected": {
+        "statusCode": 200
+      }
+    },
+    "TEST_FOR_GET_BY_ID": {
+      "input": {
+        "id": 1
+      },
+      "expected": [
+        {
+          "id": 1,
+          "subjectid": 56,
+          "name": "javascript",
+          "template": "",
+          "lastmoddatetime": "2017-03-07T12:18:40.000Z",
+          "lastmoduserid": 99999
+        }
+      ]
+    },
+    "TEST_FOR_COMPILING_CODE_FOR_JAVASCRIPT": {
+      "input": {
+        "languageId": 56,
+        "editorId": 1,
+        "code": "var x = 20, y =30; var z = x*y;print(z);"
+      },
+      "expected": {
+        "Warnings": null,
+        "Errors": null,
+        "Result": "600\n",
+        "Files": null
+      }
+    },
+    "TEST_FOR_COMPILING_CODE_FOR_JAVA": {
+      "input": {
+        "languageId": 48,
+        "editorId": 1,
+        "code": "class Rextester{ public static void main(String args[]) { int x= 10, y=20, z; z=x*y; System.out.println(z);}}"
+      },
+      "expected": {
+        "Warnings": null,
+        "Errors": null,
+        "Result": "200\n",
+        "Files": null
+      }
+    },
+    "TEST_FOR_COMPILING_CODE_FOR_NODEJS": {
+      "input": {
+        "languageId": 61,
+        "editorId": 1,
+        "code": "var a =10, b=30, c; c= a*b; console.log(c);"
+      },
+      "expected": {
+        "Warnings": null,
+        "Errors": null,
+        "Result": "300\n",
+        "Files": null
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "name": "python",
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "name": "python",
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "name": "python",
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "name": "python",
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_DELETE_FOR_SUPER": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+      }
+    },
+    "TEST_FOR_DELETE_FOR_EMPLOYEE": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_DELETE_FOR_CANDIDATE": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    },
+    "TEST_FOR_DELETE_FOR_NEW_USER": {
+      "input": {
+        "id": 5
+      },
+      "expected": {
+        "name": "python",
+        "id": 5,
+        "subjectid": 94
+      }
+    }
+  }
+}

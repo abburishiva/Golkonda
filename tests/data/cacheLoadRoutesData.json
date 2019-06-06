@@ -1,0 +1,160 @@
+{
+  "TEST_FOR_CACHE_LOAD_ROUTES": {
+    "TEST_FOR_GET_ALL_COMMON_LEVELS_BY_FILTERING_AND_SORT": {
+      "input": {
+        "entityid": 2,
+        "sort": "name"
+      },
+      "expected": {
+        "count": 3,
+        "first": {
+          "id": 3,
+          "name": "ADVANCED"
+        },
+        "last": {
+          "id": 4,
+          "name": "PROFICIENT"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_LOOKUP_CITIES_BY_SORTING": {
+      "expected": {
+        "first": {
+          "id": 33025,
+          "name": "'Abasan al Kabirah"
+        },
+        "last": {
+          "id": 7080,
+          "name": "Zyryanovsk"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_SUBJECTS_BY_FILTERING_WITH_CATEGORYID": {
+      "input": {
+        "categoryid": 5
+      },
+      "expected": [
+        {
+          "id": 1,
+          "categoryid": 5,
+          "name": "Selenium WebDriver",
+          "icon_class": "ts-seleniumwebdriver",
+          "description": "Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application.",
+          "lastmoddatetime": "2017-02-15 05:42:08",
+          "lastmoduserid": 99999
+        }
+      ]
+    },
+    "TEST_FOR_GET_ALL_ROUTES_IN_CACHE": {
+
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER":{
+      "input":[
+      {
+        "route":"/v1/common/levels"
+      },
+        {
+          "route":"/v1/lookup/cities"
+        },
+        {
+          "route":"/v1/subjects"
+        }
+      ]
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE":{
+      "input":[
+        {
+          "url":"/v1/common/levels"
+        },
+        {
+          "url":"/v1/lookup/cities"
+        },
+        {
+          "url":"/v1/subjects"
+        }
+      ]
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE":{
+      "input":[
+        {
+          "url":"/v1/common/levels"
+        },
+        {
+          "url":"/v1/lookup/cities"
+        },
+        {
+          "url":"/v1/subjects"
+        }
+      ]
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER":{
+      "input":[
+        {
+          "url":"/v1/common/levels"
+        },
+        {
+          "url":"/v1/lookup/cities"
+        },
+        {
+          "url":"/v1/subjects"
+        }
+      ]
+    },
+    "TEST_FOR_DELETE_CACHE_ROUTES_FOR_SUPER":{
+      "input":[
+        {
+          "route":"/v1/common/levels"
+        },
+        {
+          "route":"/v1/lookup/cities"
+        },
+        {
+          "route":"/v1/subjects"
+        }
+      ]
+
+    },
+    "TEST_FOR_DELETE_CACHE_ROUTES_FOR_EMPLOYEE":{
+      "input":[
+        {
+          "route":"/v1/common/levels"
+        },
+        {
+          "route":"/v1/lookup/cities"
+        },
+        {
+          "route":"/v1/subjects"
+        }
+      ]
+
+    },
+    "TEST_FOR_DELETE_CACHE_ROUTES_FOR_CANDIDATE":{
+      "input":[
+        {
+          "route":"/v1/common/levels"
+        },
+        {
+          "route":"/v1/lookup/cities"
+        },
+        {
+          "route":"/v1/subjects"
+        }
+      ]
+
+    },
+    "TEST_FOR_DELETE_CACHE_ROUTES_FOR_NEW_USER":{
+      "input":[
+        {
+          "route":"/v1/common/levels"
+        },
+        {
+          "route":"/v1/lookup/cities"
+        },
+        {
+          "route":"/v1/subjects"
+        }
+      ]
+
+    }
+  }
+}

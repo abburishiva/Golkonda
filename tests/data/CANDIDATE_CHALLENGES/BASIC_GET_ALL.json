@@ -1,0 +1,53 @@
+{
+  "BASIC_GET_ALL": {
+    "TEST_FOR_BASIC_GET_ALL_SUPER": {
+      "expected": {
+        "count": 1,
+        "statusCode":200
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_EMPLOYEE": {
+      "expected": {
+        "count": 1,
+        "statusCode":200
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_CANDIDATE": {
+      "expected": {
+        "count": 1,
+        "statusCode":200
+      }
+    },
+    "TEST_FOR_BASIC_GET_ALL_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_ID_SUPER": {
+      "expected": {
+        "statusCode": 200
+
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_ID_EMPLOYEE": {
+      "expected": {
+        "statusCode": 200
+
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_ID_CANDIDATE": {
+      "expected": {
+        "statusCode": 200
+
+      }
+    },
+    "TEST_FOR_BASIC_GET_BY_ID_NEW_USER": {
+      "expected": {
+        "statusCode": 401
+
+      }
+    }
+  }
+}
+

@@ -1,0 +1,368 @@
+{
+  "BASIC_POST":{
+    "TEST_FOR_BASIC_POST_SUPER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 2,
+        "quiztype": "choice"
+      },
+      "expected": {
+        "statusCode":201,
+        "candidate_id": "",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 2,
+          "name": "INTERMEDIATE"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYEE": {
+      "input":{
+        "subjectid": 2,
+        "levelid": 3,
+        "quiztype": "choice"
+      },
+      "expected": {
+        "statusCode":201,
+        "candidate_id": "",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 2,
+          "name": "C#",
+          "icon": "ts-csharp"
+        },
+        "level": {
+          "id": 3,
+          "name": "ADVANCED"
+        },
+        "questions": [
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "c",
+            "answerFour": "None of mentioned",
+            "answerThree": "type & scope",
+            "answerTwo": "scope",
+            "answerOne": "type",
+            "question": "What is the most specified using class declaration ?",
+            "question_id": 179,
+            "rowNo": 0
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "d",
+            "answerFour": "All i, ii, iii and iv\r\n",
+            "answerThree": "i, iii and iv only\r\n",
+            "answerTwo": "ii, iii and iv only",
+            "answerOne": "i, ii and iii only\r\n",
+            "question": "\r\n<div>A C# program may consist of the following parts.\r\n\r\ni) Namespace declaration\r\n\r\nii) Class methods\r\n\r\niii) A main method\r\n\r\niv) Statement & Expressions\r\n</div>\r\n",
+            "question_id": 180,
+            "rowNo": 1
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": "b",
+            "answerFour": "All i, ii, iii, iv and v\r\n",
+            "answerThree": "i, ii, iv and v only\r\n",
+            "answerTwo": "i, iii, iv and v only\r\n",
+            "answerOne": "i, ii, iii and iv only\r\n",
+            "question": " C# supports the following types of access specifiers.\r\n\r\ni) public ii) friend iii) private iv) protected v) internal",
+            "question_id": 181,
+            "rowNo": 2
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 184,
+            "rowNo": 3
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 185,
+            "rowNo": 4
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 187,
+            "rowNo": 5
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 188,
+            "rowNo": 6
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 189,
+            "rowNo": 7
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 190,
+            "rowNo": 8
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 194,
+            "rowNo": 9
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 195,
+            "rowNo": 10
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 196,
+            "rowNo": 11
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 197,
+            "rowNo": 12
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 198,
+            "rowNo": 13
+          },
+          {
+            "time_taken": 0,
+            "correctOrNot": "N",
+            "attempted": "N",
+            "candidateAnswer": null,
+            "time": 60,
+            "originalAnswer": null,
+            "answerFour": null,
+            "answerThree": null,
+            "answerTwo": null,
+            "answerOne": null,
+            "question": null,
+            "question_id": 200,
+            "rowNo": 14
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_CANDIDATE": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 3,
+        "quiztype": "choice"
+      },
+      "expected": {
+        "statusCode":201,
+        "candidate_id": "",
+        "lastmoddatetime": "",
+        "public_view": {
+          "review": 0,
+          "likes": 0,
+          "status": true
+        },
+        "geo_location": {
+          "ip_address": null
+        },
+        "browser": null,
+        "location": null,
+        "challengedatetime": "",
+        "screen_sharing_id": null,
+        "is_screen_sharing": false,
+        "youtube_id": null,
+        "total_time": 900,
+        "time_taken": 0,
+        "attempted": 0,
+        "correct": 0,
+        "quiz": {
+          "id": 1,
+          "name": "choice"
+        },
+        "subject": {
+          "id": 56,
+          "name": "JavaScript",
+          "icon": "ts-javascriptprogramming"
+        },
+        "level": {
+          "id": 1,
+          "name": "BEGINNER"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_NEW_USER": {
+      "input": {
+        "subjectid": 56,
+        "levelid": 1,
+        "quiztype": "choice"
+      },
+      "expected": {
+        "statusCode":401
+      }
+    }
+  }
+}

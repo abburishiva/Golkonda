@@ -1,0 +1,272 @@
+{
+  "EMPLOYER_INTERVIEWS_BASIC_POST": {
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_SUPER": {
+      "input": {
+        "emp_id": "591af2215a19a2354ce16cac",
+        "defination": {
+          "id": "59008ae121857e29ec55f19c"
+        },
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "lastmoddatetime": "2017-05-12T06:38:26.168Z",
+        "__v": 0,
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          {
+            "email": "mpramod.ip@gmail.com",
+            "_id": "5a0accbad92d4a5336d30384",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksithara.ip@gmail.com",
+            "_id": "5a28ee26a740140ee9de6106",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "statusCode": 201,
+        "emp_id": "591af2215a19a2354ce16cac",
+        "challengeId": "59008ae121857e29ec55f19c",
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          {
+            "email": "mpramod.ip@gmail.com",
+            "_id": "5a0accbad92d4a5336d30384",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksithara.ip@gmail.com",
+            "_id": "5a28ee26a740140ee9de6106",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_EMPLOYEE": {
+      "input": {
+        "emp_id": "591af2215a19a2354ce16cac",
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "lastmoddatetime": "2017-05-12T06:38:26.168Z",
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          {
+            "email": "mpramod.ip@gmail.com",
+            "_id": "5a0accbad92d4a5336d30384",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksithara.ip@gmail.com",
+            "_id": "5a28ee26a740140ee9de6106",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "statusCode": 201,
+        "emp_id": "591af2215a19a2354ce16cac",
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "lastmoddatetime": "2017-05-15T10:16:00.677Z",
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          "ravindra11ip@gmail.com",
+          "ksrikanth.ip@gmail.com",
+          "pravindra.ip@gmail.com"
+        ]
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_CANDIDATE": {
+      "input": {
+        "emp_id": "591af2215a19a2354ce16cac",
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "lastmoddatetime": "2017-05-12T06:38:26.168Z",
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          {
+            "email": "mpramod.ip@gmail.com",
+            "_id": "5a0accbad92d4a5336d30384",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksithara.ip@gmail.com",
+            "_id": "5a28ee26a740140ee9de6106",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "statusCode": 403
+      }
+    },
+    "TEST_FOR_BASIC_POST_EMPLOYER_INTERVIEW_FOR_NEW_USER": {
+      "input": {
+        "emp_id": "591af2215a19a2354ce16cac",
+        "type": "schedule",
+        "startDate": "2017-05-12T06:38:26.168Z",
+        "endDate": "2017-05-13T06:38:26.168Z",
+        "expiredTime": "2017-05-13T06:38:26.168Z",
+        "access": {
+          "live": true,
+          "collaboration": true,
+          "screenSharing": false,
+          "public": true
+        },
+        "events": [
+          "challengeComplete",
+          "challengeOpen",
+          "challengeStarted"
+        ],
+        "sendEmail": [
+          {
+            "email": "mpramod.ip@gmail.com",
+            "_id": "5a0accbad92d4a5336d30384",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          },
+          {
+            "email": "ksithara.ip@gmail.com",
+            "_id": "5a28ee26a740140ee9de6106",
+            "access": {
+              "live": false,
+              "collaboration": true,
+              "screenSharing": false,
+              "public": true
+            }
+          }
+        ],
+        "templateData": {
+          "message_type": "TS_EMPLOYER_INTERVIEW",
+          "subject": "Interview Details",
+          "redirect_url": "talentscreen.io/employer/interview"
+        }
+      },
+      "expected": {
+        "statusCode": 401
+      }
+    }
+  }
+}

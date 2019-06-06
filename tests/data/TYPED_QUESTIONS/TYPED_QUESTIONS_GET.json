@@ -1,0 +1,38 @@
+{
+  "TYPED_QUESTIONS": {
+    "TEST_FOR_BASIC_GET_ALL_TYPED_QUESTIONS": {
+      "expected": {
+        "count": 0,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_ALL_TYPED_QUESTIONS_FILTERING_BY_LEVELID": {
+      "input": {
+        "levelid": 2
+      },
+      "expected": {
+        "count": 0,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    "TEST_FOR_GET_ONE": {
+      "input": {
+        "id": 1
+      },
+      "expected": {
+        "id": 1,
+        "levelid": 2,
+        "statusCode":200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "EMPLOYERS_CHALLENGES": {
+    "TEST_FOR_BASIC_GET_EMPLOYERS_CHALLENGE_BY_ID_FOR_SUPER": {
+      "input": {
+        "id": "590c0f1b69bc174105bdff1f"
+      },
+      "expected":{
+        "_id": "590c0f1b69bc174105bdff1f",
+        "__v": 0,
+        "lastmoddatetime": "2017-05-04T12:33:49.000Z",
+        "notifications": {
+          "type": "email",
+          "events": [
+            "challengeOpen",
+            "challengeStarted"
+          ]
+        },
+        "questions": {
+          "source": "Talentscreen",
+          "type": "user",
+          "list": [
+            "<p>Local Browser used for validations on the Web Pages uses __________.</p>"
+          ]
+        },
+        "access": {
+          "start_date": "4-05-2017",
+          "end_date": "4-05-2027",
+          "live": false,
+          "collaboration": false,
+          "screen_sharing": true,
+          "public": true
+        },
+        "subject": {
+          "type": "employer",
+          "id": "56",
+          "name": "Javascript"
+        },
+        "detail": {
+          "name": "test12",
+          "level": "beginner",
+          "types": [
+            "choice"
+          ]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_CHALLENGE_BY_ID_FOR_EMPLOYEE": {
+      "input": {
+        "id": "58fd801bfd47185a4d3b48f3"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_CHALLENGE_BY_ID_FOR_CANDIDATE": {
+      "input": {
+        "id": "58fd801bfd47185a4d3b48f3"
+      }
+    },
+    "TEST_FOR_BASIC_GET_EMPLOYERS_CHALLENGE_BY_ID_FOR_NEW_USER": {
+      "input": {
+        "id": "58fd801bfd47185a4d3b48f3"
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_SUPER": {
+      "input": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "detail": {
+          "name": "kumar",
+          "types": [
+            "choice"
+          ],
+          "level": "NOVICE"
+        },
+        "subject": {
+          "id": 56,
+          "name": "javascript",
+          "type": "choice"
+        },
+        "access": {
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "question": "what is callback function in javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            }
+          ]
+        }
+      },
+      "expected": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "notifications": {
+          "events": []
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "time_given": "60secs",
+              "answer": 1,
+              "question": "what is callback function in javascript?"
+            }
+          ]
+        },
+        "access": {
+          "live": false,
+          "collaboration": false,
+          "screen_sharing": false,
+          "public": true
+        },
+        "subject": {
+          "id": "56",
+          "name": "javascript",
+          "type": "choice"
+        },
+        "detail": {
+          "name": "kumar",
+          "level": "NOVICE",
+          "types": [
+            "choice"
+          ]
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_EMPLOYEE": {
+      "input": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "detail": {
+          "name": "kumar",
+          "types": [
+            "choice"
+          ],
+          "level": "NOVICE"
+        },
+        "subject": {
+          "id": 56,
+          "name": "javascript",
+          "type": "choice"
+        },
+        "access": {
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "question": "what is callback function in javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            }
+          ]
+        }
+      },
+      "expected": {
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_CANDIDATE": {
+      "input": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "detail": {
+          "name": "kumar",
+          "types": [
+            "choice"
+          ],
+          "level": "NOVICE"
+        },
+        "subject": {
+          "id": 56,
+          "name": "javascript",
+          "type": "choice"
+        },
+        "access": {
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "question": "what is callback function in javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            }
+          ]
+        }
+      },
+      "expected": {
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_POST_FOR_NEW_USER": {
+      "input": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "detail": {
+          "name": "kumar",
+          "types": [
+            "choice"
+          ],
+          "level": "NOVICE"
+        },
+        "subject": {
+          "id": 56,
+          "name": "javascript",
+          "type": "choice"
+        },
+        "access": {
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "question": "what is callback function in javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            }
+          ]
+        }
+      },
+      "expected": {
+        "error": {
+          "message": "Not Authorized!"
+        }
+      }
+    },
+    "TEST_FOR_BASIC_PUT_FOR_SUPER": {
+      "input": {
+        "emp_id": "58fa03679a175068a476a33c",
+        "detail": {
+          "name": "kumar",
+          "types": [
+            "choice"
+          ],
+          "level": "NOVICE"
+        },
+        "subject": {
+          "id": 56,
+          "name": "javascript",
+          "type": "choice"
+        },
+        "access": {
+        },
+        "questions": {
+          "source": "talentscreen",
+          "type": "choice",
+          "list": [
+            {
+              "question": "what is callback function in javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            },
+            {
+              "question": "what is javascript?",
+              "answer": 1,
+              "time_given": "60secs"
+            }
+          ]
+        }
+      },
+      "expected": { "_id": "5953935239c6c05b9a15db9a",
+        "emp_id": "58fa03679a175068a476a33c",
+        "notifications": { "events": [] },
+        "questions":
+        { "source": "talentscreen",
+          "type": "choice"
+          },
+        "access":
+        { "live": false,
+          "collaboration": false,
+          "screen_sharing": false,
+          "public": true },
+        "subject": { "id": 56, "name": "javascript","type": "choice" },
+        "detail": { "name": "kumar", "level": "NOVICE", "types": [ "choice" ] } }
+    },
+      "TEST_FOR_BASIC_PUT_FOR_EMPLOYEE": {
+        "input": {
+          "emp_id": "58fa03679a175068a476a33c",
+          "detail": {
+            "name": "kumar",
+            "types": [
+              "choice"
+            ],
+            "level": "NOVICE"
+          },
+          "subject": {
+            "id": 56,
+            "name": "javascript",
+            "type": "choice"
+          },
+          "access": {
+          },
+          "questions": {
+            "source": "talentscreen",
+            "type": "choice",
+            "list": [
+              {
+                "question": "what is callback function in javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              },
+              {
+                "question": "what is javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              }
+            ]
+          }
+        }
+      },
+      "TEST_FOR_BASIC_PUT_FOR_CANDIDATE": {
+        "input": {
+          "emp_id": "58fa03679a175068a476a33c",
+          "detail": {
+            "name": "kumar",
+            "types": [
+              "choice"
+            ],
+            "level": "NOVICE"
+          },
+          "subject": {
+            "id": 56,
+            "name": "javascript",
+            "type": "choice"
+          },
+          "access": {
+          },
+          "questions": {
+            "source": "talentscreen",
+            "type": "choice",
+            "list": [
+              {
+                "question": "what is callback function in javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              },
+              {
+                "question": "what is javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              }
+            ]
+          }
+        }
+      },
+      "TEST_FOR_BASIC_PUT_FOR_NEW_USER": {
+        "input": {
+          "emp_id": "58fa03679a175068a476a33c",
+          "detail": {
+            "name": "kumar",
+            "types": [
+              "choice"
+            ],
+            "level": "NOVICE"
+          },
+          "subject": {
+            "id": 56,
+            "name": "javascript",
+            "type": "choice"
+          },
+          "access": {
+          },
+          "questions": {
+            "source": "talentscreen",
+            "type": "choice",
+            "list": [
+              {
+                "question": "what is callback function in javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              },
+              {
+                "question": "what is javascript?",
+                "answer": 1,
+                "time_given": "60secs"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

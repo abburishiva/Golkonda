@@ -1,0 +1,18 @@
+{
+  "EXISTING_EMPLOYEE_REGISTERING_WITH_REGISTERED_EMAIL": {
+    "TEST_FOR_EXISTING_EMPLOYEE_REGISTERING_WITH_REGISTERED_EMAIL": {
+      "input": {
+        "app_type": "talentscreen",
+        "email_address": "kumar@whitebox-learning.com",
+        "password": "16a2174aa0099047aaefd63853516d7c",
+        "message_type": "register",
+        "type": "register",
+        "role": "employee"
+      },
+      "expected": {
+        "statusCode":200,
+        "message": "The email address that you have entered already registered as employer. Please try using another email address"
+      }
+    }
+  }
+}
